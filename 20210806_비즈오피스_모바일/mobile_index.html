@@ -1,0 +1,1974 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=8.0, minimum-scale=1.0, width=device-width">
+        <link rel="stylesheet" href='swiper/swiper_cdn.css'/>
+        <script src="swiper/swiper_cdn.js"></script>
+        <script src='swiper/swiper.js'></script>
+        <link rel='stylesheet' href='tagInput/tagInput.css'>
+        <script src='tagInput/tagInput.js'></script>
+
+        <link rel='stylesheet' type='text/css' href='css/font.css'/>
+        <link rel='stylesheet' type='text/css' href='css/reset.css'/>
+        <link rel='stylesheet' type='text/css' href='css/main.css'/>
+        <link rel='stylesheet' type='text/css' href='css/mail_list.css'/>
+        <link rel='stylesheet' type='text/css' href='css/mail_write.css'/>
+        <link rel='stylesheet' type='text/css' href='css/footer.css'/>
+        <link rel='stylesheet' type='text/css' href='css/menu_tab.css'/>
+        <link rel='stylesheet' type='text/css' href='css/organization_chart.css'/>
+        <link rel='stylesheet' type='text/css' href='css/contact.css'/>
+        <link rel='stylesheet' type='text/css' href='css/mail_confirm.css'/>
+        <link rel='stylesheet' type='text/css' href='css/payment.css'/>
+        <script src='js/main.js'></script>
+    </head>
+
+    <body>
+        <div class='wrapper'>
+            <!-- main_content 시작 -->
+            <div class='main_content layOut_layer' style='display:block;'>
+                <header class='clearfix'>
+                    <span class='kt_logo'><img src='images/logo.png' alt='kt bizoffice'></span>
+                    <span class='setting_icon'><img src='images/setting_btn.png'></span>
+                </header>
+
+                <!-- info 시작 -->
+                <section class='info clearfix'>
+                    <p class='info_photo'>
+                        <img src='images/user_photo.jpg' width='48px' height='48px'>
+                    </p>
+
+                    <dl class='info_txt'>
+                        <dt><span class='info_name'>홍길동</span>&nbsp;사원&nbsp;&nbsp;UI/UX팀</dt>
+                        <dd>최종접속시간&nbsp;2021-05-14&nbsp;13:36</dd>
+                    </dl>
+                </section>
+                <!-- info 끝 -->
+
+                <!-- my_menu 시작 -->
+                <section class='my_menu clearfix'>
+                    <dl class='my_menu_title'>
+                        <dt>MY MENU</dt>
+                        <dd><img src='images/my_menu_setting.png'></dd>
+                    </dl>
+
+                    <ul class='clearfix'>
+                        <li class='my_menu_01 mb10'>
+                            <dl>
+                                <dt><img src='images/my_menu_01.png' style='margin-top:4px'></dt>
+                                <dd>전자우편</dd>
+                                <dd class='current_count'><span>5</span></dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_02.png'></dt>
+                                <dd>전자결재</dd>
+                                <dd class='current_count'><span>2</span></dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_03.png'></dt>
+                                <dd>일정관리</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_04.png' style='margin-top:3px'></dt>
+                                <dd>게시판</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_05.png'></dt>
+                                <dd>자원관리</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_06.png'></dt>
+                                <dd>업무일지</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_07.png'></dt>
+                                <dd>근태관리</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_08.png' height='35px'></dt>
+                                <dd>주소록</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <!-- my_menu 끝 -->
+
+                <!-- 출퇴 시작 -->
+                <section class='time_check'>
+                    <p class='current_time'>
+                        현재시간 <span><span id='current_hours'></span>:<span id='current_minutes'></span>:<span id='current_seconds'></span></span>
+                    </p>
+                    <p class='in_out_check'>
+                        <span class='time_check_in on'>출근입력<img src='images/check_icon.png'></span>
+                        <span class='time_check_out'>퇴근입력<img src='images/check_icon.png'></span>
+                    </p>
+                </section>
+                <!-- 출퇴 끝 -->
+
+                <!-- 공지사항 시작 -->
+                <section class='notice swiper-container'>
+                    <ul class='clearfix swiper-wrapper'>
+                        <li class="swiper-slide">
+                            <dl>
+                                <dt>NOTICE_01</dt>
+                                <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                            </dl>
+                            <div class='notice_content'>
+                                <dl class='cont_title'>
+                                    <dt>불법 소프트웨어 사용금지의 대한 공지사항</dt>
+                                    <dd class='cont_time'>11:20</dd>
+                                    <dd class='cont_date'>06-20</dd>
+                                </dl>
+                                <p>가온아이는 불법소프트웨어 사용을 근절합니다. 업무용장비에 불법소프트웨어를 설치를 불허합니다. 설치히 주의가 요망됩니다.</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <dl>
+                                <dt>NOTICE_02</dt>
+                                <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                            </dl>
+                            <div class='notice_content'>
+                                <dl class='cont_title'>
+                                    <dt>불법 소프트웨어 사용금지의 대한 공지사항</dt>
+                                    <dd class='cont_time'>11:20</dd>
+                                    <dd class='cont_date'>06-20</dd>
+                                </dl>
+                                <p>가온아이는 불법소프트웨어 사용을 근절합니다. 업부용장비에 불법소프트웨어를 설치를 불허합니다. 설치히 주의가 요망됩니다.</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <dl>
+                                <dt>NOTICE_03</dt>
+                                <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                            </dl>
+                            <div class='notice_content'>
+                                <dl class='cont_title'>
+                                    <dt>불법 소프트웨어 사용금지의 대한 공지사항</dt>
+                                    <dd class='cont_time'>11:20</dd>
+                                    <dd class='cont_date'>06-20</dd>                                </dl>
+                                <p>가온아이는 불법소프트웨어 사용을 근절합니다. 업부용장비에 불법소프트웨어를 설치를 불허합니다. 설치히 주의가 요망됩니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <section class='notice_navi'> -->
+                    <div class="swiper-pagination"></div>
+                    <!-- </section> -->
+                </section>
+                <!-- 공지사항 끝 -->
+
+                <!-- 공지사항 네비 시작 -->
+                
+                <!-- 공지사항 네비 끝 -->
+
+
+                <!-- 직원찾기 시작 -->
+                <section class='employee_search'>
+                    <form action='#' name='employee_search' class='clearfix'>
+                        <img src='images/search_icon.png'><input type='text' placeholder='직원을 검색하세요'><span class='employee_search_btn'>검색</span>
+                    </form>
+                </section>
+                <!-- 직원찾기 끝 -->
+
+                <!-- 메일 시작 -->
+                <section class='mail'>
+                    <dl class='mail_title clearfix'>
+                        <dt><img src='images/mail_icon.png'></dt>
+                        <dt><span>받은메일함</span></dt>
+                        <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                    </dl>
+                    <div class='mail_list clearfix'>
+                        <dl>
+                            <dt class='mail_txt'>악성코드 유포 메일 주의악성코드 유포 메일 주의악성코드 유포 메일 주의악성코드 유포 메일 주의악성코드 유포 메일 주의악성코드 유포 메일 주의</dt><span class='link_icon'><img src='images/line_icon.png'></span>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                        <dl>
+                            <dt class='mail_txt'>업무협조 요청건</dt>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                        <dl>
+                            <dt class='mail_txt'>퇴근시 사무실 정리 안내</dt>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                        <dl>
+                            <dt class='mail_txt'>로고 이미지 요청드립니다</dt>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                    </div>
+                </section>
+                <!-- 메일 끝 -->
+            </div>
+            <!-- main_content 끝 -->
+
+
+
+
+            <!-- mail_content 시작 -->
+            <div class='mail_content layOut_layer' style='display:none;'>
+
+                <!-- 메일 상단 검은 상자 시작 -->
+                <div class='list_checked_area'>
+                    <dl class='clearfix'>
+                        <dt><span class='current_maiL_amount'>12</span> / 100</dt>
+                        <dd><span><img class='close_btn' src='images/mail_close_img.svg'></span></dd>
+                    </dl>
+                    <ul>
+                        <li class='list_checked_menu_01'>
+                            <dl>
+                                <dt></dt>
+                                <dd>전체선택</dd>
+                            </dl>
+                        </li>
+                        <li class='list_checked_menu_02'>
+                            <dl>
+                                <dt></dt>
+                                <dd>읽음</dd>
+                            </dl>
+                        </li>
+                        <li class='list_checked_menu_03'>
+                            <dl>
+                                <dt></dt>
+                                <dd>삭제</dd>
+                            </dl>
+                        </li>
+                        <li class='list_checked_menu_04'>
+                            <dl>
+                                <dt></dt>
+                                <dd>이동</dd>
+                            </dl>
+                        </li>
+                        <li class='list_checked_menu_05'>
+                            <dl>
+                                <dt></dt>
+                                <dd>스팸</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 메일 상단 검은 상자 끝 -->
+
+
+                <!-- header 시작-->
+                <header class='clearfix'>
+                    <span class='prev_page_btn'><img src='images/mail_prev_arrow.svg'></span>
+                    <span>전자우편</span>
+                    <span class='mail_search'><img src='images/mail_search.svg'></span>
+                </header>
+                <!-- header 끝 -->
+
+
+                <!-- mail_list 시작 -->
+                <div class='mail_list_area'>
+                    <dl class='mail_list_title clearfix'>
+                        <dt>
+                            <span class='check_icon'><img src='images/mail_check_icon.svg'></span>
+                            받은편지함
+                            <span class='current_mail_amount'>13</span>
+                        </dt>
+                        <dd>
+                            <span class='mail_reload'><img src='images/mail_reload.svg'></span>
+                            <span class='mail_option'><img src='images/mail_option.svg'></span>
+                        </dd>
+                    </dl>
+                    
+
+                    <ul class='mail_list'>
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_01'>
+                                <label for='mail_list_01'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_on'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class='grade_up'>[지원요청] 한림성심대학교 "그룹웨어 지원요청 건"</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_02'>
+                                <label for='mail_list_02'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_off'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class='grade_down'>악성코드 유포 메일 주의</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_03'>
+                                <label for='mail_list_03'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_off'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[인사/동정/부음] 7월 22일자 인사/동정/부음 안내</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_04'>
+                                <label for='mail_list_04'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_off'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[가천대] 모바일 휴가기안 화면 디자인 작업 작업 작업</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_05'>
+                                <label for='mail_list_05'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_off'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[현대차증권] 디자인 시안 4차 요청</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_06'>
+                                <label for='mail_list_06'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_off'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[반차공지] UI/UX팀 정수연 (07/23 오후)</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_07'>
+                                <label for='mail_list_07'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_off'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[닷넷표준모듈] 로그인 기능 추가관련문의</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='mail_list_08'>
+                                <label for='mail_list_08'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='favorite favorite_off'><span></span></dd>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>악성코드 유포 메일 주의</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <aside>
+                    <div class='top_move' onclick='window.scrollTo(0,0);'></div>
+                    <div class='write_page_move'></div>
+                </aside>
+            </div>
+            <!-- mail_list 끝 -->
+
+
+            <!-- mail_write 시작 -->
+            <div class='mail_write layOut_layer'>
+                <header class=''>
+                    <dl>
+                        <dt class='write_L'><img class='mail_write_close' src='images/close_icon.png' width='14px' height='14px'></dt>
+                        <dd class='write_R send_mail'><span><img src='images/mail_send.svg'></span>발송</dd>
+                        <dd class='write_R send_me'>내게쓰기</dd>
+                        <dd class='write_R sign'>서명</dd>
+                    </dl>
+                </header>
+
+                <div class='write_layout_area'>
+                    <form>
+                    <dl class='write_layout write_layout_form'>
+                        <dt class='write_L_form receiver_txt'><span>받는사람</span><span class='reference_expand_icon'></span></dt>
+                        <dd class='write_search'>
+                            <div class='form-group'>
+                                <label for='tags'></label>
+                                <div class='form-control tags' id='tags'>
+                                    <input type='text' class='labelinput'>
+                                    <input type='hidden' value name='result'>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd class='write_R_form'>
+                            <span class='tree'></span><span class='address_icon'></span>
+                        </dd>
+                    </dl>
+
+                    <div class='reference_expand_area'>
+                        <dl class='write_layout write_layout_form'>
+                            <dt class='write_L_form receiver_txt'><span>참조</span></dt>
+                            <dd class='write_search'>
+                                <div class='form-group'>
+                                    <label for='tags'></label>
+                                    <div class='form-control tags2' id='tags2'>
+                                        <input type='text' class='labelinput'>
+                                        <input type='hidden' value name='result'>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dd class='write_R_form'>
+                                <span class='tree'></span><span class='address_icon'></span>
+                            </dd>
+                        </dl>
+
+                        <dl class='write_layout write_layout_form'>
+                            <dt class='write_L_form receiver_txt'><span>숨은참조</span></dt>
+                            <dd class='write_search'>
+                                <div class='form-group'>
+                                    <label for='tags'></label>
+                                    <div class='form-control tags' id='tags3'>
+                                        <input type='text' class='labelinput'>
+                                        <input type='hidden' value name='result'>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dd class='write_R_form'>
+                                <span class='tree'></span><span class='address_icon'></span>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class='write_layout write_title'>
+                        <input type='text' placeholder='제목을 입력해주세요'>
+                    </div>
+
+                    <div class='write_layout add_file_area'>
+                        <dl class='add_file'>
+                            <dt class='write_L'><span class='add_file_title'>첨부파일</span><span class='reference_expand_icon'></dt>
+                            <dt class='write_L'><span class='add_file_amount'>2개</span> (106MB)</dt>
+                            <dd class='write_R'><span class='file_link_icon'></span></dd>
+                            <dd class='write_R per_area'><span class='per_outer'><span class='per_inner'></span></span>70%</dd>
+                        </dl>
+                        <div class='file_area'>
+                            <ul class=''>
+                                <li>
+                                    <dl>
+                                        <dt class='write_L'><span class='file_type_jpg'></span>3.1MB</dt>
+                                        <dd class='write_R'><span class='file_delete'></span></dd>
+                                    </dl>
+                                    <p>화면설계서.jpg</p>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class='write_L'><span class='file_type_ppt'></span>100MB</dt>
+                                        <dd class='write_R'><span class='file_delete'></span></dd>
+                                    </dl>
+                                    <p>화면설계_와이어프레임 프레임프레임프레임.ppt</p>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class='write_L'><span class='file_type_jpg'></span>3.1MB</dt>
+                                        <dd class='write_R'><span class='file_delete'></span></dd>
+                                    </dl>
+                                    <p>화면설계서.jpg</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='mail_text_area'>
+                        <textarea placeholder="내용을 입력해 주세요"></textarea>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 메시지 작성 페이지 끝 -->
+
+
+            <!-- 조직도 시작 -->
+            <div class='organization_chart layOut_layer'>
+                <header>
+                    <p>
+                        <span class='close_btn'></span>
+                        <span class='header_txt'>조직도</span>
+                    </p>
+                </header>
+
+                <div class='chart_area'>
+                    <ul class='chart_depth_01'>
+                        <li class='expand on'><p><span class='expand_icon'></span><span>(주)가온아이</span></p>
+                            <ul class='chart_depth_02'>
+                                <li class='expand'><span class='expand_icon'></span><span>SS사업부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand'><span class='expand_icon'></span><span>SS기술영업팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>기술영업사원1</span></li>
+                                                <li><span class='line_bg'></span><span>기술영업사원2</span></li>
+                                                <li><span class='line_bg'></span><span>기술영업사원3</span></li>
+                                                <li><span class='line_bg'></span><span>기술영업사원4</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>CS사업부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>CS개발팀1</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>CS개발팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>CS개발팀사원1</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand up'><span class='expand_icon'></span><span>CS개발팀2</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>CS개발팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>CS개발팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>CS개발팀사원1</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>해외사업부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>일본사업팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>일본사업팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>일본사업팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>일본사업팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand up'><span class='expand_icon'></span><span>미국사업팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>미국사업팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>미국사업팀사원2</span></li>
+                                                <li><span class='line_bg'></span><span>미국사업팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>클라우드사업부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>운영팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>운영팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>운영팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>운영팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>영업마케팅팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>영업마케팅팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>영업마케팅팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>영업마케팅팀사원1</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>비즈메카팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>비즈메카팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>비즈메카팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>비즈메카팀사원1</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li><span class='expand_icon'></span><span>기록관리사업부</span>
+                                </li>
+
+                                <li><span class='expand_icon'></span><span>공공융합사업부</span>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>유통사업부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>유통1팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span>유통1팀사원1</li>
+                                                <li class='vertical_line'><span class='line_bg'></span>유통1팀사원2</li>
+                                                <li class='vertical_line'><span class='line_bg'></span>유통1팀사원3</li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>유통2팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span>유통2팀사원1</li>
+                                                <li class='vertical_line'><span class='line_bg'></span>유통2팀사원2</li>
+                                                <li class='vertical_line'><span class='line_bg'></span>유통2팀사원3</li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>유통3팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span>유통3팀사원1</li>
+                                                <li><span class='line_bg'></span>유통3팀사원2</li>
+                                                <li><span class='line_bg'></span>유통3팀사원3</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><span class='expand_icon'></span><span>CSP사업부</span>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>고객만족사업부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>솔루션기획팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>솔루션기획팀사원1</span></li></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>솔루션기획팀사원2</span></li></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>솔루션기획팀사원3</span></li></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>QC팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>QC팀사원1</span></li></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>QC팀사원2</span></li></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>QC팀사원3</span></li></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>컨설팅팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>컨설팅팀사원1</span></li></li>
+                                                <li><span class='line_bg'></span><span>컨설팅팀사원2</span></li></li>
+                                                <li><span class='line_bg'></span><span>컨설팅팀사원3</span></li></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>SS개발부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>개발1팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발1팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발1팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발1팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>개발2팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발2팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발2팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발2팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>솔루션2팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>솔루션2팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>솔루션2팀사원2</span></li>
+                                                <li><span class='line_bg'></span><span>솔루션2팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><span class='expand_icon'></span><span>ES개발부</span>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>MI개발부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>Mobile팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>Mobile팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>Mobile팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>Mobile팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>Innovation팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>Innovation팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>Innovation팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>Innovation팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>test</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>test팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>test팀사원2</span></li>
+                                                <li><span class='line_bg'></span><span>test팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><span class='expand_icon'></span><span>플랫폼컨설팅사업부</span>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>지식관리연구소</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>협업솔루션팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>협업솔루션팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>협업솔루션팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>협업솔루션팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>솔루션1팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>솔루션1팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>솔루션1팀사원2/span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>솔루션1팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>UI/UX팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>UI/UX팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>UI/UX팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>UI/UX팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>신사업팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>신사업팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>신사업팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>신사업팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>클라우드팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>클라우드팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>클라우드팀사원2</span></li>
+                                                <li><span class='line_bg'></span><span>클라우드팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><span class='expand_icon'></span><span>경영지원실</span>
+                                </li>
+                                
+                                <li><span class='expand_icon'></span><span>전략기획실</span>
+                                </li>
+
+                                <li><span class='expand_icon'></span><span>기획마케팅팀</span>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>CC사업부</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand'><span class='expand_icon'></span><span>CC기술영업팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>CC기술영업팀사원1</span></li>
+                                                <li><span class='line_bg'></span><span>CC기술영업팀사원2</span></li>
+                                                <li><span class='line_bg'></span><span>CC기술영업팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><span class='expand_icon'></span><span>해외마케팅팀</span>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>프로젝트팀</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>기록연구사</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>기록연구사사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>기록연구사사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>기록연구사사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>유통산업본부TM</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>유통산업본부TM사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>유통산업본부TM사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>유통산업본부TM사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>프로젝트</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>프로젝트사원1</span></li>
+                                                <li><span class='line_bg'></span><span>프로젝트사원2</span></li>
+                                                <li><span class='line_bg'></span><span>프로젝트사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='expand'><span class='expand_icon'></span><span>지원부서</span>
+                                    <ul class='chart_depth_03'>
+                                        <li class='expand down'><span class='expand_icon'></span><span>퇴사자임시</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>퇴사자임시1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>퇴사자임시2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>퇴사자임시3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>인턴</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>인턴사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>인턴사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>인턴사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>행정지원</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>행정지원사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>행정지원사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>행정지원사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>개발3팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발3팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발3팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>개발3팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>휴직자</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>휴직자사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>휴직자사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>휴직자사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>ezEKP개발팀</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>ezEKP개발팀사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>ezEKP개발팀사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>ezEKP개발팀사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up down'><span class='expand_icon'></span><span>고객지원팀해피시스템</span>
+                                            <ul class='chart_depth_04'>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>고객지원팀해피시스템사원1</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>고객지원팀해피시스템사원2</span></li>
+                                                <li class='vertical_line'><span class='line_bg'></span><span>고객지원팀해피시스템사원3</span></li>
+                                            </ul>
+                                        </li>
+                                        <li class='expand up'><span class='expand_icon'></span><span>클라우드센터</span>
+                                            <ul class='chart_depth_04'>
+                                                <li><span class='line_bg'></span><span>클라우드센터사원1</span></li>
+                                                <li><span class='line_bg'></span><span>클라우드센터사원2</span></li>
+                                                <li><span class='line_bg'></span><span>클라우드센터사원3</span></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 조직도 끝 -->
+
+
+            <!-- 연락처 시작 -->
+            <div class='contact layOut_layer'>
+                <header>
+                    <dl class='clearfix'>
+                        <dt class='close_btn'><span></span></dt>
+                        <dt class='header_txt'>연락처</dt>
+                        <dd class='contact_icon'><span></span></dd>
+                    </dl>
+                </header>
+
+                <div class='contact_tab'>
+                    <span class='contact_tab_01 on'>조직도</span>
+                    <span class='contact_tab_02'>주소록</span>
+                </div>
+
+                <form class='detail_tab'>
+                    <ul class='detail_tab_select'>
+                        <li class='tab_left'>조직선택</li>
+                        <li class='tab_center'>
+                            <span class='select_txt'>현대모비스</span>
+                            <span class='right_icon'></span>
+                            <span class='select_txt'>소속그룹명</span>
+                            <span class='right_icon'></span>
+                            <span class='select_txt'>소속실명</span>
+                            <span class='right_icon'></span>
+                            <span class='select_txt'>팀명</span>
+                        </li>
+                        <li class='tab_right'><span></span></li>
+                    </ul>
+
+                    <ul class='detail_tab_search'>
+                        <li class='tab_left'>직원검색</li>
+                        <li class='tab_center'>
+                            <div class='form-group'>
+                                <label for='tags'></label>
+                                <div class='form-control tags' id='tags4'>
+                                    <input type='text' class='labelinput' placeholder='검색어를 입력해주세요'>
+                                    <input type='hidden' value name='result'>
+                                </div>
+                            </div>
+                        <li class='tab_right'><span></span></li>
+                    </ul>
+
+                    <ul class='selected'>
+                        <li class='tab_left'>직원선택</li>
+                        <li class='tab_center'></li>
+                    </ul>
+                </form>
+
+                <div class='contact_list_area'>
+                    <p class='contact_list_amount'>총 <span><span class='amount_num'>10</span>건</span></p>
+                    <ul class='contact_list'>
+                        <li>
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='personal'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>박길동</span> (인사팀)</p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='personal'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>박길동</span> (인사팀)</p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='group'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>홍보팀</span></p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='personal'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>홍길동</span> (인사팀)</p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='group'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>인사관리본부</span></p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='group'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>전략사업개발팀</span></p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='personal'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>홍길동</span> (인사팀)</p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='personal'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>박길동</span> (인사팀)</p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='personal'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>박길동</span> (인사팀)</p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+
+                            <ul class='contact_list_tab'>
+                                <li class='tab_left'><span class='personal'></span></li>
+                                <li class='tab_center'>
+                                    <p><span class='contact_thick'>박길동</span> (인사팀)</p>
+                                    <p><span class='contact_emial'>park@google.com</span></p>
+                                </li>
+                                <li class='tab_right'><span class='contact_add_icon'></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 연락서 끝 -->
+
+
+            <!-- 메일 확인 시작 -->
+            <div class='mail_confirm layOut_layer'>
+                <header class=''>
+                    <dl>
+                        <dt class='write_L'><img class='mail_confirm_prev' src='images/mail_prev_arrow.svg' width='14px' height='14px'></dt>
+                        <dd class='write_R mail_confirm_menu'><span></span></dd>
+                        <dd class='write_R mail_delete'><span></span></dd>
+                        <dd class='write_R mail_reply'><span><span class='reply_icon'></span>회신</span></dd>
+                        <dd class='write_R mail_reply'><span><span class='reply_all_icon'></span>전체회신</span></dd>
+                    </dl>
+                </header>
+
+                <div class='write_layout_area'>
+                    <form>
+                    <dl class='write_layout write_layout_form'>
+                        <dt class='write_L_form receiver_txt'><span>보낸사람</span><span class='reference_expand_icon'></span></dt>
+                        <dd class='write_L_form_02 send_people'><span>곽나경</span></dd>
+                        
+                    </dl>
+
+                    <div class='reference_expand_area'>
+                        <dl class='write_layout write_layout_form'>
+                            <dt class='write_L_form receiver_txt'><span>받는사람</span></dt>
+                            <dd class='write_L_form_02 receiver_person'><span>UI/UX팀</span><span>김철수</span></dd>
+                        </dl>
+
+                        <dl class='write_layout write_layout_form'>
+                            <dt class='write_L_form receiver_txt'><span>참조</span></dt>
+                            <dd class='write_L_form_02'></dd>
+                        </dl>
+                    </div>
+
+                    <div class='write_layout receive_mail_title'>
+                        <ul>
+                            <li>
+                                <p>[지원요청]한림성심대학교 "그룹웨어 시스템재구축" 사업 제안용 포탈 및 모바일 시안지원 요청드립니다.[지원요청]한림성심대학교 "그룹웨어 시스템재구축" 사업 제안용 포탈 및 모바일 시안지원 요청드립니다.</p>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class='write_L'><span class='date'>2021-06-17</span></dt>
+                                    <dt class='write_L'><span class='time'>12:20:25</span></dt>
+                                    <dd class='write_R'><span class='favorite'></span></dd>
+                                    <dd class='write_R'><span class='link_icon'></span></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='write_layout add_file_area'>
+                        <dl class='add_file'>
+                            <dt class='write_L'><span class='add_file_title'>첨부파일</span><span class='reference_expand_icon'></dt>
+                            <dt class='write_L'><span class='add_file_amount'>3개</span> (106MB)</dt>
+                            <dt class='write_L'><span class='save_all'>모두저장</span></dt>
+                        </dl>
+                        <div class='file_area'>
+                            <ul class=''>
+                                <li>
+                                    <dl>
+                                        <dt class='write_L'><span class='file_type_jpg'></span>3.1MB</dt>
+                                        <dd class='write_R'><span class='file_delete'></span></dd>
+                                    </dl>
+                                    <p>화면설계서.jpg</p>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class='write_L'><span class='file_type_ppt'></span>100MB</dt>
+                                        <dd class='write_R'><span class='file_delete'></span></dd>
+                                    </dl>
+                                    <p>화면설계_와이어프레임 프레임프레임프레임.ppt</p>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class='write_L'><span class='file_type_jpg'></span>3.1MB</dt>
+                                        <dd class='write_R'><span class='file_delete'></span></dd>
+                                    </dl>
+                                    <p>화면설계서.jpg</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class='mail_text_area'>
+                        <p>
+                            안녕하세요.<br/>
+                            SS기술영업팀 김유경입니다.<br/>
+                            한림성심대학교 "그룹웨어 시스템 재구축" 사업 제안을 위한 포탈 및 모바일 시안 지원 요청드립니다.<br/><br/>
+                            *사이트 : 한림성심대학교 (http://www.hsc.ac.kr/)<br/><br/>
+                            *플랫폼 : 자바<br/>
+                            *지원 요청사항<br/><br/>
+                            -웹 시안(로그인 및 포탈)<br/>
+                            메뉴 구성:메일, 전자결재, 주소록관리, 일정관리, 게시판, 업무관리, 커뮤니티, 전자설문, 자원관리, 웹폴더, 메모<br/><br/>
+                            링크 구성:종합정보시스템, 대학 홈페이지, 입학 홈페이지, 교직원 채용, 교직원 공지사항, 교직원 식단, 예결산공고, 규정집<br/><br/>
+                            -모바일 시안(로그인 및 메인화면)<br/>
+                            모바일 메인화면은 폴더함이 아닌 일반 또는 포탈형으로 작업 부탁드립니다.<br/><br/>
+                            입찰마감이 차주 월요일 예정입니다.<br/>
+                            가능하시다면 목요일 오후 또는 금요일 오전까지 작업 지원 부탁드립니다.<br/><br/>
+                            감사합니다. 김유경드림
+                        </p>
+                        <img src='images/card.svg'>
+                        <ul>
+                            <li><span class='reply_icon'></span>회신</li>
+                            <li><span class='reply_all_icon'></span>전체회신</li>
+                            <li><span class='relay_icon'></span>전달</li>
+                        </ul>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 메일 확인 끝 -->
+
+
+            <!-- 전자 결재 시작 -->
+            <div class='payment_content layOut_layer'>
+
+                <!-- header 시작-->
+                <header class='clearfix'>
+                    <span class='prev_page_btn'><img src='images/mail_prev_arrow.svg'></span>
+                    <span>전자결재</span>
+                    <span class='payment_search'><img src='images/mail_search.svg'></span>
+                </header>
+                <!-- header 끝 -->
+
+
+                <!-- payment_list 시작 -->
+                <div class='payment_list_area'>
+                    <dl class='payment_list_title clearfix'>
+                        <dt>
+                            미결함
+                            <span class='current_payment_amount'>13</span>
+                        </dt>
+                        <dd>
+                            <span class='payment_reload'><img src='images/mail_reload.svg'></span>
+                            <span class='payment_option'><img src='images/mail_option.svg'></span>
+                        </dd>
+                    </dl>
+                    
+
+                    <ul class='payment_list'>
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='payment_list_01'>
+                                <label for='payment_list_01'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[기안] 명함 신청의 건</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='payment_list_02'>
+                                <label for='payment_list_02'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[기안] 명함 신청의 건</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='payment_list_03'>
+                                <label for='payment_list_03'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[기안] 명함 신청의 건</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='payment_list_04'>
+                                <label for='payment_list_04'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[기안] 명함 신청의 건</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='paymentl_list_05'>
+                                <label for='payment_list_05'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>국내 출장 신청서입니다.</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='payment_list_06'>
+                                <label for='payment_list_06'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[기안] 하계휴가 신청]</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='payment_list_07'>
+                                <label for='payment_list_07'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[기안] 하계휴가 신청</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class='list_left_area'>
+                                <input type='checkbox' id='payment_list_08'>
+                                <label for='payment_list_08'>
+                                    <span></span>
+                                </label>
+                            </div>
+
+                            <div class='list_right_area'>
+                                <dl class='list_DL_01'>
+                                    <dt>홍길동</dt>
+                                    <dd class='mail_list_time'>10:39</dd>
+                                    <dd class='mail_list_date'>2020.05.15</dd>
+                                </dl>
+
+                                <dl class='list_DL_02'>
+                                    <dt class=''>[기안] 하계휴가 신청</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- payment_list 끝 -->
+                <aside>
+                    <div class='top_move' onclick='window.scrollTo(0,0);'></div>
+                    <div class='payment_page_move'></div>
+                </aside>
+            </div>
+            <!-- 전자 결재 끝 -->
+
+
+            <!-- 하단 고정 메뉴 시작 -->
+            <footer class=''>
+                <ul class='clearfix'>
+                    <li>
+                        <dl class='main_btn' onclick='window.scrollTo(0,0);'>
+                            <dt><img src='images/footer_icon_01.png'></dt>
+                            <dd>홈</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class='mail_btn' onclick='window.scrollTo(0,0);'>
+                            <dt><img src='images/footer_icon_02.png'></dt>
+                            <dd>메일</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class='person_btn' onclick='window.scrollTo(0,0);'>
+                            <dt><img src='images/footer_icon_03.png'></dt>
+                            <dd>연락처</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class='cash_btn' onclick='window.scrollTo(0,0);'>
+                            <dt><img src='images/writebanner02.png' width='18px' height='17px'></dt>
+                            <dd>결재</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class='org_btn' onclick='window.scrollTo(0,0);'>
+                            <dt><img src='images/footer_icon_04.png'></dt>
+                            <dd>조직도</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl class='menu_btn' onclick='window.scrollTo(0,0);'>
+                            <dt><img style='margin-top:2px;'src='images/menu_btn.png'></dt>
+                            <dd>전체</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </footer>
+            <!-- 하단 고정 메뉴 끝 -->
+            
+            <!-- main_content 끝 -->
+
+            <!-- 탭메뉴 시작 -->
+            <div class='menu_tab layOut_layer'>
+                <header>
+                    <dl class='clearfix'>
+                        <dt><span>홍길동</span>&nbsp;사원</dt>
+                        <dd class='close'><img src='images/close_icon.png'></dd>
+                    </dl>
+                </header>
+
+                <section class='menu_tab_quick'>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt><img src='images/menu_tab_quick_01.png'></dt>
+                                <dd>홈</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src='images/menu_tab_quick_02.png'></dt>
+                                <dd>환경설정</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src='images/menu_tab_quick_03.png'></dt>
+                                <dd>로그아웃</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class='menu_list_area'>
+                    <ul class='list_depth_01'>
+                        <li class='on'><span>전자메일전자메일전자메일전자메일전자메일</span>
+                            <div style='display:block;'>
+                                <ul class='list_depth_02'>
+                                    <li class='on'><span>받은편지함</span><img src='images/up_arrow.png'>
+                                        <ul class='list_depth_03' style='display:block;'>
+                                            <li class='on'><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>PIMS</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함2</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색2</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록2</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>전자결재</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함3</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색3</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록3</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>게시판</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함4</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색4</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록4</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>커뮤니티</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함5</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색5</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록5</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>유용한 업무</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함6</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색6</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록6</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>프로젝트 관리</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함7</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색7</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록7</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>SNS</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함8</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색8</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록8</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 탭메뉴 끝 -->
+        </div>
+    </body>
+</html>

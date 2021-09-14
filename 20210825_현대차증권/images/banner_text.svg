@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 300 50" style="enable-background:new 0 0 300 50;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#D8D8D8;}
+	.st2{fill:#EF6B11;}
+	.st3{font-family:'HDharmonyB';}
+	.st4{font-size:20px;}
+	.st5{fill:#444444;}
+	.st6{fill:#00EDDD;}
+	.st7{fill:#FFD281;}
+	.st8{fill:#FFA683;}
+</style>
+<g id="그룹_187" transform="translate(-20 -820.107)">
+	<g id="사각형_115" transform="translate(20 889)">
+		<path class="st0" d="M7-68.9h286c3.9,0,7,3.1,7,7v36c0,3.9-3.1,7-7,7H7c-3.9,0-7-3.1-7-7v-36C0-65.8,3.1-68.9,7-68.9z"/>
+		<path class="st1" d="M7-68.4h286c3.6,0,6.5,2.9,6.5,6.5v36c0,3.6-2.9,6.5-6.5,6.5H7c-3.6,0-6.5-2.9-6.5-6.5v-36
+			C0.5-65.5,3.4-68.4,7-68.4z"/>
+	</g>
+	<text transform="matrix(1 0 0 1 46 852.107)" class="st2 st3 st4">IT</text>
+	<text transform="matrix(1 0 0 1 63.1194 852.107)" class="st5 st3 st4"> 소통마당</text>
+	<g id="그룹_58" transform="translate(-304.676 713.346)">
+		<path id="패스_41" class="st6" d="M504.7,121.9H487c-4,0-7.3,3.3-7.3,7.3l0,0v7.1c0,4,3.3,7.3,7.3,7.3h18.2l4,6.8
+			c0.5,0.7,1.4,0.8,2.1,0.3c0.4-0.3,0.6-0.7,0.6-1.2v-20.3C512,125.1,508.7,121.9,504.7,121.9z"/>
+		<path id="패스_42" class="st7" d="M495.9,119.9v7.1c0,4-3.3,7.3-7.3,7.3h-18.2l-4,6.8c-0.5,0.7-1.4,0.8-2.1,0.3
+			c-0.4-0.3-0.6-0.7-0.6-1.2v-20.3c0-4,3.3-7.3,7.3-7.3c0,0,0,0,0,0h17.7C492.6,112.6,495.9,115.9,495.9,119.9
+			C495.9,119.9,495.9,119.9,495.9,119.9z"/>
+		<path id="패스_43" class="st8" d="M495.9,121.9v5.1c0,4-3.3,7.3-7.3,7.3h-8.8v-5.1c0-4,3.3-7.3,7.3-7.3c0,0,0,0,0,0L495.9,121.9
+			z"/>
+		<circle id="타원_17" class="st0" cx="487.3" cy="123.9" r="2.4"/>
+		<circle id="타원_18" class="st0" cx="479.8" cy="123.9" r="2.4"/>
+		<circle id="타원_19" class="st0" cx="472.3" cy="123.9" r="2.4"/>
+	</g>
+</g>
+</svg>

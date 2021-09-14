@@ -1,0 +1,1195 @@
+<html>
+
+<head>
+    <title>ezEKP.net</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/css/default.css?ver=20200615165510000" type="text/css">
+
+    <link rel="stylesheet" href="/css/skin01.css?ver=20200615165920000" type="text/css">
+
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico?ver=20180904155219529">
+    <script type="text/javascript" src="/myoffice/ezPortal/lang/ezPortal_kr.js?ver=20191227150412242"></script>
+</head>
+
+<body id="portal_body" class="IndexWrap_Portal">
+
+    <div id="IndexScreen" class="wrapper">
+        <div id="top">
+            <header>
+                <ul class="contentlayout">
+                    <li class="contentlayout_left">
+
+                    </li>
+                    <li class="contentlayout_right">
+
+                        <div class="bootstrap-iso">
+
+
+                            <div class="btn_arrow dropdown" id="MultiView_Menu" style="visibility: visible;">
+                                <a href="#" id="MultiView_Button" data-toggle="dropdown" data-submenu="">
+                                    <dl class="btn_arrowDL">
+                                        <dt><span class="icon_menu top_arrow_left"></span></dt>
+                                        <dd><span class="icon_menu top_arrow_right"></span></dd>
+                                    </dl>
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+
+                                    <li class="dropdown-header text-center">MultiView</li>
+                                    <li><a href="/myoffice/ezportal/layout/portallayout_basic.aspx" target="_multi"
+                                            title="">포탈</a></li>
+                                    <li><a href="/myoffice/ezemail/index_myoffice.aspx" target="_multi" title="">메일</a>
+                                    </li>
+                                    <li><a href="/myoffice/ezapproval/index_approval.aspx" target="_multi"
+                                            title="">결재</a></li>
+                                    <li><a href="/myoffice/ezboardstd/index_board.aspx" target="_multi" title="">게시판</a>
+                                    </li>
+                                    <li><a href="/myoffice/ezschedule/index_schedule.aspx" target="_multi"
+                                            title="">일정관리</a></li>
+                                    <li><a href="/myoffice/ezresource/index_resource.aspx" target="_multi"
+                                            title="">자원관리</a></li>
+                                    <li><a href="/myoffice/ezcommunity/main_page.aspx" target="_multi" title="">커뮤니티</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="my_link dropdown" id="my_link">
+                                <dl class="my_linkDL" aria-expanded="false" data-toggle="dropdown" data-submenu="">
+                                    <dd>업무시스템<span class="icon_menu top_collapse_down"></span></dd>
+                                </dl>
+                                <div class="my_link_list dropdown-menu pull-right none-a-tag"
+                                    style="padding-top: 0px; padding-bottom: 0px; min-width: 100px; top: 0px;">
+                                    <dl class="my_link_listDL">
+                                        <dt style="width: 33%;" onclick="QuickMove(event, 'UP')"><span
+                                                class="icon_menu top_collapse_up"></span></dt>
+                                        <dt style="width: 33%;" onclick="QuickMove(event, 'DOWN')"><span
+                                                class="icon_menu top_collapse_down"></span></dt>
+                                        <dt style="width: 33%; text-align: center; padding-top: 5px;"
+                                            onclick="GoToApplication('92', '', false)"><span
+                                                class="main_img main_icon_config"></span></dt>
+                                        <dd id="quicklink_beforeitem"
+                                            style="text-align: center; border-bottom: 1px solid rgb(222, 222, 222); font-size: 30px; height: 20px; display: none;">
+                                            <div style="margin-top: -15px">···</div>
+                                        </dd>
+                                        <dd>
+                                            <ul class="my_link_listUL" style="overflow-y: auto; height: 195px;">
+                                                <li onclick="OpenWindow('', 'https://calendar.google.com', '구글', 'FULL')"
+                                                    class="cursorPointer" _liheight="38"><span>구글</span></li>
+                                                <li onclick="OpenWindow('', 'http://www.naver.com', '네이버', 'FULL')"
+                                                    class="cursorPointer" _liheight="38"><span>네이버</span></li>
+                                                <li onclick="OpenWindow('', 'http://www.google.com', '구글', 'FULL')"
+                                                    class="cursorPointer" _liheight="38"><span>구글</span></li>
+                                                <li onclick="OpenWindow('', 'http://www.daum.net', '다음', 'FULL')"
+                                                    class="cursorPointer" _liheight="38"><span>다음</span></li>
+                                                <li onclick="OpenWindow('', 'http://www.nate.com', '네이트', 'FULL')"
+                                                    class="cursorPointer" _liheight="38"><span>네이트</span></li>
+                                            </ul>
+                                        </dd>
+                                        <dd id="quicklink_afteritem"
+                                            style="text-align: center; border-bottom: 1px solid rgb(222, 222, 222); font-size: 30px; height: 20px; display: none;">
+                                            <div style="margin-top: -15px">···</div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="my_information dropdown" id="my_information_Menu">
+                                <a href="#" id="my_information_Button" data-toggle="dropdown" data-submenu="">
+                                    <dl class="my_informationDL">
+                                        <dt>
+                                            <img src="/myoffice/Common/DownloadAttach.aspx?filepath=%2fUpload_Personal%2fPhoto%2fc001.jpg"
+                                                alt=""></dt>
+                                        <dd><span class="icon_menu top_collapse_down"></span></dd>
+                                    </dl>
+                                </a>
+
+                                <ul class="dropdown-menu pull-right none-a-tag" id="my_informationUL" style="">
+                                    <li onclick="OpenWindowMultiView(this, event)"
+                                        id="/myoffice/ezpersonal/index_environment.aspx">환경설정</li>
+                                    <li
+                                        onclick="OpenWindow('', '/myoffice/ezOrgan/Search_Organ.aspx', 'layer', 'width=800px, height=700px')">
+                                        직원조회</li>
+                                    <li onclick="Logout('/logout.aspx')">로그아웃</li>
+                                </ul>
+                            </div>
+
+                            <div class="my_Notification dropdown">
+                                <ul class="my_NotificationUL" data-toggle="dropdown" data-submenu=""
+                                    style="margin-bottom: 0px">
+                                    <li>
+                                        <span class="icon_menu top_Notification" title="알림"></span>
+                                        <span id="notiCountBadge" class="top_count"><span>22</span></span>
+                                    </li>
+                                </ul>
+                                <div class="dropdown-menu pull-right none-a-tag" id="my_NotificationUL"
+                                    style="padding: 0px; margin: 0px; width: 352px; height: 685px; right: -130px;">
+                                    <!-- 포인트 -->
+                                    <p class="notification_point"><span class="icon16 notification_arrow_point"></span>
+                                    </p>
+                                    <iframe id="iframeNoti"
+                                        src="/myoffice/ezPersonal/Notification_Realtime/Notification_Main.aspx"
+                                        style="width: 100%; height: 100%" frameborder="0" scrolling="NO"></iframe>
+                                </div>
+                            </div>
+
+                            <div class="my_search">
+                                <ul class="contentlayout my_searchUL">
+                                    <li class="contentlayout_right" onclick="Search_Employee('POPUP')" title="직원정보 조회">
+                                        <span class="icon_menu top_usersearchBtn"></span></li>
+                                    <li class="contentlayout_right" onclick="Search_Integrate()" title="검색"><span
+                                            class="icon_menu top_searchBtn"></span></li>
+                                    <li class="contentlayout_none">
+                                        <input type="text" id="txt_Search" class="width100percent" placeholder="통합검색"
+                                            onkeydown="entercheck()"></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="contentlayout_none"
+                        style="position: absolute; width: calc(100vw - 507px); clear: none; left: 0px;">
+                        <nav>
+                            <ul id="horizonMenu" class="navUL" style="">
+
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    _usemulti="1" id="/myoffice/ezportal/layout/portallayout_basic.aspx"><span
+                                        class="icon_menu top_resource"></span><span class="top_text" style="">포탈</span>
+                                </li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    _usemulti="1" id="/myoffice/ezemail/index_myoffice.aspx"><span
+                                        class="icon_menu top_mail"></span><span class="top_text" style="">메일</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    _usemulti="1" id="/myoffice/ezapproval/index_approval.aspx"><span
+                                        class="icon_menu top_approval"></span><span class="top_text" style="">결재</span>
+                                </li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    _usemulti="1" id="/myoffice/ezboardstd/index_board.aspx"><span
+                                        class="icon_menu top_board"></span><span class="top_text" style="">게시판</span>
+                                </li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    _usemulti="1" id="/myoffice/ezschedule/index_schedule.aspx"><span
+                                        class="icon_menu top_pims"></span><span class="top_text" style="">일정관리</span>
+                                </li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    _usemulti="1" id="/myoffice/ezresource/index_resource.aspx"><span
+                                        class="icon_menu top_knowledge"></span><span class="top_text"
+                                        style="">자원관리</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    _usemulti="1" id="/myoffice/ezcommunity/main_page.aspx"><span
+                                        class="icon_menu top_sns"></span><span class="top_text" style="">커뮤니티</span>
+                                </li>
+                            </ul>
+                            <ul id="verticalMenu" class="ToggleMenu bootstrap-iso" style="display: none">
+                                <li class="dropdown"><span class="top_toggleBtn" data-toggle="dropdown"
+                                        data-submenu=""><span class="icon_menu top_toggle"></span></span>
+                                    <ul class="dropdown-menu pull-left ToggleMenuUL" id="verticalMenu_UL" style="">
+                                        <li name="topmenu_li" class="cursorPointer"
+                                            onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezportal/layout/portallayout_basic.aspx"><span
+                                                class="icon_menu top_resource" title="포탈"></span><span
+                                                class="top_text">포탈</span></li>
+                                        <li name="topmenu_li" class="cursorPointer"
+                                            onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezemail/index_myoffice.aspx"><span class="icon_menu top_mail"
+                                                title="메일"></span><span class="top_text">메일</span></li>
+                                        <li name="topmenu_li" class="cursorPointer"
+                                            onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezapproval/index_approval.aspx"><span
+                                                class="icon_menu top_approval" title="결재"></span><span
+                                                class="top_text">결재</span></li>
+                                        <li name="topmenu_li" class="cursorPointer"
+                                            onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezboardstd/index_board.aspx"><span class="icon_menu top_board"
+                                                title="게시판"></span><span class="top_text">게시판</span></li>
+                                        <li name="topmenu_li" class="cursorPointer"
+                                            onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezschedule/index_schedule.aspx"><span
+                                                class="icon_menu top_pims" title="일정관리"></span><span
+                                                class="top_text">일정관리</span></li>
+                                        <li name="topmenu_li" class="cursorPointer"
+                                            onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezresource/index_resource.aspx"><span
+                                                class="icon_menu top_knowledge" title="자원관리"></span><span
+                                                class="top_text">자원관리</span></li>
+                                        <li name="topmenu_li" class="cursorPointer"
+                                            onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezcommunity/main_page.aspx"><span class="icon_menu top_sns"
+                                                title="커뮤니티"></span><span class="top_text">커뮤니티</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                </ul>
+            </header>
+        </div>
+
+
+    </div>
+
+
+
+    <main style="height: calc(100% - 49px);">
+        <div id="container">
+            <div id="sub_content">
+                <div id="MultiView_Container">
+                    <div id="Title"><span class="debug">title</span></div>
+                    <div id="Content" style="width:100%"><span class="debug">Content</span>
+                        <div id="Taskbar" style="visibility: hidden; height: 0px;"><span class="debug">Taskbar</span>
+                            <ul></ul>
+                        </div>
+                        <div id="View" class="taskbar_hide"><span class="debug">View</span>
+                            <div id="iframe_left_panel" class="iframe_left_panel" style="display: none;"><span
+                                    class="debug">iframe_left_panel</span></div>
+                            <div id="iframe_right_panel" class="iframe_right_panel" style="display: none;"><span
+                                    class="debug">iframe_right_panel</span></div>
+                            <div id="__MultiViewPage_1" class="droppable Pages ui-droppable left full"
+                                style="position: relative;"><span class="debug">__MultiViewPage_1</span>
+                                <div name="__MultiViewPage_2_Page__" id="__MultiViewPage_2_Page__"
+                                    class="Page main full">
+                                    <div class="breadcrumbContainer" style="display: none;">
+                                        <ul class="breadcrumb">
+
+                                            <li class="active">포탈</li>
+                                            <li class="right">
+                                                <span class="debug"> (__MultiViewPage_2_Page__)</span>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <iframe name="__MultiViewPage_2_Page___frame" id="__MultiViewPage_2_Page___frame"
+                                        src="http://ekp.kaoni.com/myoffice/ezPortal/Layout/PortalLayout_Basic.aspx"
+                                        style="display: block; height: calc(100vh - 49px); padding: 0px;"
+                                        class="multiview full" frameborder="0" border="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 1500; background: none rgba(0,0,0,0.7); display: none;"
+        id="Main_mailPanel">&nbsp;</div>
+    <div class="layerpopup" style="z-index: 2000; position: absolute; display: none;" id="Main_iFramePanel">
+        <p class="loader" title="loading"></p>
+        <iframe src="/myoffice/blank.htm" style="border: none; z-index: 10000" id="Main_iFrameLayer"></iframe>
+        <iframe id="if_Progress" style="display:none" src="" <="" iframe="">
+            <iframe id=ifmpopup style="display:none" src=""></iframe>
+    </div>
+
+    <script type="text/javascript" src="/myoffice/common/XmlHttpRequest.js?ver=20200219153815577"></script>
+    <script type="text/javascript" src="/JQuery/jquery-1.9.1.min.js?ver=20180122114922000"></script>
+    <script>
+        var $ContentDiv = jQuery.noConflict();
+    </script>
+
+    <script type="text/javascript">
+        document.onselectstart = function (e) {
+            e = e || window.event;
+
+            if (e.target.tagName != "INPUT" && e.target.tagName != "TEXTAREA")
+                return false;
+            else
+                return true;
+        };
+
+        if (window.addEventListener) {
+            window.addEventListener("resize", function () {
+                Resize_Screen();
+                Resize_TopMenu();
+                QuickMenuResize();
+            });
+        } else {
+            window.onresize = function () {
+                Resize_Screen();
+                Resize_TopMenu();
+                QuickMenuResize();
+            }
+        }
+
+        $ContentDiv(this).ready(function () {
+            SetTopMenuEvent(); //LayoutMain.js에 정의
+
+            checkTopMenuHasChild();
+            Resize_TopMenu();
+            QuickMenuSizeCheck();
+            QuickMenuResize();
+            checkQuickMenuHasChild();
+
+            document.getElementById("Main_mailPanel").addEventListener("click", function (e) {
+                if (window.event) {
+                    (event.stopPropagation) ? event.stopPropagation(): event.cancelBubble = true;
+                } else {
+                    e.stopPropagation();
+                }
+            });
+
+            selToggleList_Multi(document.getElementById("horizonMenu"), document.getElementById(
+                "verticalMenu_UL"));
+            selToggleList_Multi(document.getElementById("verticalMenu_UL"), document.getElementById(
+                "horizonMenu"));
+
+            UserVowLock();
+
+
+            window.setInterval("update_connectinfo()", 30000);
+        });
+
+        function GetObject() {
+            var agentObj;
+            try {
+
+                document.getElementById("if_Progress").src = "/binary/Progress.htm";
+            } catch (e) {}
+
+            var agentObj;
+            i_icd2.SetDocumentDisp(window.document);
+            i_icd2.xmlURL = "http://" + document.location.hostname + "/binary/componentlist_transfer.aspx";
+            i_icd2.CheckVersion();
+            var nCount = i_icd2.nNeedDownload;
+            if (nCount) {
+                if_Progress.StartOn();
+            } else {
+                finish_download();
+            }
+        }
+
+        function finish_download() {
+
+        }
+
+        var Connectinfo_xmlHTTP = null;
+        var blogout = false;
+
+        function update_connectinfo() {
+            if (blogout)
+                return;
+
+            Connectinfo_xmlHTTP = createXMLHttpRequest();
+            Connectinfo_xmlHTTP.open("POST", "/myoffice/main/update_connectinfo.aspx", true);
+            Connectinfo_xmlHTTP.onreadystatechange = event_update_connectinfo;
+            Connectinfo_xmlHTTP.send();
+        }
+
+        function event_update_connectinfo() {
+            if (Connectinfo_xmlHTTP.readyState != 4)
+                return;
+
+            if (Connectinfo_xmlHTTP.status == 200 && Connectinfo_xmlHTTP.responseText == "LOGOUT") {
+                blogout = true;
+                for (var i = 0; i < document.getElementsByName("POPUPNOTICE").length; i++) {
+                    if (BroswerAndNonActiveXCheck() == "CROSS")
+                        document.getElementsByName("POPUPNOTICE")[i].remove();
+                    else
+                        document.getElementsByName("POPUPNOTICE")[i].removeNode(true);
+                }
+                Alert_Message("사용자가 다른곳에서 로그인해서 강제로 로그아웃합니다.", connetionLogOut, "");
+            }
+        }
+
+        function connetionLogOut() {
+            window.location.href = "/Logout.aspx";
+        }
+
+        function getTopFrame() {
+            Resize_Screen();
+            LoadUrlContent("/myoffice/ezPortal/Layout/PortalLayout_Basic.aspx", "mainFrame");
+        }
+
+        function entercheck() {
+            if (window.event.keyCode == 13)
+                Search_Integrate();
+        }
+
+        function Search_Integrate() {
+            // 한글깨지는 문제가 발생하여 encodeURIComponent를 두번 사용 - 언어셋 문제로 두번 사용하면 안깨짐.
+            OpenWindow("", "/myoffice/ezSearch/index_Search.aspx?keyword=" + encodeURIComponent(encodeURIComponent(
+                document.getElementById("txt_Search").value)), "", "");
+
+            // 검색후 검색어 초기화
+            document.getElementById("txt_Search").value = "";
+        }
+
+        function ChangeRealTimeNoteBadgeCount(badgeCount) {
+            if (document.getElementById("notiCountBadge") != null) {
+                var BadgeCountString = "";
+                if (badgeCount > 999) {
+                    BadgeCountString = "999+";
+                } else {
+                    BadgeCountString = badgeCount.toString();
+                }
+
+                if (document.getElementById("notiCountBadge").getElementsByTagName("span").length > 0) {
+                    document.getElementById("notiCountBadge").getElementsByTagName("span")[0].innerText =
+                        BadgeCountString;
+                } else {
+                    var _spanElem = document.createElement("span");
+                    _spanElem.innerText = BadgeCountString;
+
+                    document.getElementById("notiCountBadge").appendChild(_spanElem);
+                }
+            }
+        }
+
+        function OpenWindow(evt, url, location, option) {
+            if (location.toUpperCase() == "MAIN") {
+                LoadUrlContent(url, "mainFrame");
+            } else {
+                if (option != "") {
+
+                    if (option == "FULL") {
+
+                        option = "width=" + screen.availWidth + ", height=" + screen.availHeight + ", top=0, left=0";
+                    } else {
+                        var width = 0,
+                            height = 0;
+                        var leftPosition = "",
+                            topPosition = "";
+                        var opt = option.split(';');
+                        for (var i = 0; i < opt.length; i++) {
+                            if (opt[i].indexOf('height') > -1) {
+                                height = opt[i].substring(opt[i].indexOf('=') + 1, opt[i].indexOf('px'));
+                                var top = window.outerHeight / 2 + window.screenY - (height / 2);
+                                topPosition = ", top=" + top + ", screenY=" + top;
+                            }
+                            if (opt[i].indexOf('width') > -1) {
+                                width = opt[i].substring(opt[i].indexOf('=') + 1, opt[i].indexOf('px'));
+                                var left = window.outerWidth / 2 + window.screenX - (width / 2);
+                                leftPosition = ", left=" + left + ", screenX=" + left;
+                            }
+                        }
+                        option = option + topPosition + leftPosition;
+                    }
+                }
+
+                if (location.toUpperCase() == "LAYER") {
+                    DivPopUpShow(parseInt(width), parseInt(height), url);
+                } else {
+                    if (location.toUpperCase() == "TOP")
+                        document.location.href = url;
+                    else {
+                        window.open(url, "", option);
+                    }
+                }
+            }
+
+            if (window.event) {
+                (event.stopPropagation) ? event.stopPropagation(): event.cancelBubble = true;
+            } else {
+                evt.stopPropagation();
+            }
+        }
+
+        function Search_Employee(viewType) {
+            if (viewType.toUpperCase() === "LAYER") {
+                DivPopUpShow(800, 700, "/myoffice/ezOrgan/Search_Organ.aspx?companyid=top&search=" + escape(document
+                    .getElementById("txt_Search").value));
+            } else {
+                OpenWindow(null, "/myoffice/ezOrgan/Search_Organ.aspx?companyid=top&search=" + escape(document
+                    .getElementById("txt_Search").value), "popup", "height=700px, width =800px");
+            }
+
+            // 검색후 검색어 초기화
+            document.getElementById("txt_Search").value = "";
+        }
+
+        function PopClose(obj) {
+            document.getElementById(obj).contentWindow.Popup_Close();
+        }
+
+        function QuickMove(_event, value) {
+            if (window.event) {
+                (event.stopPropagation) ? event.stopPropagation(): event.cancelBubble = true;
+            } else {
+                _event.stopPropagation();
+            }
+
+            var WindowHeight = document.documentElement.clientHeight; // 화면 전체 높이
+            var TopMenuHeight = document.getElementById("top").clientHeight; // 탑메뉴 높이
+            var QuickMenuMaxHeight = WindowHeight - (TopMenuHeight + 100);
+            var QuickMenuMinHeight = 150;
+            var QuickMenuHeight = 0;
+
+            var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li:not(.quickdisplaynone)");
+            if (value == "DOWN") {
+                // 마지막 row index 체크
+                var nextDownElement = quickdisplayElements[quickdisplayElements.length - 1].nextElementSibling;
+                while (nextDownElement != null && nextDownElement != undefined) {
+                    QuickMenuHeight += parseInt(nextDownElement.getAttribute("_liheight"));
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        nextDownElement.classList.remove("quickdisplaynone");
+                    } else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        nextDownElement.classList.remove("quickdisplaynone");
+                    } else {
+                        nextDownElement.classList.add("quickdisplaynone");
+                    }
+
+                    nextDownElement = nextDownElement.nextElementSibling;
+                }
+
+                // 기존에 열려있는 항목은 모두 안보이도록 처리
+                var beforeDownElement = quickdisplayElements[quickdisplayElements.length - 1];
+                while (beforeDownElement != null && beforeDownElement != undefined) {
+                    QuickMenuHeight += parseInt(beforeDownElement.getAttribute("_liheight"));
+
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        beforeDownElement.classList.remove("quickdisplaynone");
+                    } else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        beforeDownElement.classList.remove("quickdisplaynone");
+                    } else {
+                        beforeDownElement.classList.add("quickdisplaynone");
+                    }
+
+                    beforeDownElement = beforeDownElement.previousElementSibling;
+                }
+            } else {
+                // 마지막 row index 체크
+                var previousUpElement = quickdisplayElements[0].previousElementSibling;
+                while (previousUpElement != null && previousUpElement != undefined) {
+                    QuickMenuHeight += parseInt(previousUpElement.getAttribute("_liheight"));
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        previousUpElement.classList.remove("quickdisplaynone");
+                    } else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        previousUpElement.classList.remove("quickdisplaynone");
+                    } else {
+                        previousUpElement.classList.add("quickdisplaynone");
+                    }
+
+                    previousUpElement = previousUpElement.previousElementSibling;
+                }
+
+                // 기존에 열려있는 항목은 모두 안보이도록 처리
+                var nextUpElement = quickdisplayElements[0];
+                while (nextUpElement != null && nextUpElement != undefined) {
+                    QuickMenuHeight += parseInt(nextUpElement.getAttribute("_liheight"));
+
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        nextUpElement.classList.remove("quickdisplaynone");
+                    } else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        nextUpElement.classList.remove("quickdisplaynone");
+                    } else {
+                        nextUpElement.classList.add("quickdisplaynone");
+                    }
+
+                    nextUpElement = nextUpElement.nextElementSibling;
+                }
+            }
+
+            quicklink_displayEtc();
+        }
+
+        function QuickMenuSizeCheck() {
+            // 퀵메뉴의 각Row 의 높이를 _LiHeight에 입력한다.
+            document.getElementById("my_link").classList.add("open");
+
+            var my_link_listULElements = document.getElementsByClassName("my_link_listUL");
+            if (my_link_listULElements.length > 0) {
+                var my_link_listUL_ChildrenLi_Elements = my_link_listULElements[0].getElementsByTagName("li");
+                for (var i = 0; i < my_link_listUL_ChildrenLi_Elements.length; i++) {
+                    my_link_listUL_ChildrenLi_Elements[i].setAttribute("_liheight", my_link_listUL_ChildrenLi_Elements[
+                        i].clientHeight);
+                }
+            }
+
+            document.getElementById("my_link").classList.remove("open");
+        }
+
+        function QuickMenuResize() {
+            var WindowHeight = document.documentElement.clientHeight; // 화면 전체 높이
+            var TopMenuHeight = document.getElementById("top").clientHeight; // 탑메뉴 높이
+            var QuickMenuMaxHeight = WindowHeight - (TopMenuHeight + 100);
+            var QuickMenuMinHeight = 150;
+            var QuickMenuHeight = 0;
+
+            var myLinkListULElements = document.getElementsByClassName("my_link_listUL");
+            if (myLinkListULElements.length > 0) {
+                var myLinkListLIElements = myLinkListULElements[0].children;
+                var bStartShow = false;
+                for (var i = 0; i < myLinkListLIElements.length; i++) {
+                    if (!bStartShow && !myLinkListLIElements[i].classList.contains("quickdisplaynone")) {
+                        bStartShow = true;
+                    }
+
+                    if (bStartShow) {
+                        QuickMenuHeight += parseInt(myLinkListLIElements[i].getAttribute("_liheight"));
+                        if (QuickMenuMaxHeight >= QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                            myLinkListLIElements[i].classList.remove("quickdisplaynone");
+                        } else if (QuickMenuMaxHeight <= QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                            myLinkListLIElements[i].classList.remove("quickdisplaynone");
+                        } else {
+                            myLinkListLIElements[i].classList.add("quickdisplaynone");
+                        }
+                    } else {
+                        myLinkListLIElements[i].classList.add("quickdisplaynone");
+                    }
+                }
+            }
+
+            var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li:not(.quickdisplaynone)");
+            if (quickdisplayElements.length === 0) {
+                // 모두 안보이도록 처리되는 경우가 있음. 이경우 마지막 것을 display로 변경하여 아래 구문에서 처리되도록 한다.
+                var myLinkListLIElements = document.querySelectorAll(".my_link_listUL > li");
+                if (myLinkListLIElements.length > 0) {
+                    myLinkListLIElements[myLinkListLIElements.length - 1].classList.remove("quickdisplaynone");
+                }
+            }
+
+            // 마지막 항목이 display되는 항목일 경우 앞으로 찾아간다.
+            var myLinkListLIElements = document.querySelectorAll(".my_link_listUL > li");
+            if (myLinkListLIElements.length > 0) {
+                if (!myLinkListLIElements[myLinkListLIElements.length - 1].classList.contains("quickdisplaynone")) {
+                    var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li.quickdisplaynone");
+                    var beforeDownElement = quickdisplayElements[quickdisplayElements.length - 1];
+                    while (beforeDownElement != null && beforeDownElement != undefined) {
+                        QuickMenuHeight += parseInt(beforeDownElement.getAttribute("_liheight"));
+                        if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                            beforeDownElement.classList.remove("quickdisplaynone");
+                        } else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                            beforeDownElement.classList.remove("quickdisplaynone");
+                        } else {
+                            beforeDownElement.classList.add("quickdisplaynone");
+                        }
+
+                        beforeDownElement = beforeDownElement.previousElementSibling;
+                    }
+                };
+            }
+
+            // IE에서 사이즈 조정시 링크메뉴 사라지는 문제가 있어 추가
+            var myLinkListElements = document.getElementsByClassName("my_link_list");
+            if (myLinkListElements.length > 0) {
+                myLinkListElements[0].style.top = "0px";
+            }
+
+            // 퀵메뉴 하위메뉴 표시를 위해 목록 높이 고정(하위 메뉴 표시할때 스크롤바 표시하기 위함)
+            var my_link_listULElements = document.getElementsByClassName("my_link_listUL");
+            if (my_link_listULElements.length > 0) {
+                var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li:not(.quickdisplaynone)");
+                var QuickMenuDisplayHeight = 0;
+                for (var i = 0; i < quickdisplayElements.length; i++) {
+                    QuickMenuDisplayHeight += parseInt(quickdisplayElements[i].getAttribute("_liheight")) + 1;
+                }
+
+                my_link_listULElements[0].style.height = QuickMenuDisplayHeight + "px";
+            }
+            quicklink_displayEtc();
+        }
+
+        function quicklink_displayEtc() {
+            var myLinkListULElements = document.getElementsByClassName("my_link_listUL");
+            if (myLinkListULElements.length > 0) {
+                var myLinkListLIElements = myLinkListULElements[0].children;
+                if (myLinkListLIElements.length > 0) {
+                    if (myLinkListLIElements[0].classList.contains("quickdisplaynone")) {
+                        document.getElementById("quicklink_beforeitem").style.display = "";
+                    } else {
+                        document.getElementById("quicklink_beforeitem").style.display = "none";
+                    }
+
+                    if (myLinkListLIElements[myLinkListLIElements.length - 1].classList.contains("quickdisplaynone")) {
+                        document.getElementById("quicklink_afteritem").style.display = "";
+                    } else {
+                        document.getElementById("quicklink_afteritem").style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function OpenWindow_Cookie(evt, url, location, option) {
+            setCookie("logo", "true", "", "/", "", "");
+            OpenWindow(evt, url, location, option);
+        }
+
+        function setCookie(name, value, expires, path, domain, secure) {
+            try {
+                var today = new Date();
+                today.setTime(today.getTime());
+                if (expires) {
+                    expires = expires * 1000 * 60 * 60 * 24;
+                }
+                var expires_date = new Date(today.getTime() + (expires));
+                document.cookie = name + "=" + escape(value) +
+                    ((expires) ? ";expires=" + expires_date.toGMTString() : "") + //expires.toGMTString()
+                    ((path) ? ";path=" + path : "") +
+                    ((domain) ? ";domain=" + domain : "") +
+                    ((secure) ? ";secure" : "");
+            } catch (err) {}
+        }
+
+        function PreView_Close() {
+            if (typeof PreviewRayerChange === "function") {
+                PreviewRayerChange('OFF');
+                ResponsiveLeftRightView();
+                PreviewOnResize();
+            } else if (typeof DivPopUpHidden === "function") {
+                DivPopUpHidden();
+            }
+        }
+
+
+        var bInherit = false;
+        var curImg = new Image;
+        var oldPath = "";
+        var subPath = "";
+        var menuName = "";
+        var tempclickmenuPath = "";
+        var temppNewPath;
+        var tempobj;
+        var clickmenusub = "";
+        var clickmenuPath = "";
+        var clickmenuName = "";
+
+        function img_onMouseOver(pNewPath, obj) {
+            temppNewPath = pNewPath;
+            tempobj = obj;
+            if (curImg == obj) {
+                return;
+            } else {
+                oldPath = obj.src;
+                obj.src = pNewPath;
+                if (clickmenusub != "")
+                    document.getElementById(clickmenusub).style.display = "none";
+                if (clickmenuName != "" && document.getElementsByName(clickmenuName)[0].src.indexOf(pNewPath) == -1) {
+                    tempclickmenuPath = document.getElementsByName(clickmenuName)[0].src;
+                    document.getElementsByName(clickmenuName)[0].src = clickmenuPath;
+                }
+            }
+            if (document.getElementById("menu_" + obj.name) != null) {
+                subPath = "menu_" + obj.name;
+                menuName = obj.name;
+                document.getElementById("menu_" + obj.name).style.left = 0;
+                document.getElementById("menu_" + obj.name).style.display = "";
+                var LeftMargin = parseInt(document.getElementsByName(menuName)[0].offsetLeft);
+                if (window.document.documentElement.clientWidth < document.getElementsByName(menuName)[0].offsetLeft +
+                    document.getElementById("menu_" + obj.name).clientWidth) {
+                    LeftMargin = LeftMargin - (document.getElementsByName(menuName)[0].offsetLeft + document
+                        .getElementById("menu_" + obj.name).clientWidth - window.document.documentElement
+                        .clientWidth);
+                    LeftMargin = LeftMargin - 30;
+                }
+                document.getElementById("menu_" + obj.name).style.left = LeftMargin + "px";
+            } else {
+                menuName = obj.name;
+                subPath = "";
+            }
+        }
+
+        function img_onMouseOut(obj) {
+            tempobj = obj;
+            if (curImg == obj) {
+                return;
+            } else if (clickmenuPath == oldPath) {} else {
+                obj.src = oldPath;
+                if (tempclickmenuPath != "" && obj != document.getElementsByName(clickmenuName)[0])
+                    document.getElementsByName(clickmenuName)[0].src = tempclickmenuPath;
+            }
+            if (subPath != "" && document.getElementById(subPath).style.display == "" && subPath != clickmenusub) {
+                document.getElementById(subPath).style.display = "none";
+            }
+            if (clickmenusub != "")
+                document.getElementById(clickmenusub).style.display = "";
+        }
+
+        function submenuover(subObj) {
+            if (tempobj.name === subObj.id.replace("menu_", "")) {
+                img_onMouseOver(temppNewPath, tempobj);
+            }
+        }
+
+        function submenuout(subObj) {
+            img_onMouseOut(tempobj);
+        }
+
+        function Resize_TopMenu() {
+            if (typeof ResponsiveLeftRightView == 'function') {
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                }
+
+                ResponsiveLeftRightView();
+            }
+
+            var pLeftClientWidth = 0;
+            var pTopmenuWidth = 0;
+            if (document.querySelectorAll("header>.contentlayout>.contentlayout_left").length > 0) {
+                pLeftClientWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_left")[0]
+                .clientWidth;
+            }
+
+            if (document.querySelectorAll("header>.contentlayout>.contentlayout_none").length > 0) {
+                pTopmenuWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_none")[0].clientWidth;
+            } else {
+                pTopmenuWidth = document.documentElement.clientWidth;
+            }
+
+            var pTop_TotalTextWidth = 0;
+            var pTop_TotalNoneTextWidth = 0;
+
+            document.getElementById("horizonMenu").style.display = "";
+            document.getElementById("verticalMenu").style.display = "none";
+            for (var i = 0; i < document.getElementsByClassName("navUL")[0].childNodes.length; i++) {
+                if (document.getElementsByClassName("navUL")[0].childNodes[i].tagName === "LI") {
+                    if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")
+                        .length > 0) {
+                        if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                            "top_text")[0].style.display === "none") {
+                            pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName(
+                                "navUL")[0].childNodes[i].clientWidth;
+
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "top_text")[0].style.display = "";
+                            pTop_TotalTextWidth = pTop_TotalTextWidth + document.getElementsByClassName("navUL")[0]
+                                .childNodes[i].clientWidth;
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "top_text")[0].style.display = "none";
+                        } else {
+                            pTop_TotalTextWidth = pTop_TotalTextWidth + document.getElementsByClassName("navUL")[0]
+                                .childNodes[i].clientWidth;
+
+                            if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                    "icon_menu").length > 0) {
+                                document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                    "top_text")[0].style.display = "none";
+                                pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName(
+                                    "navUL")[0].childNodes[i].clientWidth;
+                                document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                    "top_text")[0].style.display = "";
+                            } else {
+                                pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName(
+                                    "navUL")[0].childNodes[i].clientWidth;
+                            }
+                        }
+                    } else {
+                        pTop_TotalTextWidth = pTop_TotalTextWidth + document.getElementsByClassName("navUL")[0]
+                            .childNodes[i].clientWidth;
+                        pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName("navUL")[0]
+                            .childNodes[i].clientWidth;
+                    }
+                }
+            }
+
+            if (pTopmenuWidth - 30 > pTop_TotalTextWidth) {
+                document.getElementById("horizonMenu").style.display = "";
+                document.getElementById("verticalMenu").style.display = "none";
+                for (var i = 0; i < document.getElementsByClassName("navUL")[0].childNodes.length; i++) {
+                    if (document.getElementsByClassName("navUL")[0].childNodes[i].tagName === "LI") {
+                        if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu").length > 0) {
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu")[0].parentElement.parentElement.removeEventListener("mouseover",
+                                ShowTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu")[0].parentElement.parentElement.removeEventListener("mouseout",
+                                HideTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "top_text")[0].style.display = "";
+                        }
+                    }
+                }
+
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                }
+            } else if (pTopmenuWidth - 30 <= pTop_TotalTextWidth && pTopmenuWidth - 30 > pTop_TotalNoneTextWidth) {
+                document.getElementById("horizonMenu").style.display = "";
+                document.getElementById("verticalMenu").style.display = "none";
+                for (var i = 0; i < document.getElementsByClassName("navUL")[0].childNodes.length; i++) {
+                    if (document.getElementsByClassName("navUL")[0].childNodes[i].tagName === "LI") {
+                        if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu").length > 0) {
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu")[0].parentElement.parentElement.removeEventListener("mouseover",
+                                ShowTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu")[0].parentElement.parentElement.removeEventListener("mouseout",
+                                HideTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu")[0].parentElement.parentElement.addEventListener("mouseover",
+                                ShowTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "icon_menu")[0].parentElement.parentElement.addEventListener("mouseout",
+                                HideTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName(
+                                "top_text")[0].style.display = "none";
+                        }
+                    }
+                }
+
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                }
+            } else {
+                document.getElementById("horizonMenu").style.display = "none";
+                document.getElementById("verticalMenu").style.display = "";
+
+                var pTotalWidth = document.documentElement.clientWidth;
+                var pLogoWidth = 0;
+                var pMainMenuWidth = 80;
+                var pUtilWidth = 0;
+                var my_searchWidth = 0;
+
+                if (document.querySelectorAll("header>.contentlayout>.contentlayout_left").length > 0) {
+                    pLogoWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_left").item(0)
+                        .clientWidth;
+                }
+
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                    my_searchWidth = document.querySelectorAll(".my_search").item(0).clientWidth;
+                }
+
+                if (document.querySelectorAll("header>.contentlayout>.contentlayout_right").length > 0) {
+                    pUtilWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_right").item(0)
+                        .clientWidth;
+                }
+
+                if (pTotalWidth > (pLogoWidth + pMainMenuWidth + pUtilWidth)) {
+                    if (document.querySelectorAll(".my_search").length > 0) {
+                        document.querySelectorAll(".my_search").item(0).style.display = "";
+                    }
+                } else {
+                    if (document.querySelectorAll(".my_search").length > 0) {
+                        document.querySelectorAll(".my_search").item(0).style.display = "none";
+                    }
+                }
+            }
+
+            if (document.getElementById("verticalMenu") != null && document.getElementById("verticalMenu") !=
+                undefined) {
+                if (document.getElementById("verticalMenu").style.display === "none") {
+                    var openElements = document.getElementById("verticalMenu").getElementsByClassName("open");
+                    if (openElements.length > 0) {
+                        for (var i = 0; i < openElements.length; i++) {
+                            openElements[i].classList.remove("open");
+                        }
+                    }
+                }
+            }
+        }
+
+        function ShowTopMenuTooltip(e) {
+            try {
+                if (getParent_selector(e.target, ".navsubList").length > 0) {
+                    // 서브메뉴 선택이므로 툴팁 표시 안함.
+                    HideTopMenuTooltip();
+                    return;
+                }
+
+                var LiElement = null;
+                if (e.target.tagName != "LI") {
+                    var getParentElements = getParent_selector(e.target, "LI");
+                    for (var i = 0; i < getParentElements.length; i++) {
+                        if (getParentElements[i].getAttribute("name") == "topmenu_li") {
+                            LiElement = getParent_selector(e.target, "LI")[i];
+                            break;
+                        }
+                    }
+                } else {
+                    LiElement = e.target;
+                }
+
+                var getClientRectResult = LiElement.getClientRects();
+                if (getClientRectResult.length > 0) {
+                    var addele = document.createElement("div");
+                    addele.setAttribute("id", "TopMenuTolltip");
+                    addele.className = "bubbleTopmenu";
+                    addele.style.left = (getClientRectResult[0].left + getClientRectResult[0].width + 15).toString() +
+                        "px";
+                    var Top_TextElements = LiElement.getElementsByClassName("top_text");
+                    if (Top_TextElements.length > 0)
+                        addele.innerText = trim_Cross(Top_TextElements[0].textContent.replace("\r", "").replace("\n",
+                            ""));
+
+                    document.body.appendChild(addele);
+                }
+            } catch (ex) {}
+        }
+
+        function HideTopMenuTooltip() {
+            var bubbleTopmenuElements = document.querySelectorAll(".bubbleTopmenu");
+            if (bubbleTopmenuElements.length > 0) {
+                for (var i = 0; i < bubbleTopmenuElements.length; i++) {
+                    bubbleTopmenuElements[i].parentNode.removeChild(bubbleTopmenuElements[i]);
+                }
+            }
+        }
+
+        function Logout(url) {
+            document.location.href = url;
+        }
+
+        function ChangeSubtitle(deptid) {
+            if ("S230000" != deptid) {
+                var xmlhttp = createXMLHttpRequest();
+                var xmlpara = createXmlDom();
+                var objNode;
+                createNodeInsert(xmlpara, objNode, "DATA");
+                createNodeAndInsertText(xmlpara, objNode, "DEPTID", deptid);
+                xmlhttp.open("POST", "/myoffice/ezPortal/interASP/ChangeUserInfo.aspx", false);
+                xmlhttp.send(xmlpara);
+
+                window.location.reload();
+            }
+        }
+        var isVow = false;
+
+        function UserVowLock() {
+
+            var sVOW_ID = "";
+            var vow_xmlHttp = createXMLHttpRequest();
+            vow_xmlHttp.open("POST", "/myoffice/ezBoardSTD/VOW/aspx/Get_VowRespondent.aspx", false);
+            vow_xmlHttp.send();
+
+            sVOW_ID = vow_xmlHttp.responseText;
+            vow_xmlHttp = null;
+            if (sVOW_ID != "") {
+
+                isVow = true;
+
+                for (var j = 0; j < document.getElementsByName("POPUPNOTICE").length; j++) {
+                    document.getElementsByName("POPUPNOTICE")[j].style.display = "none";
+                }
+
+                document.getElementById("Main_mailPanel").style.background = "none rgba(0,0,0,0.90)";
+                DivPopUpShow(700, 865, "/myoffice/ezBoardSTD/VOW/VowInfoPop.aspx");
+            }
+        }
+
+        function checkTopMenuHasChild() {
+            // 하위메뉴가 있는 경우 > 표시
+            // Horizon menu 2댑스 
+            var horizonNavsubULElements = document.getElementsByClassName("navsubUL");
+            for (var i = 0; i < horizonNavsubULElements.length; i++) {
+                var navsubELElements = GetChildNodes(horizonNavsubULElements[i]);
+                for (var j = 0; j < navsubELElements.length; j++) {
+                    if (GetElementsByTagName(navsubELElements[j], "UL").length > 0) {
+                        navsubELElements[j].classList.add("hassub");
+                    }
+                }
+            }
+
+            // Vertical Menu 1댑스
+            var verticalNavsubULElement = document.getElementById("verticalMenu_UL");
+            if (verticalNavsubULElement != null) {
+                var navsubELElements = GetChildNodes(verticalNavsubULElement);
+                for (var i = 0; i < navsubELElements.length; i++) {
+                    var navsubULElements = GetElementsByTagName(navsubELElements[i], "UL")
+                    if (navsubULElements.length > 0) {
+                        navsubELElements[i].classList.add("hassub");
+
+                        // 2댑스 메뉴
+                        var navsub2DepthELElements = GetChildNodes(navsubULElements[0]);
+
+                        for (var j = 0; j < navsub2DepthELElements.length; j++) {
+                            var navsub3DepthULElements = GetElementsByTagName(navsub2DepthELElements[j], "UL");
+                            if (navsub3DepthULElements.length > 0) {
+                                navsub2DepthELElements[j].classList.add("hassub");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        function checkQuickMenuHasChild() {
+            // 하위메뉴가 있는 경우 > 표시
+            // Horizon menu 2댑스 
+            var QuickMenuULElements = document.getElementsByClassName("my_link_listUL");
+            for (var i = 0; i < QuickMenuULElements.length; i++) {
+                var navsubELElements = GetChildNodes(QuickMenuULElements[i]);
+                for (var j = 0; j < navsubELElements.length; j++) {
+                    if (GetElementsByTagName(navsubELElements[j], "UL").length > 0) {
+                        navsubELElements[j].classList.add("hassub");
+                    }
+                }
+            }
+        }
+
+        //# sourceURL=filename.js
+    </script>
+
+
+
+
+    <script type="text/javascript" src="/JQuery/jquery-1.9.1.min.js?ver=20180122114922000"></script>
+
+    <script type="text/javascript" src="/JQuery/jquery-ui-1.12.1.js?ver=20180122114922000"></script>
+
+
+
+    <script type="text/javascript" src="/myoffice/Common/MultiView/scripts/MultiView.js?ver=20180412152132000"></script>
+
+    <script type="text/javascript" src="/myoffice/Common/MultiView/scripts/LayoutMain.js?ver=20190227130146763">
+    </script>
+
+
+    <script type="text/javascript" src="/myoffice/Common/MultiView/bootstrap/js/bootstrap.min.js?ver=20180122114932000">
+    </script>
+    <script type="text/javascript"
+        src="/myoffice/Common/MultiView/bootstrap/js/bootstrap-submenu.min.js?ver=20180122114932000"></script>
+
+
+    <link rel="stylesheet" href="/myoffice/Common/MultiView/bootstrap/css/bootstrap-iso.css?ver=20180322205308000">
+    <link rel="stylesheet"
+        href="/myoffice/Common/MultiView/bootstrap/css/bootstrap-submenu.min.css?ver=20180122114932000">
+
+
+
+    <link rel="stylesheet" href="/myoffice/Common/MultiView/css/multi_view.css?ver=20180417171414000">
+    <link rel="stylesheet" href="/JQuery/jquery-ui.min.css?ver=20180122114922000">
+
+    <script type="text/javascript">
+        var MultiView_MultiOpen_Alert = "멀티뷰는 7개까지만 지원합니다.<br/>새 멀티뷰를 오픈하려면,<br/>열린 멀티뷰를 닫고 다시 오픈해 주세요.";
+
+
+
+
+        var MultiView_Close_Confirm = strLang15;
+        var MultiView_NotLink_Alert = strLang16;
+    </script>
+
+
+    <style>
+        .bootstrap-iso a:link,
+        .bootstrap-iso a:visited,
+        .bootstrap-iso a:hover,
+        .bootstrap-iso a:active,
+        .bootstrap-iso a:focus {
+            text-decoration: none;
+        }
+
+        .bootstrap-iso .dropdown dl {
+            margin: 0;
+        }
+
+        .bootstrap-iso .none-a-tag li {
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.4;
+            color: #333;
+            white-space: nowrap;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .bootstrap-iso .none-a-tag li:hover,
+        .bootstrap-iso .none-a-tag li:focus {
+            text-decoration: none;
+            color: #262626;
+            background-color: #f5f5f5;
+        }
+    </style>
+
+
+    <div style="display: none;">
+        <a id="InitMenu" href="/myoffice/ezPortal/Layout/PortalLayout_Basic.aspx" target="_single" title=""
+            style="display: none;">포탈</a>
+    </div>
+
+
+
+</body>
+
+</html>

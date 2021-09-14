@@ -1,0 +1,56 @@
+다우오피스
+
+아이디hoodemo / mademo / kimdemo / jeondemo / handemo 
+패스워드daouoffice1 (비밀번호는 모두 동일합니다.)
+
+전체 페이지 디자인 & 소스 보시고, 관리자 페이지도 들어가서 전체적인 환경 검토하세요.
+
+-닷넷 (데모)
+
+웹 : ekp.kaoni.com 
+
+모바일 : http://mekp.kaoni.com/ (모바일)
+
+아이디 : c001 비번 :  uiux!#
+
+----------------------------------------
+
+-자바 (데모)
+
+웹 : http://jekp.kaoni.com/
+
+아이디 : admin 비번 : ezflow_010!
+
+
+
+http://m.kaoni.com/
+
+#계정 : uxgisa1,2,3 / 111
+
+본인 계정으로 로그인 가능
+
+----------------------------------------
+
+자바버전 테스트서버
+
+PC - jrel.ezekp.com
+
+모바일 - mjrel.ezekp.com
+
+
+
+ID : gstest1
+
+PW : test123!@#
+
+-------------------------------------------------
+모비스 데모 서버
+
+접속 URL : ezwekp.kaoni.com
+테스트계정
+sawon01/sawon0123 - 관리자 권한 
+daeri01/daeri0123
+bujang01/bujang0123
+isa01/isa01234
+
+c001 / uiux!#

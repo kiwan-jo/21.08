@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://ekp.kaoni.com/myoffice/ezPortal/Layout/PortalLayout_Basic.aspx -->
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title></title>
+
+        <link rel="stylesheet" href="default.css" type="text/css">
+        <link rel='stylesheet' href='skin_01.css' type='text/css'>
+        <link rel='stylesheet' href='jquery-ui.min.css'>
+        <link rel='stylesheet' href='bootstrap-iso.css'>
+        <link rel='stylesheet' href='bootstrap-submenu.min.css'>
+
+        <script type='text/javascript' src='ezPortal_kr.js'></script>
+        <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+        <script type='text/javascript' src='jquery-ui-1.12.1.js'></script>
+        <script type='text/javascript' src='XmlHttpRequest.js'></script>
+        <script type='text/javascript' src='bootstrap-submenu.min.js'></script>
+        <script type='text/javascript' src='bootstrap.min.js'></script>
+
+
+        <style>
+            .bootstrap-iso a:link,
+            .bootstrap-iso a:visited,
+            .bootstrap-iso a:hover,
+            .bootstrap-iso a:active,
+            .bootstrap-iso a:focus {
+                text-decoration: none;
+            }
+
+            .bootstrap-iso .dropdown dl {
+                margin: 0;
+            }
+
+            .bootstrap-iso .none-a-tag li {
+                padding: 3px 20px;
+                clear: both;
+                font-weight: normal;
+                line-height: 1.4;
+                color: #333;
+                white-space: nowrap;
+                cursor: pointer;
+                width: 100%;
+            }
+
+                .bootstrap-iso .none-a-tag li:hover,
+                .bootstrap-iso .none-a-tag li:focus {
+                    text-decoration: none;
+                    color: #262626;
+                    background-color: #f5f5f5;
+                }
+        </style>
+    </head>
+
+    <body id="_MainBody" class="mainbg">
+        <!-- top 시작 -->
+        <div id='IndexScreen' class='wrapper'>
+            <div id='top'>
+                <header>
+                    <ul class="contentlayout">
+                        <li class="contentlayout_left">
+                            <img src='images/logo.svg' height='40px' style='margin-top:5px;'>
+                        </li>
+                        <li class="contentlayout_right">
+            
+                            <div class="bootstrap-iso">
+            
+            
+                                
+                                <div class="my_link dropdown" id="my_link">
+                                    <dl class="my_linkDL" aria-expanded="false" data-toggle="dropdown" data-submenu="">
+                                        <dd>업무시스템<span class="icon_menu top_collapse_down fff_color_arrow"></span></dd>
+                                    </dl>
+                                    <div class="my_link_list dropdown-menu pull-right none-a-tag"
+                                        style="padding-top: 0px; padding-bottom: 0px; min-width: 100px; top: 0px;">
+                                        <dl class="my_link_listDL">
+                                            <dt style="width: 33%;" onclick="QuickMove(event, 'UP')"><span
+                                                    class="icon_menu top_collapse_up"></span></dt>
+                                            <dt style="width: 33%;" onclick="QuickMove(event, 'DOWN')"><span
+                                                    class="icon_menu top_collapse_down"></span></dt>
+                                            <dt style="width: 33%; text-align: center; padding-top: 5px;"
+                                                onclick="GoToApplication('92', '', false)"><span
+                                                    class="main_img main_icon_config"></span></dt>
+                                            <dd id="quicklink_beforeitem"
+                                                style="text-align: center; border-bottom: 1px solid rgb(222, 222, 222); font-size: 30px; height: 20px; display: none;">
+                                                <div style="margin-top: -15px">···</div>
+                                            </dd>
+                                            <dd>
+                                                <ul class="my_link_listUL" style="overflow-y: auto; height: 195px;">
+                                                    <li onclick="OpenWindow('', 'https://calendar.google.com', '구글', 'FULL')"
+                                                        class="cursorPointer" _liheight="38"><span>구글</span></li>
+                                                    <li onclick="OpenWindow('', 'http://www.naver.com', '네이버', 'FULL')"
+                                                        class="cursorPointer" _liheight="38"><span>네이버</span></li>
+                                                    <li onclick="OpenWindow('', 'http://www.google.com', '구글', 'FULL')"
+                                                        class="cursorPointer" _liheight="38"><span>구글</span></li>
+                                                    <li onclick="OpenWindow('', 'http://www.daum.net', '다음', 'FULL')"
+                                                        class="cursorPointer" _liheight="38"><span>다음</span></li>
+                                                    <li onclick="OpenWindow('', 'http://www.nate.com', '네이트', 'FULL')"
+                                                        class="cursorPointer" _liheight="38"><span>네이트</span></li>
+                                                </ul>
+                                            </dd>
+                                            <dd id="quicklink_afteritem"
+                                                style="text-align: center; border-bottom: 1px solid rgb(222, 222, 222); font-size: 30px; height: 20px; display: none;">
+                                                <div style="margin-top: -15px">···</div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="my_information dropdown" id="my_information_Menu">
+                                    <a href="#" id="my_information_Button" data-toggle="dropdown" data-submenu="">
+                                        <dl class="my_informationDL">
+                                            <dt>
+                                                <img src="images/info_photo.svg"
+                                                    alt=""></dt>
+                                            <dd><span class="icon_menu top_collapse_down fff_color_arrow"></span></dd>
+                                        </dl>
+                                    </a>
+            
+                                    <ul class="dropdown-menu pull-right none-a-tag" id="my_informationUL" style="">
+                                        <li onclick="OpenWindowMultiView(this, event)"
+                                            id="/myoffice/ezpersonal/index_environment.aspx">환경설정</li>
+                                        <li
+                                            onclick="OpenWindow('', '/myoffice/ezOrgan/Search_Organ.aspx', 'layer', 'width=800px, height=700px')">
+                                            직원조회</li>
+                                        <li onclick="Logout('/logout.aspx')">로그아웃</li>
+                                    </ul>
+                                </div>
+            
+                                <div class="my_Notification dropdown">
+                                    <ul class="my_NotificationUL" data-toggle="dropdown" data-submenu="" style="margin-bottom: 0px">
+                                        <li>
+                                            <span class="icon_menu top_Notification" title="알림"></span>
+                                            <span id="notiCountBadge" class="top_count"><span>3</span></span>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown-menu pull-right none-a-tag" id="my_NotificationUL"
+                                        style="padding: 0px; margin: 0px; width: 352px; height: 685px; right: -130px;">
+                                        <!-- 포인트 -->
+                                        <p class="notification_point"><span class="icon16 notification_arrow_point"></span></p>
+                                        <iframe id="iframeNoti"
+                                            src="/myoffice/ezPersonal/Notification_Realtime/Notification_Main.aspx"
+                                            style="width: 100%; height: 100%" frameborder="0" scrolling="NO"></iframe>
+                                    </div>
+                                </div>
+            
+                                <div class="my_search">
+                                    <ul class="contentlayout my_searchUL">
+                                        <li class='contentlayout_left'>
+                                            <select class='search_all'>
+                                                <option selected='selected'>통합검색</option>
+                                                <option value='직원검색'>직원검색</option>
+                                                <option value='부서검색'>부서검색</option>
+                                                <option value='회사검색'>회사검색</option>
+                                            </select>
+                                        </li>
+                                        <li class="contentlayout_right" onclick="Search_Integrate()" title="검색"><span
+                                                class="icon_menu top_searchBtn"></span></li>
+                                        <li class="contentlayout_none">
+                                            <input type="text" id="txt_Search" class="width100percent" placeholder=""
+                                                onkeydown="entercheck()"></li>
+                                    </ul>
+                                </div>
+            
+                            </div>
+                        </li>
+                        <li class="contentlayout_none" style="position: absolute; width: calc(100vw - 614px); clear: none; left: 130px;">
+                            <nav>
+                                <ul id="horizonMenu" class="navUL" style="">
+            
+                                    <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                        _usemulti="1" id="/myoffice/ezportal/layout/portallayout_basic.aspx"><span
+                                            class="icon_menu top_resource"></span><span class="top_text" style="">메일</span></li>
+                                    <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                        _usemulti="1" id="/myoffice/ezemail/index_myoffice.aspx"><span
+                                            class="icon_menu top_mail"></span><span class="top_text" style="">결재</span></li>
+                                    <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                        _usemulti="1" id="/myoffice/ezapproval/index_approval.aspx"><span
+                                            class="icon_menu top_approval"></span><span class="top_text" style="">게시</span></li>
+                                    <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                        _usemulti="1" id="/myoffice/ezboardstd/index_board.aspx"><span
+                                            class="icon_menu top_board"></span><span class="top_text" style="">규정/지침</span></li>
+                                    <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                        _usemulti="1" id="/myoffice/ezschedule/index_schedule.aspx"><span
+                                            class="icon_menu top_pims"></span><span class="top_text" style="">업무지원</span></li>
+                                    <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                        _usemulti="1" id="/myoffice/ezresource/index_resource.aspx"><span
+                                            class="icon_menu top_knowledge"></span><span class="top_text" style="">소통마당</span></li>
+                                    <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                        _usemulti="1" id="/myoffice/ezcommunity/main_page.aspx"><span
+                                            class="icon_menu top_sns"></span><span class="top_text" style="">협업</span></li>
+                                </ul>
+                                <ul id="verticalMenu" class="ToggleMenu bootstrap-iso" style="display: none">
+                                    <li class="dropdown"><span class="top_toggleBtn" data-toggle="dropdown" data-submenu=""><span
+                                                class="icon_menu top_toggle"></span></span>
+                                        <ul class="dropdown-menu pull-left ToggleMenuUL" id="verticalMenu_UL" style="">
+                                            <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                                id="/myoffice/ezportal/layout/portallayout_basic.aspx"><span
+                                                    class="icon_menu top_resource" title="포탈"></span><span
+                                                    class="top_text">포탈</span></li>
+                                            <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                                id="/myoffice/ezemail/index_myoffice.aspx"><span class="icon_menu top_mail"
+                                                    title="메일"></span><span class="top_text">메일</span></li>
+                                            <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                                id="/myoffice/ezapproval/index_approval.aspx"><span class="icon_menu top_approval"
+                                                    title="결재"></span><span class="top_text">결재</span></li>
+                                            <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                                id="/myoffice/ezboardstd/index_board.aspx"><span class="icon_menu top_board"
+                                                    title="게시판"></span><span class="top_text">게시판</span></li>
+                                            <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                                id="/myoffice/ezschedule/index_schedule.aspx"><span class="icon_menu top_pims"
+                                                    title="일정관리"></span><span class="top_text">일정관리</span></li>
+                                            <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                                id="/myoffice/ezresource/index_resource.aspx"><span class="icon_menu top_knowledge"
+                                                    title="자원관리"></span><span class="top_text">자원관리</span></li>
+                                            <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                                id="/myoffice/ezcommunity/main_page.aspx"><span class="icon_menu top_sns"
+                                                    title="커뮤니티"></span><span class="top_text">커뮤니티</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+                </header>
+            </div>
+        </div>
+        <!-- top 끝 -->
+
+        <!-- main 시작 -->
+        <div id="Center">
+            <div class="layout_h">
+                <section class="section_lh" style="height: 1096px;">
+                    <div class="personal">
+                        <div class="info">
+                            <p class="img_userphoto">
+                                <img alt="" src="images/info_photo.svg">
+                            </p>
+                            <dl class="info_txt">
+                                <dt>홍길동
+                                    <span title="포탈화면설정" class="main_img main_icon_layoutconfig"
+                                        onclick="GoToApplication(&#39;91&#39;, &#39;&#39;, false)"></span>
+                                    <span title="개인정보관리" class="main_img main_icon_userconfig"
+                                        onclick="GoToApplication(&#39;90&#39;, &#39;&#39;, false)"></span>
+                                </dt>
+                                <dd>기획마케팅팀 (대리)</dd>
+                            </dl>
+                        </div>
+                        <div class="quick_write">
+                            <ul class="quick_writeUL">
+                                <li id="MAILWRITE" onclick="btnWrite_onclick(this)">
+                                    <dl class="quick_writeDL">
+                                        <dt><span class="main_img main_icon_mail"></span></dt>
+                                        <dd>메일쓰기</dd>
+                                    </dl>
+                                </li>
+                                <li id="SCHEDULEWRITE" onclick="btnWrite_onclick(this)">
+                                    <dl class="quick_writeDL">
+                                        <dt><span class="main_img main_icon_schedule"></span></dt>
+                                        <dd>일정등록</dd>
+                                    </dl>
+                                </li>
+                                <li id="APPROVALWRITE" onclick="btnWrite_onclick(this)">
+                                    <dl class="quick_writeDL">
+                                        <dt><span class="main_img main_icon_approval"></span></dt>
+                                        <dd>기안하기</dd>
+                                    </dl>
+                                </li>
+        
+        
+                                <li id="COLLABRATIONWRITE" onclick="btnWrite_onclick(this)">
+                                    <dl class="quick_writeDL">
+                                        <dt><span class="main_img main_icon_collaboration"></span></dt>
+                                        <dd>협업쓰기</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    <div class='status'>
+                        <ul class='status_UL'>
+                            <li class='status_LI'>
+                                <dl>
+                                    <dt><span>6</span></dt>
+                                    <dd><span>결재대기</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI'>
+                                <dl>
+                                    <dt><span>6</span></dt>
+                                    <dd><span>접수대기</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI brn'>
+                                <dl>
+                                    <dt><span>3</span></dt>
+                                    <dd><span>협업TODO</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI'>
+                                <dl>
+                                    <dt><span>4</span></dt>
+                                    <dd><span>금일일정</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI'>
+                                <dl>
+                                    <dt><span>8</span></dt>
+                                    <dd><span>IT서비스</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI brn'>
+                                <dl>
+                                    <dt><span>1</span></dt>
+                                    <dd><span>경영지원</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI bbn'>
+                                <dl>
+                                    <dt><span>2</span></dt>
+                                    <dd><span>통합안내장</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI bbn'>
+                                <dl>
+                                    <dt><span>12</span></dt>
+                                    <dd><span>고객확인</span></dd>
+                                </dl>
+                            </li>
+                            <li class='status_LI brn bbn'>
+                                <dl>
+                                    <dt><span>0</span></dt>
+                                    <dd><span>고객의심거래외</span></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class='video_area'>
+                        <video src='hyundai_motor_pr_20210810.mp4' width='300px' height='186px' controls></video>
+                    </div>
+
+                    <div class='ad'>
+                    </div>
+
+                    <div class='support_link'>
+                        <ul class='support_link_UL'>
+                            <li class='support_link_LI_01'>
+                                <img src='images/banner_01.png'>
+                            </li>
+                            <li class='support_link_LI_02'>
+                                <img src='images/banner_02.png'>
+                            </li>
+                            <li class='support_link_LI_03'>
+                                <img src='images/banner_03.png'>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="sectionPosition">
+                    <ul class="sectionUl">
+                        <li>
+                            <!-- 공지사항 시작 -->
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="content_portletBox">
+                                    <div class="floatNone">
+                                        <div class="left_list">
+                                            <ul class='left_list_UL'>
+                                                <li class='left_list_LI1 on'>
+                                                    <span>현대차증권</span>
+                                                </li>
+                                                <li class='left_list_LI2'>
+                                                    <span>그룹사</span>
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                        <div class="notice_appr list_mail_appr">
+                                            <dl class="tabpart_portletDL">
+                                                <dd title="더보기" onclick="Approval_Portlet_more_Click()"><span class="more_txt">더보기</span></dd>
+                                                <dt>
+                                                    <ul id="Approval_Portlet_tab_menu_list" class="tabpart_portletTitle">
+                                                        <li class="on">
+                                                            <span id="Apprval_Portlet_doingApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">전사공지</span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Apprval_Portlet_draftApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">H-POPS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Apprval_Portlet_rejectApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">최근게시물</span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Apprval_Portlet_rejectApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">Daily Report</span>
+                                                        </li>
+                                                    </ul>
+                                                </dt>
+                                            </dl>
+                                            <ul id="Approval_Portlet_APPRLIST" class="tabpart_portlet_list">
+                                                <li class='new_notice'
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{1D8C6AC8-BAE9-45D0-B795-67A94242A553}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span
+                                                class="floatNone">1조 5천억 규모의 '수소경제도시 전환을 위한 MOU' 체결</span>
+                                            <span class='new_mark'>N</span></li>
+                                        <li class='new_notice'
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{B7D1BBC2-CAAE-4247-8041-F86ED79E725B}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span
+                                                class="floatNone">VIP고객 대상 문화 마케팅 시행</span><span class='new_mark'>N</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{DF87E938-0410-4563-95D9-0F847591417E}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span class="floatNone">최재붕 교수 초청...제 5회 '뉴노멀 오픈 클래스' 개최</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{95fa1ba4-78f1-4d21-aea5-950674068711}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span class="floatNone">1분기 영업이익 570억원! 지난해 연간 이익 절반 가까이 벌었다</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{b697e585-d93a-42b4-94d0-c0e8773db01c}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span class="floatNone">조직개편...디지털 혁신 및 소비자보호 강화</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 공지사항 끝 -->
+
+                            <!-- 받은메일 시작 -->
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="content_portletBox">
+                                    <div class="floatNone">
+                                        <div class="notice_appr todo_appr">
+                                            <dl class="tabpart_portletDL">
+                                                <dd title="더보기" onclick="Approval_Portlet_more_Click()"><span class="more_txt">더보기</span></dd>
+                                                <dt>
+                                                    <ul id="Approval_Portlet_tab_menu_list" class="tabpart_portletTitle">
+                                                        <li class="on">
+                                                            <span id="Apprval_Portlet_doingApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">받은메일 <span
+                                                                name="approval_doingCount"
+                                                                class="point2">5</span></span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Apprval_Portlet_draftApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">협업 소식</span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Apprval_Portlet_rejectApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">할일</span>
+                                                        </li>
+                                                    </ul>
+                                                </dt>
+                                            </dl>
+                                            <ul id="Approval_Portlet_APPRLIST" class="tabpart_portlet_list">
+                                                <li class=''
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{1D8C6AC8-BAE9-45D0-B795-67A94242A553}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span
+                                                class="floatNone">[휴가계] 2021년 06월 21일~2021년 06월 24일</span>
+                                            </li>
+                                        <li class=''
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{B7D1BBC2-CAAE-4247-8041-F86ED79E725B}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span
+                                                class="floatNone">[보고서] 06월 18일 신입사원 교육보고서</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{DF87E938-0410-4563-95D9-0F847591417E}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">[보고서] 06월 18일 중간관리자 교윩 결과 보고서</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{95fa1ba4-78f1-4d21-aea5-950674068711}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">신입사원 보충인력 계획안</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{b697e585-d93a-42b4-94d0-c0e8773db01c}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">시스템이관 계획안</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 받은메일 끝 -->
+                        </li>
+                        
+                        
+                        <li>
+                            <!-- 일정 시작 (점3개 추가) -->
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="content_portletBox">
+                                    <div class="floatNone">
+                                        <div class="schedule_date">
+                                            <p class='month_move'>
+                                                <span class='month_prev'></span><span class='month_next'></span>
+                                            </p>
+                                            <p class='schedule_year'>2021</p>
+                                            <p class='schedule_month'>07</p>
+                                        </div>
+                                        
+                                        <div class="schedule">
+                                            <div id="CalendarMini" class="calender">
+                                                <table id="" cellpadding="0" cellspacing="0" border="0" width="100%" class="calendar_mini">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="col" class="sun">일</th>
+                                                            <th scope="col">월</th>
+                                                            <th scope="col">화</th>
+                                                            <th scope="col">수</th>
+                                                            <th scope="col">목</th>
+                                                            <th scope="col">금</th>
+                                                            <th scope="col" class="sat">토</th>
+                                                        </tr>
+                                                        <tr id="TR_7_0">
+                                                            <td class=" sun prev_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-01_Day"
+                                                                    dispdate="2021-08-01">27</div>
+                                                            </td>
+                                                            <td class="prev_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-02_Day"
+                                                                    dispdate="2021-08-02">28</div>
+                                                            </td>
+                                                            <td class="prev_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-03_Day"
+                                                                    dispdate="2021-08-03" style=''>29</div>
+                                                            </td>
+                                                            <td class="prev_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-04_Day"
+                                                                    dispdate="2021-08-04">30</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-05_Day"
+                                                                    dispdate="2021-08-05" style=''>1</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-06_Day"
+                                                                    dispdate="2021-08-06" >2</div>
+                                                            </td>
+                                                            <td class=" sat">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-07_Day"
+                                                                    dispdate="2021-08-07">3</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="TR_7_1">
+                                                            <td class=" sun">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-08_Day"
+                                                                    dispdate="2021-08-08">4</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-09_Day"
+                                                                    dispdate="2021-08-09" style=''>5</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-10_Day"
+                                                                    dispdate="2021-08-10" style=''>6</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-11_Day"
+                                                                    dispdate="2021-08-11">7</div>
+                                                            </td>
+                                                            <td class="today">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-12_Day"
+                                                                    dispdate="2021-08-12" style=''>8</div>
+                                                                <div class='schedule_list'>
+                                                                    <span class='list_company'></span><span class='list_group'></span><span class='list_per'></span>
+                                                                </div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-13_Day"
+                                                                    dispdate="2021-08-13" style=''>9</div>
+                                                            </td>
+                                                            <td class=" sat">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-14_Day"
+                                                                    dispdate="2021-08-14">10</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="TR_7_2">
+                                                            <td class=" sun">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-15_Day"
+                                                                    dispdate="2021-08-15">11</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-16_Day"
+                                                                    dispdate="2021-08-16">12</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-17_Day"
+                                                                    dispdate="2021-08-17" style=''>13</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-18_Day"
+                                                                    dispdate="2021-08-18">14</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-19_Day"
+                                                                    dispdate="2021-08-19" style=''>15</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-20_Day"
+                                                                    dispdate="2021-08-20" style=''>16</div>
+                                                            </td>
+                                                            <td class=" sat">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-21_Day"
+                                                                    dispdate="2021-08-21">17</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="TR_7_3">
+                                                            <td class=" sun">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-22_Day"
+                                                                    dispdate="2021-08-22">18</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-23_Day"
+                                                                    dispdate="2021-08-23" style=''>19</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-24_Day"
+                                                                    dispdate="2021-08-24" style=''>20</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-25_Day"
+                                                                    dispdate="2021-08-25">21</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-26_Day"
+                                                                    dispdate="2021-08-26" style=''>22</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-27_Day"
+                                                                    dispdate="2021-08-27" style=''>23</div>
+                                                            </td>
+                                                            <td class=" sat">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-28_Day"
+                                                                    dispdate="2021-08-28">24</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="TR_7_4">
+                                                            <td class=" sun">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-29_Day"
+                                                                    dispdate="2021-08-29">25</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-30_Day"
+                                                                    dispdate="2021-08-30">26</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-08-31_Day"
+                                                                    dispdate="2021-08-31" style=''>27</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-01_Day"
+                                                                    dispdate="2021-09-01">28</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-02_Day"
+                                                                    dispdate="2021-09-02" style=''>29</div>
+                                                            </td>
+                                                            <td class="">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-03_Day"
+                                                                    dispdate="2021-09-03" style=''>30</div>
+                                                            </td>
+                                                            <td class="sat">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-04_Day"
+                                                                    dispdate="2021-09-04">31</div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr id="TR_7_5">
+                                                            <td class="sun next_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-05_Day"
+                                                                    dispdate="2021-09-05">1</div>
+                                                            </td>
+                                                            <td class="next_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-06_Day"
+                                                                    dispdate="2021-09-06" style=''>2</div>
+                                                            </td>
+                                                            <td class="next_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-07_Day"
+                                                                    dispdate="2021-09-07" style=''>3</div>
+                                                            </td>
+                                                            <td class="next_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-08_Day"
+                                                                    dispdate="2021-09-08">4</div>
+                                                            </td>
+                                                            <td class="next_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-09_Day"
+                                                                    dispdate="2021-09-09" style=''>5</div>
+                                                            </td>
+                                                            <td class="next_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-10_Day"
+                                                                    dispdate="2021-09-10" style=''>6</div>
+                                                            </td>
+                                                            <td class="sat next_month">
+                                                                <div onclick="DayOnMouseClick(this);" id="TDMINI_2021-09-11_Day"
+                                                                    dispdate="2021-09-11">7</div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="schedule_content">
+                                            <dl class='schedule_content_title'>
+                                                <dt>
+                                                    <span class='today_date'>8일 </span>(금요일)
+                                                </dt>
+                                                <dd title="더보기" onclick="Approval_Portlet_more_Click()"><span class="more_txt">더보기</span></dd>
+                                            </dl>
+                                            <ul class='schedule_cont_UL'>
+                                                <li class='schedule_cont_LI company'>
+                                                    <dl>
+                                                        <dt>
+                                                            <span class='department'>[회사]</span> 코로나 19대응을 위해서 힘써주시기 바랍니다.
+                                                        </dt>
+                                                        <dd class='schedule_time'><span>09:30 ~ 10:40</span></dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class='schedule_cont_LI group'>
+                                                    <dl>
+                                                        <dt>
+                                                            <span class='department'>[사업]</span> 월간회의
+                                                        </dt>
+                                                        <dd class='schedule_time'><span>09:30 ~ 10:40</span></dd>
+                                                    </dl>
+                                                </li>
+
+                                                <li class='schedule_cont_LI person'>
+                                                    <dl>
+                                                        <dt>
+                                                            <span class='department'>[임원]</span> 정기 임원회의
+                                                        </dt>
+                                                        <dd class='schedule_time'><span>09:30 ~ 10:40</span></dd>
+                                                    </dl>
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <!-- 일정 끝 -->
+
+                            <!-- 전자결재 시작 (완성) -->
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="content_portletBox">
+                                    <div class="floatNone">
+                                        <div class="apprgraph">
+                                            <p class="graph_title">시간/미결재 문서</p>
+                                            <div class="apprgraph_area">
+                                                <dl>
+                                                    <dt>하루</dt>
+                                                    <dd>
+                                                        <div class="nomal_count">
+                                                            <span name="ONEDGAP">5</span>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>일주일</dt>
+                                                    <dd>
+                                                        <div class="nomal_count">
+                                                            <span name="SEVENDGAP">3</span>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>한달</dt>
+                                                    <dd>
+                                                        <div class="nomal_count">
+                                                            <span name="ONEMGAP">0</span>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>이후</dt>
+                                                    <dd>
+                                                        <div class="point_count">
+                                                            <span name="OTHER">0</span>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div class="list_mail_appr payment_appr">
+                                            <dl class="tabpart_portletDL">
+                                                <dd title="더보기" onclick="Approval_Portlet_more_Click()"><span class="more_txt">더보기</span></dd>
+                                                <dt>
+                                                    <ul id="Approval_Portlet_tab_menu_list" class="tabpart_portletTitle">
+                                                        <li class="on">
+                                                            <span id="Apprval_Portlet_doingApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">결재할문서 <span
+                                                                    name="approval_doingCount"
+                                                                    class="point2">5</span></span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Apprval_Portlet_draftApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">결재진행 문서</span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Apprval_Portlet_rejectApprovalTab"
+                                                                onclick="Apprval_Portlet_ChangeTab(this)">수신함</span>
+                                                        </li>
+                                                    </ul>
+                                                </dt>
+                                            </dl>
+                                            <ul id="Approval_Portlet_APPRLIST" class="tabpart_portlet_list">
+                                                <li
+                                                    onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{1D8C6AC8-BAE9-45D0-B795-67A94242A553}&#39;, &#39;BOARD&#39;)">
+                                                    <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span
+                                                        class="floatNone">[휴가계] 2021년 06월 21일~2021년 06월 24일</span></li>
+                                                <li
+                                                    onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{B7D1BBC2-CAAE-4247-8041-F86ED79E725B}&#39;, &#39;BOARD&#39;)">
+                                                    <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span
+                                                        class="floatNone">[보고서] 06월 18일 신입사원 교육보고서</span></li>
+                                                <li
+                                                    onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{DF87E938-0410-4563-95D9-0F847591417E}&#39;, &#39;BOARD&#39;)">
+                                                    <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">[보고서]06월 18일 중간관리자 교육 결과 보고서</span></li>
+                                                <li
+                                                    onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{95fa1ba4-78f1-4d21-aea5-950674068711}&#39;, &#39;BOARD&#39;)">
+                                                    <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">신입사원 보충인력 계획안</span></li>
+                                                <li
+                                                    onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{b697e585-d93a-42b4-94d0-c0e8773db01c}&#39;, &#39;BOARD&#39;)">
+                                                    <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">시스템이관 계획안</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 전자결재 끝 -->
+                            
+                        </li>
+
+                        <li>
+                            <!-- 자원예약 시작 (완성) -->
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="col content_portletBox">
+                                    <dl class="tabpart_portletDL Underline">
+                                        <dd name="portlet_setting_button" onclick="Resource_Config_OnClick()" title="설정">
+                                            <span class="main_img main_icon_config resource_setting"></span></dd>
+
+                                        <dd><input type="text"
+                                                class="DatePicker_class hasDatepicker" name="Datepicker_name" placeholder='2021-06-23'
+                                                id="Sdatepicker" readonly="readonly"
+                                                style="text-align: center;" size="10"><img
+                                                class="ui-datepicker-trigger" src="images/calendar_icon.png" alt="" title="">
+                                        </dd>
+
+                                        <dt>
+                                            <p class="notice_portletTitle">자원예약</p>
+                                        </dt>
+                                    </dl>
+                                    <div class="resource_listBox">
+                                        <ul class="resource_listBoxUL" id="Resource_Portlet_List">
+                                            <li>
+                                                <dl class="resource_listBoxDL">
+                                                    <dt><span class="icon_tree tree_resource_item"></span><span
+                                                            onclick="resourceWrite_onclick(&#39;5&#39;,&#39;S907001&#39;)"
+                                                            id="5_S907001" class="resource_list_text">Vision Room</span>
+                                                    </dt>
+                                                    <dd><span id="5_138"
+                                                            onclick="resourceView_onclick(&#39;5&#39;,&#39;138&#39;,&#39;2021-08-18 17:30&#39;,&#39;2021-08-18 19:30&#39;,&#39;S907001&#39;)"
+                                                            onmouseover="selectItem(&#39;5_138&#39;,&#39;2021-08-18 17:30~2021-08-18 19:30&#39;,&#39;모바일 서버 테스트&#39;,&#39;신현숙&#39;,&#39;영업팀&#39;,&#39;1&#39;,&#39;1&#39;)"
+                                                            onmouseout="hideTooltip(&#39;5_138&#39;)"
+                                                            class="resource_list_item">09:00~10:00</span>
+                                                        <span class='resource_list_item'>15:30~17:00</span></dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl class="resource_listBoxDL">
+                                                    <dt><span class="icon_tree tree_resource_ok"></span><span
+                                                            onclick="resourceWrite_onclick(&#39;7&#39;,&#39;S907001&#39;)"
+                                                            id="7_S907001" class="resource_list_text">Innovation Room</span></dt>
+                                                    <dd>
+                                                        <span class='resource_list_item'>09:00~10:00</span>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl class="resource_listBoxDL">
+                                                    <dt><span class="icon_tree tree_resource_item"></span><span
+                                                            onclick="resourceWrite_onclick(&#39;10&#39;,&#39;S907001&#39;)"
+                                                            id="10_S907001" class="resource_list_text">아이폰8+</span></dt>
+                                                    <dd>
+                                                        <p onclick="resourceWrite_onclick(&#39;10&#39;,&#39;S907001&#39;)"
+                                                            id="10_S907001" class="resource_list_add"><span
+                                                                class="icon16 icon_resource_add"></span></p>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl class="resource_listBoxDL">
+                                                    <dt><span class="icon_tree tree_resource_ok"></span><span
+                                                            onclick="resourceWrite_onclick(&#39;11&#39;,&#39;S907001&#39;)"
+                                                            id="11_S907001" class="resource_list_text">노트북</span></dt>
+                                                    <dd><span id="11_85"
+                                                            onclick="resourceView_onclick(&#39;11&#39;,&#39;85&#39;,&#39;2021-08-18 15:00&#39;,&#39;2021-08-18 17:00&#39;,&#39;S907001&#39;)"
+                                                            onmouseover="selectItem(&#39;11_85&#39;,&#39;2021-08-18 15:00~2021-08-18 17:00&#39;,&#39;Vert.x 교육&#39;,&#39;곽나경&#39;,&#39;영업팀&#39;,&#39;1&#39;,&#39;1&#39;)"
+                                                            onmouseout="hideTooltip(&#39;11_85&#39;)"
+                                                            class="resource_list_item">09:00~16:30</span></dd>
+                                                </dl>
+                                            </li>
+                                            <li>
+                                                <dl class="resource_listBoxDL">
+                                                    <dt><span class="icon_tree tree_resource_ok"></span><span
+                                                            onclick="resourceWrite_onclick(&#39;24&#39;,&#39;S907001&#39;)"
+                                                            id="24_S907001" class="resource_list_text">소형차</span></dt>
+                                                    <dd>
+                                                        <span class='resource_list_item'>하루종일</span>
+                                                    </dd>
+                                                </dl>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <div id="tooltip" style="position:absolute; z-index:200;visibility:hidden"></div>
+                                </div>
+                            </div>
+                            <!-- 자원예약 끝 -->
+
+                            <!-- 인사명령 시작 (완성) -->
+                            <div style="width:25%; float:left;" class="portlet_25percent">
+                                <div class="col content_portletBox">
+                                    <dl class="tabpart_portletDL Underline">
+                                        <dd title="더보기"
+                                            onclick="Familyevents_Portlet_more_Click(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;)">
+                                            <span class="more_txt">더보기</span></dd>
+                                        <dd name="Familyevents_Portlet_config"
+                                            onclick="Familyevents_Portlet_Configuration()" title="설정" style="display:none;">
+                                            <span class="main_img main_icon_config"></span></dd>
+                                        <dt>
+                                            <p class="notice_portletTitle">인사명령</p>
+                                        </dt>
+                                    </dl>
+                                    <ul class="tabpart_portlet_list" id="Familyevents_List">
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{1D8C6AC8-BAE9-45D0-B795-67A94242A553}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2019-01-10</span><span
+                                                class="floatNone">(인명 제21-036호)'21년 하반기 보직 변경</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{B7D1BBC2-CAAE-4247-8041-F86ED79E725B}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-11-02</span><span
+                                                class="floatNone">(인명 제21-036호) 인사발령 </span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{DF87E938-0410-4563-95D9-0F847591417E}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-11-02</span><span class="floatNone">(인명 제21-036호) 인사발령</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{95fa1ba4-78f1-4d21-aea5-950674068711}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-10-31</span><span class="floatNone">(인명 제21-036호) 인사발령</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{b697e585-d93a-42b4-94d0-c0e8773db01c}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-10-31</span><span class="floatNone">(인명 제21-036호) 인사발령</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 인사명령 끝 -->
+                            
+                            <!-- 경조사 시작 (완성) -->
+                            <div style="width:25%; float:left;" class="portlet_25percent">
+                                <div class="col content_portletBox">
+                                    <dl class="tabpart_portletDL  Underline">
+                                        <dd title="더보기"
+                                            onclick="Familyevents_Portlet_more_Click(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;)">
+                                            <span class="more_txt">더보기</span></dd>
+                                        <dd name="Familyevents_Portlet_config"
+                                            onclick="Familyevents_Portlet_Configuration()" title="설정" style="display:none;">
+                                            <span class="main_img main_icon_config"></span></dd>
+                                        <dt>
+                                            <p class="notice_portletTitle">경조사</p>
+                                        </dt>
+                                    </dl>
+                                    <ul class="tabpart_portlet_list" id="Familyevents_List">
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{1D8C6AC8-BAE9-45D0-B795-67A94242A553}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2019-01-10</span><span
+                                                class="floatNone">[축돌]이몽룡 과장 돌잔치 안내 </span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{B7D1BBC2-CAAE-4247-8041-F86ED79E725B}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-11-02</span><span
+                                                class="floatNone">♡~“장세용부장” 차남 결혼식을 알려드립니다~♡ </span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{DF87E938-0410-4563-95D9-0F847591417E}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-11-02</span><span class="floatNone">※※이종무
+                                                수석부장님 장남 결혼식 알림※※</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{95fa1ba4-78f1-4d21-aea5-950674068711}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-10-31</span><span class="floatNone">[결혼]
+                                                경영관리팀 강진우 대리 결혼합니다!!</span></li>
+                                        <li
+                                            onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{b697e585-d93a-42b4-94d0-c0e8773db01c}&#39;, &#39;BOARD&#39;)">
+                                            <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                class="floatRight writedate">2018-10-31</span><span class="floatNone">[결혼]
+                                                SS개발1팀 최찬규 사원 2018.11.17</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 경조사 끝 -->
+                        </li>
+
+                        <li>
+                            <!-- 협업 시작 (완성) -->
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="col content_portletBox cooperation_appr">
+                                    <dl class="tabpart_portletDL  Underline">
+                                        <dd title="더보기"
+                                            onclick="Familyevents_Portlet_more_Click(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;)">
+                                            <span class="more_txt">더보기</span></dd>
+                                        <dd name="Familyevents_Portlet_config"
+                                            onclick="Familyevents_Portlet_Configuration()" title="설정" style="display:none;">
+                                            <span class="main_img main_icon_config"></span></dd>
+                                        <dt>
+                                            <p class="notice_portletTitle">협업</p>
+                                        </dt>
+                                        <dt>
+                                            <ul class='cooperation_chart'>
+                                                <li class='cooperation_list on'><span>뉴스피드</span></li>
+                                                <li class='cooperation_list'><span>할인</span></li>
+                                                <li class='cooperation_list'><span>문서</span></li>
+                                                <li class='cooperation_list'><span>이슈</span></li>
+                                            </ul>
+                                        </dt>
+                                    </dl>
+                                    <div class='cooperation_board'>
+                                        <ul class='cooperation_board_list'>
+                                            <li class='board_list_01 on'><span>ME</span></li>
+                                            <li class='board_list_02'><span>그룹웨어프로그램프로그램</span></li>
+                                            <li class='board_list_03'><span>업무혁신팀</span></li>
+                                        </ul>
+                                        <ul class="tabpart_portlet_list" id="Familyevents_List">
+                                            <li
+                                                onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{1D8C6AC8-BAE9-45D0-B795-67A94242A553}&#39;, &#39;BOARD&#39;)">
+                                                <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                    class="floatRight writername">홍길동</span><span class='floatRight to_per'>ME</span><span
+                                                    class="floatNone">[일정] 확대 간부회의</span></li>
+                                            <li
+                                                onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{B7D1BBC2-CAAE-4247-8041-F86ED79E725B}&#39;, &#39;BOARD&#39;)">
+                                                <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                    class="floatRight writername">홍길동</span><span class='floatRight to_per'>ME</span><span
+                                                    class="floatNone">[메세지] [공지] 8월 전사교육</span></li>
+                                            <li
+                                                onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{DF87E938-0410-4563-95D9-0F847591417E}&#39;, &#39;BOARD&#39;)">
+                                                <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                    class="floatRight writername">홍길동</span><span class='floatRight to_per'>ME</span><span class="floatNone">[할일] 투입인력 프로필 취합</span></li>
+                                            <li
+                                                onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{95fa1ba4-78f1-4d21-aea5-950674068711}&#39;, &#39;BOARD&#39;)">
+                                                <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                    class="floatRight writername">홍길동</span><span class='floatRight to_per'>ME</span><span class="floatNone">
+                                                    [메세지] 전사 공지합니다. 코로나19 안전수칙 방안</span></li>
+                                            <li
+                                                onclick="Board_itemClick(&#39;{f6f9a991-fe62-c511-4629-f6b1cf11b473}&#39;, &#39;{b697e585-d93a-42b4-94d0-c0e8773db01c}&#39;, &#39;BOARD&#39;)">
+                                                <span class="main_img main_icon_listdot floatLeft"></span><span
+                                                    class="floatRight writername">홍길동</span><span class='floatRight to_per'>ME</span><span class="floatNone">
+                                                    [메세지] 협업 솔루션 자료 공유</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 협업 끝 -->
+
+                            <!-- 생일자 시작 (완성) -->
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="col content_portletBox">
+                                    <dl class="tabpart_portletDL  Underline">
+                                        <dd class='birth_page_move'>
+                                            <ul>
+                                                <li class='birth_prev'></li>
+                                                <li class='birth_next'></li>
+                                            </ul>
+                                        </dd>
+                                        <dd class='birth_page'>
+                                            <span class='current_page'>1</span>/2
+                                        </dd>
+                                        <dt>
+                                            <p class="notice_portletTitle"><span class='birth_month'>6월 </span>생일자</p>
+                                        </dt>
+                                    </dl>
+                                    <div class="tabpart_portlet_list content_birthday">
+                                        <ul class="contentlayout" id="birthday_portlet_listBox">
+                                            <li class='birth_list_01'>
+                                                <div class='birth_left floatLeft'>
+                                                    <img src='images/info_photo.svg' width='60px' height='60px'>
+                                                </div>
+                                                <div class='birth_right floatLeft'>
+                                                    <p class='birth_name'>홍길동</p>
+                                                    <p class='birth_team'>기획마케팅팀 (대리)</p>
+                                                    <p class='birth_date'>2020-07-15</p>
+                                                </div>
+                                            </li>
+                                            <li class='birth_list_02'>
+                                                <div class='birth_left floatLeft'>
+                                                    <img src='images/info_photo.svg' width='60px' height='60px'>
+                                                </div>
+                                                <div class='birth_right floatLeft'>
+                                                    <p class='birth_name'>홍길동</p>
+                                                    <p class='birth_team'>기획마케팅팀 (대리)</p>
+                                                    <p class='birth_date'>2020-07-15</p>
+                                                </div>
+                                            </li>
+                                            <li class='birth_list_03'>
+                                                <div class='birth_left floatLeft'>
+                                                    <img src='images/info_photo.svg' width='60px' height='60px'>
+                                                </div>
+                                                <div class='birth_right floatLeft'>
+                                                    <p class='birth_name'>홍길동</p>
+                                                    <p class='birth_team'>기획마케팅팀 (대리)</p>
+                                                    <p class='birth_date'>2020-07-15</p>
+                                                </div>
+                                            </li>
+                                            <li class='birth_list_04'>
+                                                <div class='birth_left floatLeft'>
+                                                    <img src='images/info_photo.svg' width='60px' height='60px'>
+                                                </div>
+                                                <div class='birth_right floatLeft'>
+                                                    <p class='birth_name'>홍길동</p>
+                                                    <p class='birth_team'>기획마케팅팀 (대리)</p>
+                                                    <p class='birth_date'>2020-07-15</p>
+                                                </div>
+                                            </li>
+                                            <li class='birth_list_05'>
+                                                <div class='birth_left floatLeft'>
+                                                    <img src='images/info_photo.svg' width='60px' height='60px'>
+                                                </div>
+                                                <div class='birth_right floatLeft'>
+                                                    <p class='birth_name'>홍길동</p>
+                                                    <p class='birth_team'>기획마케팅팀 (대리)</p>
+                                                    <p class='birth_date'>2020-07-15</p>
+                                                </div>
+                                            </li>
+                                            <li class='birth_list_06'>
+                                                <div class='birth_left floatLeft'>
+                                                    <img src='images/info_photo.svg' width='60px' height='60px'>
+                                                </div>
+                                                <div class='birth_right floatLeft'>
+                                                    <p class='birth_name'>홍길동</p>
+                                                    <p class='birth_team'>기획마케팅팀 (대리)</p>
+                                                    <p class='birth_date'>2020-07-15</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 생일자 끝 -->
+                        </li>
+
+                        <li>
+                            <div style="width:50%; float:left;" class="portlet_50percent">
+                                <div class="content_portletBox">
+                                    <div class="floatNone">
+                                        <div class="apprgraph mailgraph">
+                                            <p class="graph_title">메일함 용량</p>
+                                            <p id="Mail_Portlet_UsingMail" class="graph_txt"><span
+                                                    class="point2">15MB</span> / 2.00G</p>
+                                            <div class="graphimg">
+                                                <div id="Mail_Portlet_mailquatersize"
+                                                    style="width: 150px; height: 130px; display: inline-block;"><svg
+                                                        height="100%" version="1.1" width="100%"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                        style="overflow: hidden; position: relative;">
+                                                        <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created
+                                                            with Raphaël 2.1.4</desc>
+                                                        <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                                            <filter id="inner-shadow-Mail_Portlet_mailquatersize">
+                                                                <feOffset dx="0" dy="3"></feOffset>
+                                                                <feGaussianBlur result="offset-blur" stdDeviation="5">
+                                                                </feGaussianBlur>
+                                                                <feComposite operator="out" in="SourceGraphic"
+                                                                    in2="offset-blur" result="inverse"></feComposite>
+                                                                <feFlood flood-color="black" flood-opacity="0.2"
+                                                                    result="color"></feFlood>
+                                                                <feComposite operator="in" in="color" in2="inverse"
+                                                                    result="shadow"></feComposite>
+                                                                <feComposite operator="over" in="shadow"
+                                                                    in2="SourceGraphic"></feComposite>
+                                                            </filter>
+                                                        </defs>
+                                                        <path fill="#ffffff" stroke="none"
+                                                            d="M44.17142857142857,66.66666666666667L28.57142857142857,66.66666666666667A46.42857142857143,46.42857142857143,0,0,1,121.42857142857143,66.66666666666667A46.42857142857143,46.42857142857143,0,0,1,28.57142857142857,66.66666666666667L44.17142857142857,66.66666666666667A30.82857142857143,30.82857142857143,0,0,0,105.82857142857142,66.66666666666667A30.82857142857143,30.82857142857143,0,0,0,44.17142857142857,66.66666666666667Z"
+                                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                                            filter="url(#inner-shadow-Mail_Portlet_mailquatersize)"></path>
+                                                        <path fill="#101010" stroke="none"
+                                                            d="M44.17142857142857,66.66666666666667L28.57142857142857,66.66666666666667A46.42857142857143,46.42857142857143,0,0,1,28.663044751544533,63.751392545662824L44.23226171502557,64.73092465032012A30.82857142857143,30.82857142857143,0,0,0,44.17142857142857,66.66666666666667Z"
+                                                            transform="matrix(0,1,-1,0,141.6667,-8.3333)"
+                                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                                            filter="url(#inner-shadow-Mail_Portlet_mailquatersize)"></path>
+                                                        <text x="75" y="11.818181818181818" text-anchor="middle"
+                                                            font-family="sans-serif" font-size="13px" stroke="none"
+                                                            fill="#999999"
+                                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 13px; font-weight: bold; fill-opacity: 1;"
+                                                            font-weight="bold" fill-opacity="1">
+                                                            <tspan dy="0"
+                                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                                            </tspan>
+                                                        </text><text x="75" y="74.27027027027027" text-anchor="middle"
+                                                            font-family="Arial" font-size="20px" stroke="none"
+                                                            fill="#00448D" class='graph_percent'
+                                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 24px; font-weight: bold; fill-opacity: 1;"
+                                                            font-weight="bold" fill-opacity="1">
+                                                            <tspan dy="0"
+                                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1%
+                                                            </tspan>
+                                                        </text><text x="75" y="80.27027027027027" text-anchor="middle"
+                                                            font-family="Arial" font-size="10px" stroke="none"
+                                                            fill="#808080"
+                                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;"
+                                                            font-weight="normal" fill-opacity="1">
+                                                        </text><text x="30.8" y="80.27027027027027" text-anchor="middle"
+                                                            font-family="Arial" font-size="10px" stroke="none"
+                                                            fill="#808080"
+                                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 0;"
+                                                            font-weight="normal" fill-opacity="0">
+                                                            <tspan dy="0"
+                                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0
+                                                            </tspan>
+                                                        </text><text x="119.2" y="80.27027027027027" text-anchor="middle"
+                                                            font-family="Arial" font-size="10px" stroke="none"
+                                                            fill="#808080"
+                                                            style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 0;"
+                                                            font-weight="normal" fill-opacity="0">
+                                                            <tspan dy="0"
+                                                                style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100
+                                                            </tspan>
+                                                        </text>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <div class="list_mail_appr payment_appr">
+                                            <dl class="tabpart_portletDL">
+                                                <dd title="더보기" onclick="Mail_Portlet_more_Click()"><span class="more_txt">더보기</span></dd>
+                                                <dt>
+                                                    <ul id="Mail_Portlet_tab_menu_list" class="tabpart_portletTitle">
+                                                        <li class="on">
+                                                            <span id="Mail_Portlet_totalMailTab"
+                                                                onclick="Mail_Portlet_ChangeTab(this)">받은 메일 <span
+                                                                    name="mail_totalCount" class="point2"
+                                                                    >5</span></span>
+                                                        </li>
+                                                        <li>
+                                                            <span id="Mail_Portlet_unreadMailTab"
+                                                                onclick="Mail_Portlet_ChangeTab(this)">읽지않은 메일 <span
+                                                                    name="mail_unreadCount" class="point2">7</span></span>
+                                                        </li>
+                                                    </ul>
+                                                </dt>
+                                            </dl>
+                                            <ul id="Mail_Portlet_MAILLIST" class="tabpart_portlet_list">
+                                                <li><span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">[휴가계] 2021년 06월 21일~2021년 06월 24일</span></li>
+                                                <li><span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">[보고서] 06월 18일 신입사원 교육보고서</span></li>
+                                                <li><span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span class="floatNone">[보고서] 06월 18일 중간관리자 교육 경과 보고서</span></li>
+                                                <li><span class="main_img main_icon_listdot floatLeft"></span><span
+                                                        class="floatRight writedate">2021.06.28</span><span
+                                                        class="floatRight writername">홍길동</span><span
+                                                        class="floatNone">신입사원 보충인력 계획안</span></li>
+                                                <li><span class="main_img main_icon_listdot floatLeft"></span><span
+                                                    class="floatRight writedate">2021.06.28</span><span
+                                                    class="floatRight writername">홍길동</span><span
+                                                    class="floatNone">시스템이관 계획안</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- main 끝 -->
+
+        <aside>
+            <div class='aside_add'></div>
+        </aside>
+    </body>
+
+    <script>var $ContentDiv = jQuery.noConflict();</script>
+    <script type="text/javascript">
+        document.onselectstart = function (e) {
+            e = e || window.event;
+
+            if (e.target.tagName != "INPUT" && e.target.tagName != "TEXTAREA")
+                return false;
+            else
+                return true;
+        };
+
+        if (window.addEventListener) {
+            window.addEventListener("resize", function () {
+                Resize_Screen();
+                Resize_TopMenu();
+                QuickMenuResize();
+            });
+        }
+        else {
+            window.onresize = function () {
+                Resize_Screen();
+                Resize_TopMenu();
+                QuickMenuResize();
+            }
+        }
+
+        $ContentDiv(this).ready(function () {
+            SetTopMenuEvent();    //LayoutMain.js에 정의
+
+            checkTopMenuHasChild();
+            Resize_TopMenu();
+            QuickMenuSizeCheck();
+            QuickMenuResize();
+            checkQuickMenuHasChild();
+
+            document.getElementById("Main_mailPanel").addEventListener("click", function (e) {
+                if (window.event) {
+                    (event.stopPropagation) ? event.stopPropagation() : event.cancelBubble = true;
+                }
+                else {
+                    e.stopPropagation();
+                }
+            });
+
+            selToggleList_Multi(document.getElementById("horizonMenu"), document.getElementById("verticalMenu_UL"));
+            selToggleList_Multi(document.getElementById("verticalMenu_UL"), document.getElementById("horizonMenu"));
+
+            UserVowLock();
+
+             
+            window.setInterval("update_connectinfo()", 30000);
+        });
+
+        function GetObject() {
+            var agentObj;
+            try {
+                
+                document.getElementById("if_Progress").src = "/binary/Progress.htm";
+            } catch (e) { }
+
+            var agentObj;
+            i_icd2.SetDocumentDisp(window.document);
+            i_icd2.xmlURL = "http://" + document.location.hostname + "/binary/componentlist_transfer.aspx";
+            i_icd2.CheckVersion();
+            var nCount = i_icd2.nNeedDownload;
+            if (nCount) {
+                if_Progress.StartOn();
+            }
+            else {
+                finish_download();
+            }
+        }
+
+        function finish_download()
+        {
+
+        }
+
+        var Connectinfo_xmlHTTP = null;
+        var blogout = false;
+        function update_connectinfo() {
+            if (blogout)
+                return;
+
+            Connectinfo_xmlHTTP = createXMLHttpRequest();
+            Connectinfo_xmlHTTP.open("POST", "/myoffice/main/update_connectinfo.aspx", true);
+            Connectinfo_xmlHTTP.onreadystatechange = event_update_connectinfo;
+            Connectinfo_xmlHTTP.send();
+        }
+
+        function event_update_connectinfo() {
+            if (Connectinfo_xmlHTTP.readyState != 4)
+                return;
+
+            if (Connectinfo_xmlHTTP.status == 200 && Connectinfo_xmlHTTP.responseText == "LOGOUT") {
+                blogout = true;
+                for (var i = 0; i < document.getElementsByName("POPUPNOTICE").length; i++) {
+                    if (BroswerAndNonActiveXCheck() == "CROSS")
+                        document.getElementsByName("POPUPNOTICE")[i].remove();
+                    else
+                        document.getElementsByName("POPUPNOTICE")[i].removeNode(true);
+                }
+                Alert_Message("사용자가 다른곳에서 로그인해서 강제로 로그아웃합니다.", connetionLogOut, "");
+            }
+        }
+        function connetionLogOut() {
+            window.location.href = "/Logout.aspx";
+        }
+        function getTopFrame() {
+            Resize_Screen();
+            LoadUrlContent("/myoffice/ezPortal/Layout/PortalLayout_Basic.aspx", "mainFrame");
+        }
+
+        function entercheck() {
+            if (window.event.keyCode == 13)
+                Search_Integrate();
+        }
+
+        function Search_Integrate() {
+            // 한글깨지는 문제가 발생하여 encodeURIComponent를 두번 사용 - 언어셋 문제로 두번 사용하면 안깨짐.
+            OpenWindow("", "/myoffice/ezSearch/index_Search.aspx?keyword=" + encodeURIComponent(encodeURIComponent(document.getElementById("txt_Search").value)), "", "");
+
+            // 검색후 검색어 초기화
+            document.getElementById("txt_Search").value = "";
+        }
+
+        function ChangeRealTimeNoteBadgeCount(badgeCount) {
+            if (document.getElementById("notiCountBadge") != null) {
+                var BadgeCountString = "";
+                if (badgeCount > 999) {
+                    BadgeCountString = "999+";
+                }
+                else {
+                    BadgeCountString = badgeCount.toString();
+                }
+
+                if (document.getElementById("notiCountBadge").getElementsByTagName("span").length > 0) {
+                    document.getElementById("notiCountBadge").getElementsByTagName("span")[0].innerText = BadgeCountString;
+                }
+                else {
+                    var _spanElem = document.createElement("span");
+                    _spanElem.innerText = BadgeCountString;
+
+                    document.getElementById("notiCountBadge").appendChild(_spanElem);
+                }
+            }
+        }
+
+        function OpenWindow(evt, url, location, option) {
+            if (location.toUpperCase() == "MAIN") {
+                LoadUrlContent(url, "mainFrame");
+            } else {
+                if (option != "") {
+
+                    if (option == "FULL") {
+
+                        option = "width=" + screen.availWidth + ", height=" + screen.availHeight + ", top=0, left=0";
+                    }
+                    else {
+                        var width = 0, height = 0;
+                        var leftPosition = "", topPosition = "";
+                        var opt = option.split(';');
+                        for (var i = 0; i < opt.length; i++) {
+                            if (opt[i].indexOf('height') > -1) {
+                                height = opt[i].substring(opt[i].indexOf('=') + 1, opt[i].indexOf('px'));
+                                var top = window.outerHeight / 2 + window.screenY - (height / 2);
+                                topPosition = ", top=" + top + ", screenY=" + top;
+                            }
+                            if (opt[i].indexOf('width') > -1) {
+                                width = opt[i].substring(opt[i].indexOf('=') + 1, opt[i].indexOf('px'));
+                                var left = window.outerWidth / 2 + window.screenX - (width / 2);
+                                leftPosition = ", left=" + left + ", screenX=" + left;
+                            }
+                        }
+                        option = option + topPosition + leftPosition;
+                    }
+                }
+
+                if (location.toUpperCase() == "LAYER") {
+                    DivPopUpShow(parseInt(width), parseInt(height), url);
+                } else {
+                    if (location.toUpperCase() == "TOP")
+                        document.location.href = url;
+                    else {
+                        window.open(url, "", option);
+                    }
+                }
+            }
+
+            if (window.event) {
+                (event.stopPropagation) ? event.stopPropagation() : event.cancelBubble = true;
+            }
+            else {
+                evt.stopPropagation();
+            }
+        }
+
+        function Search_Employee(viewType) {
+            if (viewType.toUpperCase() === "LAYER") {
+                DivPopUpShow(800, 700, "/myoffice/ezOrgan/Search_Organ.aspx?companyid=top&search=" + escape(document.getElementById("txt_Search").value));
+            }
+            else {
+                OpenWindow(null, "/myoffice/ezOrgan/Search_Organ.aspx?companyid=top&search=" + escape(document.getElementById("txt_Search").value), "popup", "height=700px, width =800px");
+            }
+
+            // 검색후 검색어 초기화
+            document.getElementById("txt_Search").value = "";
+        }
+
+        function PopClose(obj) {
+            document.getElementById(obj).contentWindow.Popup_Close();
+        }
+
+        function QuickMove(_event, value) {
+            if (window.event) {
+                (event.stopPropagation) ? event.stopPropagation() : event.cancelBubble = true;
+            }
+            else {
+                _event.stopPropagation();
+            }
+
+            var WindowHeight = document.documentElement.clientHeight;   // 화면 전체 높이
+            var TopMenuHeight = document.getElementById("top").clientHeight;    // 탑메뉴 높이
+            var QuickMenuMaxHeight = WindowHeight - (TopMenuHeight + 100);
+            var QuickMenuMinHeight = 150;
+            var QuickMenuHeight = 0;
+
+            var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li:not(.quickdisplaynone)");
+            if (value == "DOWN") {
+                // 마지막 row index 체크
+                var nextDownElement = quickdisplayElements[quickdisplayElements.length - 1].nextElementSibling;
+                while (nextDownElement != null && nextDownElement != undefined) {
+                    QuickMenuHeight += parseInt(nextDownElement.getAttribute("_liheight"));
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        nextDownElement.classList.remove("quickdisplaynone");
+                    }
+                    else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        nextDownElement.classList.remove("quickdisplaynone");
+                    }
+                    else {
+                        nextDownElement.classList.add("quickdisplaynone");
+                    }
+
+                    nextDownElement = nextDownElement.nextElementSibling;
+                }
+
+                // 기존에 열려있는 항목은 모두 안보이도록 처리
+                var beforeDownElement = quickdisplayElements[quickdisplayElements.length - 1];
+                while (beforeDownElement != null && beforeDownElement != undefined) {
+                    QuickMenuHeight += parseInt(beforeDownElement.getAttribute("_liheight"));
+
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        beforeDownElement.classList.remove("quickdisplaynone");
+                    }
+                    else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        beforeDownElement.classList.remove("quickdisplaynone");
+                    }
+                    else {
+                        beforeDownElement.classList.add("quickdisplaynone");
+                    }
+
+                    beforeDownElement = beforeDownElement.previousElementSibling;
+                }
+            }
+            else {
+                // 마지막 row index 체크
+                var previousUpElement = quickdisplayElements[0].previousElementSibling;
+                while (previousUpElement != null && previousUpElement != undefined) {
+                    QuickMenuHeight += parseInt(previousUpElement.getAttribute("_liheight"));
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        previousUpElement.classList.remove("quickdisplaynone");
+                    }
+                    else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        previousUpElement.classList.remove("quickdisplaynone");
+                    }
+                    else {
+                        previousUpElement.classList.add("quickdisplaynone");
+                    }
+
+                    previousUpElement = previousUpElement.previousElementSibling;
+                }
+
+                // 기존에 열려있는 항목은 모두 안보이도록 처리
+                var nextUpElement = quickdisplayElements[0];
+                while (nextUpElement != null && nextUpElement != undefined) {
+                    QuickMenuHeight += parseInt(nextUpElement.getAttribute("_liheight"));
+
+                    if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                        nextUpElement.classList.remove("quickdisplaynone");
+                    }
+                    else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                        nextUpElement.classList.remove("quickdisplaynone");
+                    }
+                    else {
+                        nextUpElement.classList.add("quickdisplaynone");
+                    }
+
+                    nextUpElement = nextUpElement.nextElementSibling;
+                }
+            }
+
+            quicklink_displayEtc();
+        }
+
+        function QuickMenuSizeCheck() {
+            // 퀵메뉴의 각Row 의 높이를 _LiHeight에 입력한다.
+            document.getElementById("my_link").classList.add("open");
+
+            var my_link_listULElements = document.getElementsByClassName("my_link_listUL");
+            if (my_link_listULElements.length > 0) {
+                var my_link_listUL_ChildrenLi_Elements = my_link_listULElements[0].getElementsByTagName("li");
+                for (var i = 0; i < my_link_listUL_ChildrenLi_Elements.length; i++) {
+                    my_link_listUL_ChildrenLi_Elements[i].setAttribute("_liheight", my_link_listUL_ChildrenLi_Elements[i].clientHeight);
+                }
+            }
+
+            document.getElementById("my_link").classList.remove("open");
+        }
+
+        function QuickMenuResize() {
+            var WindowHeight = document.documentElement.clientHeight;   // 화면 전체 높이
+            var TopMenuHeight = document.getElementById("top").clientHeight;    // 탑메뉴 높이
+            var QuickMenuMaxHeight = WindowHeight - (TopMenuHeight + 100);
+            var QuickMenuMinHeight = 150;
+            var QuickMenuHeight = 0;
+
+            var myLinkListULElements = document.getElementsByClassName("my_link_listUL");
+            if (myLinkListULElements.length > 0) {
+                var myLinkListLIElements = myLinkListULElements[0].children;
+                var bStartShow = false;
+                for (var i = 0; i < myLinkListLIElements.length; i++) {
+                    if (!bStartShow && !myLinkListLIElements[i].classList.contains("quickdisplaynone")) {
+                        bStartShow = true;
+                    }
+
+                    if (bStartShow) {
+                        QuickMenuHeight += parseInt(myLinkListLIElements[i].getAttribute("_liheight"));
+                        if (QuickMenuMaxHeight >= QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                            myLinkListLIElements[i].classList.remove("quickdisplaynone");
+                        }
+                        else if (QuickMenuMaxHeight <= QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                            myLinkListLIElements[i].classList.remove("quickdisplaynone");
+                        }
+                        else {
+                            myLinkListLIElements[i].classList.add("quickdisplaynone");
+                        }
+                    }
+                    else {
+                        myLinkListLIElements[i].classList.add("quickdisplaynone");
+                    }
+                }
+            }
+
+            var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li:not(.quickdisplaynone)");
+            if (quickdisplayElements.length === 0) {
+                // 모두 안보이도록 처리되는 경우가 있음. 이경우 마지막 것을 display로 변경하여 아래 구문에서 처리되도록 한다.
+                var myLinkListLIElements = document.querySelectorAll(".my_link_listUL > li");
+                if (myLinkListLIElements.length > 0) {
+                    myLinkListLIElements[myLinkListLIElements.length - 1].classList.remove("quickdisplaynone");
+                }
+            }
+
+            // 마지막 항목이 display되는 항목일 경우 앞으로 찾아간다.
+            var myLinkListLIElements = document.querySelectorAll(".my_link_listUL > li");
+            if (myLinkListLIElements.length > 0) {
+                if (!myLinkListLIElements[myLinkListLIElements.length - 1].classList.contains("quickdisplaynone")) {
+                    var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li.quickdisplaynone");
+                    var beforeDownElement = quickdisplayElements[quickdisplayElements.length - 1];
+                    while (beforeDownElement != null && beforeDownElement != undefined) {
+                        QuickMenuHeight += parseInt(beforeDownElement.getAttribute("_liheight"));
+                        if (QuickMenuMaxHeight > QuickMenuMinHeight && QuickMenuMaxHeight > QuickMenuHeight) {
+                            beforeDownElement.classList.remove("quickdisplaynone");
+                        }
+                        else if (QuickMenuMaxHeight < QuickMenuMinHeight && QuickMenuMinHeight > QuickMenuHeight) {
+                            beforeDownElement.classList.remove("quickdisplaynone");
+                        }
+                        else {
+                            beforeDownElement.classList.add("quickdisplaynone");
+                        }
+
+                        beforeDownElement = beforeDownElement.previousElementSibling;
+                    }
+                };
+            }
+
+            // IE에서 사이즈 조정시 링크메뉴 사라지는 문제가 있어 추가
+            var myLinkListElements = document.getElementsByClassName("my_link_list");
+            if (myLinkListElements.length > 0) {
+                myLinkListElements[0].style.top = "0px";
+            }
+
+            // 퀵메뉴 하위메뉴 표시를 위해 목록 높이 고정(하위 메뉴 표시할때 스크롤바 표시하기 위함)
+            var my_link_listULElements = document.getElementsByClassName("my_link_listUL");
+            if (my_link_listULElements.length > 0) {
+                var quickdisplayElements = document.querySelectorAll(".my_link_listUL > li:not(.quickdisplaynone)");
+                var QuickMenuDisplayHeight = 0;
+                for (var i = 0; i < quickdisplayElements.length; i++) {
+                    QuickMenuDisplayHeight += parseInt(quickdisplayElements[i].getAttribute("_liheight")) + 1;
+                }
+
+                my_link_listULElements[0].style.height = QuickMenuDisplayHeight + "px";
+            }
+            quicklink_displayEtc();
+        }
+
+        function quicklink_displayEtc() {
+            var myLinkListULElements = document.getElementsByClassName("my_link_listUL");
+            if (myLinkListULElements.length > 0) {
+                var myLinkListLIElements = myLinkListULElements[0].children;
+                if (myLinkListLIElements.length > 0) {
+                    if (myLinkListLIElements[0].classList.contains("quickdisplaynone")) {
+                        document.getElementById("quicklink_beforeitem").style.display = "";
+                    }
+                    else {
+                        document.getElementById("quicklink_beforeitem").style.display = "none";
+                    }
+
+                    if (myLinkListLIElements[myLinkListLIElements.length - 1].classList.contains("quickdisplaynone")) {
+                        document.getElementById("quicklink_afteritem").style.display = "";
+                    }
+                    else {
+                        document.getElementById("quicklink_afteritem").style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function OpenWindow_Cookie(evt, url, location, option) {
+            setCookie("logo", "true", "", "/", "", "");
+            OpenWindow(evt, url, location, option);
+        }
+
+        function setCookie(name, value, expires, path, domain, secure) {
+            try {
+                var today = new Date();
+                today.setTime(today.getTime());
+                if (expires) {
+                    expires = expires * 1000 * 60 * 60 * 24;
+                }
+                var expires_date = new Date(today.getTime() + (expires));
+                document.cookie = name + "=" + escape(value) +
+                    ((expires) ? ";expires=" + expires_date.toGMTString() : "") + //expires.toGMTString()
+                    ((path) ? ";path=" + path : "") +
+                    ((domain) ? ";domain=" + domain : "") +
+                    ((secure) ? ";secure" : "");
+            } catch (err) { }
+        }
+
+        function PreView_Close() {
+            if (typeof PreviewRayerChange === "function") {
+                PreviewRayerChange('OFF');
+                ResponsiveLeftRightView();
+                PreviewOnResize();
+            }
+            else if (typeof DivPopUpHidden === "function") {
+                DivPopUpHidden();
+            }
+        }
+
+
+        var bInherit = false;
+        var curImg = new Image;
+        var oldPath = "";
+        var subPath = "";
+        var menuName = "";
+        var tempclickmenuPath = "";
+        var temppNewPath;
+        var tempobj;
+        var clickmenusub = "";
+        var clickmenuPath = "";
+        var clickmenuName = "";
+        function img_onMouseOver(pNewPath, obj) {
+            temppNewPath = pNewPath;
+            tempobj = obj;
+            if (curImg == obj) {
+                return;
+            }
+            else {
+                oldPath = obj.src;
+                obj.src = pNewPath;
+                if (clickmenusub != "")
+                    document.getElementById(clickmenusub).style.display = "none";
+                if (clickmenuName != "" && document.getElementsByName(clickmenuName)[0].src.indexOf(pNewPath) == -1) {
+                    tempclickmenuPath = document.getElementsByName(clickmenuName)[0].src;
+                    document.getElementsByName(clickmenuName)[0].src = clickmenuPath;
+                }
+            }
+            if (document.getElementById("menu_" + obj.name) != null) {
+                subPath = "menu_" + obj.name;
+                menuName = obj.name;
+                document.getElementById("menu_" + obj.name).style.left = 0;
+                document.getElementById("menu_" + obj.name).style.display = "";
+                var LeftMargin = parseInt(document.getElementsByName(menuName)[0].offsetLeft);
+                if (window.document.documentElement.clientWidth < document.getElementsByName(menuName)[0].offsetLeft + document.getElementById("menu_" + obj.name).clientWidth) {
+                    LeftMargin = LeftMargin - (document.getElementsByName(menuName)[0].offsetLeft + document.getElementById("menu_" + obj.name).clientWidth - window.document.documentElement.clientWidth);
+                    LeftMargin = LeftMargin - 30;
+                }
+                document.getElementById("menu_" + obj.name).style.left = LeftMargin + "px";
+            }
+            else {
+                menuName = obj.name;
+                subPath = "";
+            }
+        }
+
+        function img_onMouseOut(obj) {
+            tempobj = obj;
+            if (curImg == obj) {
+                return;
+            }
+            else if (clickmenuPath == oldPath) {
+            }
+            else {
+                obj.src = oldPath;
+                if (tempclickmenuPath != "" && obj != document.getElementsByName(clickmenuName)[0])
+                    document.getElementsByName(clickmenuName)[0].src = tempclickmenuPath;
+            }
+            if (subPath != "" && document.getElementById(subPath).style.display == "" && subPath != clickmenusub) {
+                document.getElementById(subPath).style.display = "none";
+            }
+            if (clickmenusub != "")
+                document.getElementById(clickmenusub).style.display = "";
+        }
+
+        function submenuover(subObj) {
+            if (tempobj.name === subObj.id.replace("menu_", "")) {
+                img_onMouseOver(temppNewPath, tempobj);
+            }
+        }
+
+        function submenuout(subObj) {
+            img_onMouseOut(tempobj);
+        }
+
+        function Resize_TopMenu() {
+            if (typeof ResponsiveLeftRightView == 'function') {
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                }
+
+                ResponsiveLeftRightView();
+            }
+
+            var pLeftClientWidth = 0;
+            var pTopmenuWidth = 0;
+            if (document.querySelectorAll("header>.contentlayout>.contentlayout_left").length > 0) {
+                pLeftClientWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_left")[0].clientWidth;
+            }
+
+            if (document.querySelectorAll("header>.contentlayout>.contentlayout_none").length > 0) {
+                pTopmenuWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_none")[0].clientWidth;
+            }
+            else {
+                pTopmenuWidth = document.documentElement.clientWidth;
+            }
+
+            var pTop_TotalTextWidth = 0;
+            var pTop_TotalNoneTextWidth = 0;
+
+            document.getElementById("horizonMenu").style.display = "";
+            document.getElementById("verticalMenu").style.display = "none";
+            for (var i = 0; i < document.getElementsByClassName("navUL")[0].childNodes.length; i++) {
+                if (document.getElementsByClassName("navUL")[0].childNodes[i].tagName === "LI") {
+                    if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text").length > 0) {
+                        if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")[0].style.display === "none") {
+                            pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName("navUL")[0].childNodes[i].clientWidth;
+
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")[0].style.display = "";
+                            pTop_TotalTextWidth = pTop_TotalTextWidth + document.getElementsByClassName("navUL")[0].childNodes[i].clientWidth;
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")[0].style.display = "none";
+                        }
+                        else {
+                            pTop_TotalTextWidth = pTop_TotalTextWidth + document.getElementsByClassName("navUL")[0].childNodes[i].clientWidth;
+
+                            if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu").length > 0) {
+                                document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")[0].style.display = "none";
+                                pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName("navUL")[0].childNodes[i].clientWidth;
+                                document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")[0].style.display = "";
+                            }
+                            else {
+                                pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName("navUL")[0].childNodes[i].clientWidth;
+                            }
+                        }
+                    }
+                    else {
+                        pTop_TotalTextWidth = pTop_TotalTextWidth + document.getElementsByClassName("navUL")[0].childNodes[i].clientWidth;
+                        pTop_TotalNoneTextWidth = pTop_TotalNoneTextWidth + document.getElementsByClassName("navUL")[0].childNodes[i].clientWidth;
+                    }
+                }
+            }
+
+            if (pTopmenuWidth - 30 > pTop_TotalTextWidth) {
+                document.getElementById("horizonMenu").style.display = "";
+                document.getElementById("verticalMenu").style.display = "none";
+                for (var i = 0; i < document.getElementsByClassName("navUL")[0].childNodes.length; i++) {
+                    if (document.getElementsByClassName("navUL")[0].childNodes[i].tagName === "LI") {
+                        if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu").length > 0) {
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu")[0].parentElement.parentElement.removeEventListener("mouseover", ShowTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu")[0].parentElement.parentElement.removeEventListener("mouseout", HideTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")[0].style.display = "";
+                        }
+                    }
+                }
+
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                }
+            }
+            else if (pTopmenuWidth - 30 <= pTop_TotalTextWidth && pTopmenuWidth - 30 > pTop_TotalNoneTextWidth) {
+                document.getElementById("horizonMenu").style.display = "";
+                document.getElementById("verticalMenu").style.display = "none";
+                for (var i = 0; i < document.getElementsByClassName("navUL")[0].childNodes.length; i++) {
+                    if (document.getElementsByClassName("navUL")[0].childNodes[i].tagName === "LI") {
+                        if (document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu").length > 0) {
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu")[0].parentElement.parentElement.removeEventListener("mouseover", ShowTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu")[0].parentElement.parentElement.removeEventListener("mouseout", HideTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu")[0].parentElement.parentElement.addEventListener("mouseover", ShowTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("icon_menu")[0].parentElement.parentElement.addEventListener("mouseout", HideTopMenuTooltip);
+                            document.getElementsByClassName("navUL")[0].childNodes[i].getElementsByClassName("top_text")[0].style.display = "none";
+                        }
+                    }
+                }
+
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                }
+            }
+            else {
+                document.getElementById("horizonMenu").style.display = "none";
+                document.getElementById("verticalMenu").style.display = "";
+
+                var pTotalWidth = document.documentElement.clientWidth;
+                var pLogoWidth = 0;
+                var pMainMenuWidth = 80;
+                var pUtilWidth = 0;
+                var my_searchWidth = 0;
+
+                if (document.querySelectorAll("header>.contentlayout>.contentlayout_left").length > 0) {
+                    pLogoWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_left").item(0).clientWidth;
+                }
+
+                if (document.querySelectorAll(".my_search").length > 0) {
+                    document.querySelectorAll(".my_search").item(0).style.display = "";
+                    my_searchWidth = document.querySelectorAll(".my_search").item(0).clientWidth;
+                }
+
+                if (document.querySelectorAll("header>.contentlayout>.contentlayout_right").length > 0) {
+                    pUtilWidth = document.querySelectorAll("header>.contentlayout>.contentlayout_right").item(0).clientWidth;
+                }
+
+                if (pTotalWidth > (pLogoWidth + pMainMenuWidth + pUtilWidth)) {
+                    if (document.querySelectorAll(".my_search").length > 0) {
+                        document.querySelectorAll(".my_search").item(0).style.display = "";
+                    }
+                }
+                else {
+                    if (document.querySelectorAll(".my_search").length > 0) {
+                        document.querySelectorAll(".my_search").item(0).style.display = "none";
+                    }
+                }
+            }
+
+            if (document.getElementById("verticalMenu") != null && document.getElementById("verticalMenu") != undefined) {
+                if (document.getElementById("verticalMenu").style.display === "none") {
+                    var openElements = document.getElementById("verticalMenu").getElementsByClassName("open");
+                    if (openElements.length > 0) {
+                        for (var i = 0; i < openElements.length; i++) {
+                            openElements[i].classList.remove("open");
+                        }
+                    }
+                }
+            }
+        }
+
+        function ShowTopMenuTooltip(e) {
+            try {
+                if (getParent_selector(e.target, ".navsubList").length > 0) {
+                    // 서브메뉴 선택이므로 툴팁 표시 안함.
+                    HideTopMenuTooltip();
+                    return;
+                }
+
+                var LiElement = null;
+                if (e.target.tagName != "LI") {
+                    var getParentElements = getParent_selector(e.target, "LI");
+                    for (var i = 0; i < getParentElements.length; i++) {
+                        if (getParentElements[i].getAttribute("name") == "topmenu_li") {
+                            LiElement = getParent_selector(e.target, "LI")[i];
+                            break;
+                        }
+                    }
+                }
+                else {
+                    LiElement = e.target;
+                }
+
+                var getClientRectResult = LiElement.getClientRects();
+                if (getClientRectResult.length > 0) {
+                    var addele = document.createElement("div");
+                    addele.setAttribute("id", "TopMenuTolltip");
+                    addele.className = "bubbleTopmenu";
+                    addele.style.left = (getClientRectResult[0].left + getClientRectResult[0].width + 15).toString() + "px";
+                    var Top_TextElements = LiElement.getElementsByClassName("top_text");
+                    if (Top_TextElements.length > 0)
+                        addele.innerText = trim_Cross(Top_TextElements[0].textContent.replace("\r", "").replace("\n", ""));
+
+                    document.body.appendChild(addele);
+                }
+            }
+            catch (ex) {
+            }
+        }
+
+        function HideTopMenuTooltip() {
+            var bubbleTopmenuElements = document.querySelectorAll(".bubbleTopmenu");
+            if (bubbleTopmenuElements.length > 0) {
+                for (var i = 0; i < bubbleTopmenuElements.length; i++) {
+                    bubbleTopmenuElements[i].parentNode.removeChild(bubbleTopmenuElements[i]);
+                }
+            }
+        }
+
+        function Logout(url) {
+            document.location.href = url;
+        }
+
+        function ChangeSubtitle(deptid) {
+            if ("S230000" != deptid) {
+                var xmlhttp = createXMLHttpRequest();
+                var xmlpara = createXmlDom();
+                var objNode;
+                createNodeInsert(xmlpara, objNode, "DATA");
+                createNodeAndInsertText(xmlpara, objNode, "DEPTID", deptid);
+                xmlhttp.open("POST", "/myoffice/ezPortal/interASP/ChangeUserInfo.aspx", false);
+                xmlhttp.send(xmlpara);
+
+                window.location.reload();
+            }
+        }
+        var isVow = false;
+        function UserVowLock() {
+
+            var sVOW_ID = "";
+            var vow_xmlHttp = createXMLHttpRequest();
+            vow_xmlHttp.open("POST", "/myoffice/ezBoardSTD/VOW/aspx/Get_VowRespondent.aspx", false);
+            vow_xmlHttp.send();
+
+            sVOW_ID = vow_xmlHttp.responseText;
+            vow_xmlHttp = null;
+            if (sVOW_ID != "") {
+
+                isVow = true;
+
+                for (var j = 0; j < document.getElementsByName("POPUPNOTICE").length; j++) {
+                    document.getElementsByName("POPUPNOTICE")[j].style.display = "none";
+                }
+
+                document.getElementById("Main_mailPanel").style.background = "none rgba(0,0,0,0.90)";
+                DivPopUpShow(700, 865, "/myoffice/ezBoardSTD/VOW/VowInfoPop.aspx");
+            }
+        }
+
+        function checkTopMenuHasChild() {
+            // 하위메뉴가 있는 경우 > 표시
+            // Horizon menu 2댑스 
+            var horizonNavsubULElements = document.getElementsByClassName("navsubUL");
+            for (var i = 0; i < horizonNavsubULElements.length; i++) {
+                var navsubELElements = GetChildNodes(horizonNavsubULElements[i]);
+                for (var j = 0; j < navsubELElements.length; j++) {
+                    if (GetElementsByTagName(navsubELElements[j], "UL").length > 0) {
+                        navsubELElements[j].classList.add("hassub");
+                    }
+                }
+            }
+
+            // Vertical Menu 1댑스
+            var verticalNavsubULElement = document.getElementById("verticalMenu_UL"); 
+            if (verticalNavsubULElement != null) {
+                var navsubELElements = GetChildNodes(verticalNavsubULElement);
+                for (var i = 0; i < navsubELElements.length; i++) {
+                    var navsubULElements = GetElementsByTagName(navsubELElements[i], "UL")
+                    if (navsubULElements.length > 0) {
+                        navsubELElements[i].classList.add("hassub");
+
+                        // 2댑스 메뉴
+                        var navsub2DepthELElements = GetChildNodes(navsubULElements[0]);
+                        
+                        for (var j = 0; j < navsub2DepthELElements.length; j++) {
+                            var navsub3DepthULElements = GetElementsByTagName(navsub2DepthELElements[j], "UL");
+                            if (navsub3DepthULElements.length > 0) {
+                                navsub2DepthELElements[j].classList.add("hassub");
+                            }
+                        }
+                    }
+                }
+            }            
+        }
+        
+        function checkQuickMenuHasChild() {
+            // 하위메뉴가 있는 경우 > 표시
+            // Horizon menu 2댑스 
+            var QuickMenuULElements = document.getElementsByClassName("my_link_listUL");
+            for (var i = 0; i < QuickMenuULElements.length; i++) {
+                var navsubELElements = GetChildNodes(QuickMenuULElements[i]);
+                for (var j = 0; j < navsubELElements.length; j++) {
+                    if (GetElementsByTagName(navsubELElements[j], "UL").length > 0) {
+                        navsubELElements[j].classList.add("hassub");
+                    }
+                }
+            }
+        }
+
+        //# sourceURL=filename.js
+    </script>
+
+</html>

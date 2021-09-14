@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+aside .aside_add{background-color:#EC4134;}
+
+header{background:#EC4134;}
+
+.top_searchBtn{background:url(images/top_search_02.svg) no-repeat 0 0 / auto 12px;}
+
+.my_NotificationUL li > .top_count {border:2px solid #ec4134;}
+.my_NotificationUL li > .top_count span{background:#0A0909;}
+
+#Center{background:#fff;}
+
+
+.personal {background-color:#fff; border:1px solid #D8D8D8; box-sizing:border-box;}
+
+.info_txt dt{color:#444444;}
+.info_txt dd{color:#444;}
+
+.main_icon_userconfig {background:url(images/personal_theme_02.svg) no-repeat;}
+.main_icon_layoutconfig {background:url(images/personal_setting_02.svg) no-repeat;}
+
+.main_icon_mail { background:url(images/skin_personal_content_01.svg) no-repeat center center; background-color:#EAECF0 !important; border-radius:100%;}
+.main_icon_schedule {background:url(images/skin_personal_content_02.svg) no-repeat center center; background-color:#EAECF0 !important; border-radius:100%;}
+.main_icon_approval {background:url(images/skin_personal_content_03.svg) no-repeat center center; background-color:#EAECF0 !important; border-radius:100%;}
+.main_icon_collaboration { background:url(images/skin_personal_content_04.svg) no-repeat center center; background-color:#EAECF0 !important; border-radius:100%;}
+
+.quick_writeUL li .quick_writeDL dt{margin:5px 0 0 0 ;}
+.quick_writeUL li .quick_writeDL dd{color:#444;}
+
+
+.left_list .left_list_UL li{color:#444;}
+.left_list .left_list_UL li.on{color:#fff; background-color:#ec4134;}
+.left_list .left_list_UL li:hover{color:#fff; background-color:#ec4134;}
+.left_list .left_list_UL .left_list_LI1{background-color:#EC4134;}
+
+.list_mail_appr .tabpart_portletTitle li.on span{color:#ec4134 !important;}
+.list_mail_appr .tabpart_portletTitle li:hover span{color:#ec4134 !important;}
+
+
+
+.tabpart_portletTitle li.on > span { color: #ec4134; }
+.tabpart_portletTitle li:hover > span { color: #ec4134; }
+.tabpart_portletTitle li > span .point2 { color:#ec4134;}
+.list_mail_appr .tabpart_portletTitle li span{color:#444 !important;}
+.tabpart_portletTitle li > span{color:#444;}
+
+
+.content_portletBox .apprgraph{background-color:#e8e8e8;}
+.content_portletBox .graph_title{color:#000;}
+.content_portletBox .apprgraph_area dl dd .nomal_count span{background-color:#9D9D9D;}
+.content_portletBox .apprgraph_area dl dd .point_count span{background-color:#ec4134;}
+
+
+.resource_listBoxUL .resource_listBoxDL dd > .resource_list_item{border:1px solid #EC4134; color:#EC4134;}
+
+.cooperation_appr .cooperation_chart .cooperation_list.on{background-color:#ec4134; border:1px solid #ec4134;}
+.cooperation_appr .cooperation_chart .cooperation_list:hover{background-color:#ec4134; border:1px solid #ec4134;}
+.cooperation_appr .cooperation_board .cooperation_board_list li.on{color:#ec4134;}
+
+.birth_month{color:#ec4134;}
+
+#Mail_Portlet_mailquatersize > svg path + path {fill:#ec4134;}
+#Mail_Portlet_mailquatersize .graph_percent{fill:#000;}
+.content_portletBox .graph_txt{color:#444;}
+.content_portletBox .graph_txt .point2{color:#ec4134;}

@@ -1,0 +1,736 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=8.0, minimum-scale=1.0, width=device-width">
+        <link rel="stylesheet" href='swiper/swiper_cdn.css'/>
+        <script src="swiper/swiper_cdn.js"></script>
+        <script src='swiper/swiper.js'></script>
+
+        <link rel='stylesheet' type='text/css' href='css/font.css'/>
+        <link rel='stylesheet' type='text/css' href='css/reset.css'/>
+        <link rel='stylesheet' type='text/css' href='css/main.css'/>
+        <link rel='stylesheet' type='text/css' href='css/footer.css'/>
+        <link rel='stylesheet' type='text/css' href='css/menu_tab.css'/>
+        <script src='js/main.js'></script>
+    </head>
+
+    <body>
+        <div class='wrapper'>
+            <div class='main_content'>
+                <header class='clearfix'>
+                    <span class='kt_logo'><img src='images/logo.png' alt='kt bizoffice'></span>
+                    <span class='setting_icon'><img src='images/setting_btn.png'></span>
+                </header>
+
+                <!-- info 시작 -->
+                <section class='info clearfix'>
+                    <p class='info_photo'>
+                        <img src='images/user_photo.jpg' width='48px' height='48px'>
+                    </p>
+
+                    <dl class='info_txt'>
+                        <dt><span class='info_name'>홍길동</span>&nbsp;사원&nbsp;&nbsp;UI/UX팀</dt>
+                        <dd>최종접속시간&nbsp;2021-05-14&nbsp;13:36</dd>
+                    </dl>
+                </section>
+                <!-- info 끝 -->
+
+                <!-- my_menu 시작 -->
+                <section class='my_menu clearfix'>
+                    <dl class='my_menu_title'>
+                        <dt>MY MENU</dt>
+                        <dd><img src='images/my_menu_setting.png'></dd>
+                    </dl>
+
+                    <ul class='clearfix'>
+                        <li class='my_menu_01 mb10'>
+                            <dl>
+                                <dt><img src='images/my_menu_01.png' style='margin-top:4px'></dt>
+                                <dd>전자우편</dd>
+                                <dd class='current_count'><span>5</span></dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_02.png'></dt>
+                                <dd>전자결재</dd>
+                                <dd class='current_count'><span>2</span></dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_03.png'></dt>
+                                <dd>일정관리</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_04.png' style='margin-top:3px'></dt>
+                                <dd>게시판</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_05.png'></dt>
+                                <dd>자원관리</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_06.png'></dt>
+                                <dd>업무일지</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_07.png'></dt>
+                                <dd>근태관리</dd>
+                            </dl>
+                        </li>
+                        <li class='my_menu_01'>
+                            <dl>
+                                <dt><img src='images/my_menu_08.png' height='35px'></dt>
+                                <dd>주소록</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+                <!-- my_menu 끝 -->
+
+                <!-- 출퇴 시작 -->
+                <section class='time_check'>
+                    <p class='current_time'>
+                        현재시간 <span><span id='current_hours'></span>:<span id='current_minutes'></span>:<span id='current_seconds'></span></span>
+                    </p>
+                    <p class='in_out_check'>
+                        <span class='time_check_in on'>출근입력<img src='images/check_icon.png'></span>
+                        <span class='time_check_out'>퇴근입력<img src='images/check_icon.png'></span>
+                    </p>
+                </section>
+                <!-- 출퇴 끝 -->
+
+                <!-- 공지사항 시작 -->
+                <section class='notice swiper-container'>
+                    <ul class='clearfix swiper-wrapper'>
+                        <li class="swiper-slide">
+                            <dl>
+                                <dt>NOTICE_01</dt>
+                                <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                            </dl>
+                            <div class='notice_content'>
+                                <dl class='cont_title'>
+                                    <dt>불법 소프트웨어 사용금지의 대한 공지사항</dt>
+                                    <dd class='cont_time'>11:20</dd>
+                                    <dd class='cont_date'>06-20</dd>
+                                </dl>
+                                <p>가온아이는 불법소프트웨어 사용을 근절합니다. 업무용장비에 불법소프트웨어를 설치를 불허합니다. 설치히 주의가 요망됩니다.</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <dl>
+                                <dt>NOTICE_02</dt>
+                                <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                            </dl>
+                            <div class='notice_content'>
+                                <dl class='cont_title'>
+                                    <dt>불법 소프트웨어 사용금지의 대한 공지사항</dt>
+                                    <dd class='cont_time'>11:20</dd>
+                                    <dd class='cont_date'>06-20</dd>
+                                </dl>
+                                <p>가온아이는 불법소프트웨어 사용을 근절합니다. 업부용장비에 불법소프트웨어를 설치를 불허합니다. 설치히 주의가 요망됩니다.</p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <dl>
+                                <dt>NOTICE_03</dt>
+                                <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                            </dl>
+                            <div class='notice_content'>
+                                <dl class='cont_title'>
+                                    <dt>불법 소프트웨어 사용금지의 대한 공지사항</dt>
+                                    <dd class='cont_time'>11:20</dd>
+                                    <dd class='cont_date'>06-20</dd>                                </dl>
+                                <p>가온아이는 불법소프트웨어 사용을 근절합니다. 업부용장비에 불법소프트웨어를 설치를 불허합니다. 설치히 주의가 요망됩니다.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <section class='notice_navi'> -->
+                        <div class="swiper-pagination"></div>
+                    <!-- </section> -->
+                </section>
+                <!-- 공지사항 끝 -->
+
+                <!-- 공지사항 네비 시작 -->
+                
+                <!-- 공지사항 네비 끝 -->
+
+
+                <!-- 직원찾기 시작 -->
+                <section class='employee_search'>
+                    <form action='#' name='employee_search' class='clearfix'>
+                        <img src='images/search_icon.png'><input type='text' placeholder='직원을 검색하세요'><span class='employee_search_btn'>검색</span>
+                    </form>
+                </section>
+                <!-- 직원찾기 끝 -->
+
+                <!-- 메일 시작 -->
+                <section class='mail'>
+                    <dl class='mail_title clearfix'>
+                        <dt><img src='images/mail_icon.png'></dt>
+                        <dt><span>받은메일함</span></dt>
+                        <dd class='more_btn'><img src='images/more_btn.png'></dd>
+                    </dl>
+                    <div class='mail_list clearfix'>
+                        <dl>
+                            <dt class='mail_txt'>악성코드 유표 메일 주의악성코드 유표 메일 주의</dt><span class='link_icon'><img src='images/line_icon.png'></span>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                        <dl>
+                            <dt class='mail_txt'>업무협조 요청건</dt>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                        <dl>
+                            <dt class='mail_txt'>퇴근시 사무실 정리 안내</dt>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                        <dl>
+                            <dt class='mail_txt'>로고 이미지 요청드립니다</dt>
+                            <dd class='mail_time'>10:39</dd>
+                            <dd class='mail_date'>06-15</dd>
+                        </dl>
+                    </div>
+                </section>
+                <!-- 메일 끝 -->
+
+                <div style='width:100%; height:50px;'></div>
+
+                <!-- 하단 고정 메뉴 시작 -->
+                <footer>
+                    <ul class='clearfix'>
+                        <li>
+                            <dl>
+                                <dt><img src='images/footer_icon_01.png'></dt>
+                                <dd>홈</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src='images/footer_icon_02.png'></dt>
+                                <dd>메일</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src='images/footer_icon_03.png'></dt>
+                                <dd>결재</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src='images/footer_icon_04.png'></dt>
+                                <dd>조직도</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl class='menu_btn'>
+                                <dt><img style='margin-top:2px;'src='images/menu_btn.png'></dt>
+                                <dd>전체</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </footer>
+                <!-- 하단 고정 메뉴 끝 -->
+            </div>
+            <!-- main_content 끝 -->
+
+
+            <div class='menu_tab'>
+                <header>
+                    <dl class='clearfix'>
+                        <dt><span>홍길동</span>&nbsp;사원</dt>
+                        <dd class='close'><img src='images/close_icon.png'></dd>
+                    </dl>
+                </header>
+
+                <section class='menu_tab_quick'>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt><img src='images/menu_tab_quick_01.png'></dt>
+                                <dd>홈</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src='images/menu_tab_quick_02.png'></dt>
+                                <dd>환경설정</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><img src='images/menu_tab_quick_03.png'></dt>
+                                <dd>로그아웃</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+
+                <div class='menu_list_area'>
+                    <div class='bg_color'></div>
+                    <ul class='list_depth_01'>
+                        <li class=''><span>전자메일전자메일전자메일전자메일전자메일</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li class='on'><span>받은편지함</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li class=''><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함</span></li>
+                                            <li><span>보낸편지함</span></li>
+                                            <li><span>임시보관함</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>PIMS</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함2</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함2</span></li>
+                                            <li><span>보낸편지함2</span></li>
+                                            <li><span>임시보관함2</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함2</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색2</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록2</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>전자결재</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함3</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함3</span></li>
+                                            <li><span>보낸편지함3</span></li>
+                                            <li><span>임시보관함3</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함3</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색3</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록3</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>게시판</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함4</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함4</span></li>
+                                            <li><span>보낸편지함4</span></li>
+                                            <li><span>임시보관함4</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함4</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색4</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록4</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>커뮤니티</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함5</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함5</span></li>
+                                            <li><span>보낸편지함5</span></li>
+                                            <li><span>임시보관함5</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함5</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색5</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록5</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>유용한 업무</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함6</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함6</span></li>
+                                            <li><span>보낸편지함6</span></li>
+                                            <li><span>임시보관함6</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함6</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색6</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록6</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>프로젝트 관리</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함7</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함7</span></li>
+                                            <li><span>보낸편지함7</span></li>
+                                            <li><span>임시보관함7</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함7</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색7</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록7</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><span>SNS</span>
+                            <div>
+                                <ul class='list_depth_02'>
+                                    <li><span>받은편지함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>보낸편지함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>임시보관함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>지운편지함8</span><img src='images/down_arrow.png'>
+                                        <ul class='list_depth_03'>
+                                            <li><span>받은편지함8</span></li>
+                                            <li><span>보낸편지함8</span></li>
+                                            <li><span>임시보관함8</span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>개인편지함8</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>메일검색8</span>
+                                        
+                                    </li>
+                                </ul>
+                                <ul class='list_depth_02'>
+                                    <li><span>발송요청목록8</span>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

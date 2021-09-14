@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* 기본 스타일시트 */
+.organization_chart{padding-bottom:68px; display:none;}
+
+.organization_chart .chart_depth_03, .organization_chart .chart_depth_04{display:none;}
+
+.organization_chart .chart_depth_01 > li > p{border-bottom:1px solid #D6DBE4}
+.organization_chart .chart_depth_02 > li{padding-left:30px; border-bottom:1px solid #D6DBE4;}
+.organization_chart .chart_depth_03 > li{padding-left:30px;}
+.organization_chart .chart_depth_04 > li span{font-size:13px; font-weight:normal; padding-left:0px;} 
+
+.organization_chart span{display:inline-block; box-sizing:border-box; height:40px; padding-left:0; box-sizing:border-box; line-height:40px; font-weight:bold}
+span.line_bg, span.expand_icon{display:inline-block; width:30px; height:40px; vertical-align:middle; background-repeat:no-repeat !important; background-position:0 0; margin-left:15px;}
+
+.organization_chart li.expand > p > span.expand_icon{display:inline-block; width:30px; background:url(../images/orgchart_expand.svg);}
+.organization_chart li.expand.on > p > span.expand_icon{display:inline-block; width:30px; background:url(../images/orgchart_expand_on.svg);}
+.organization_chart li.expand > span.expand_icon{display:inline-block; width:30px; background:url(../images/orgchart_expand.svg);}
+.organization_chart li.expand.on > span.expand_icon{background:url(../images/orgchart_expand_on.svg) 0 0;}
+.organization_chart li.expand.down > span.expand_icon{background:url(../images/orgchart_expand_down.svg);}
+.organization_chart li.expand.down.on > span.expand_icon{background:url(../images/orgchart_expand_down_on.svg);}
+.organization_chart li.expand.up > span.expand_icon{background:url(../images/orgchart_expand_up.svg);}
+.organization_chart li.expand.up.on > span.expand_icon{background:url(../images/orgchart_expand_up_on.svg);}
+.organization_chart li.expand.down.up > span.expand_icon{background:url(../images/orgchart_expand_down_up.svg);}
+.organization_chart li.expand.down.up.on > span.expand_icon{background:url(../images/orgchart_expand_down_up_on.svg);}
+.organization_chart li.vertical_line > span.line_bg{background:url(../images/orgchart_vertical_bg.svg);}
+/* =========================================================================================================================================================== */
+
+
+/* 조직도 header */
+.organization_chart header{text-align:left; border-bottom:1px solid #D6DBE4;}
+.organization_chart header p{height:53px; line-height:53px; font-size:16px;}
+.organization_chart header .close_btn{display:inline-block; width:32px; height:53px; background:url(../images/org_close_btn.svg) no-repeat 0 45% / 16px; vertical-align:middle; line-height:normal; margin-left:15px;}
+.organization_chart header .header_txt{height:auto;}
+

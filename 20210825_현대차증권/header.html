@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <link rel='stylesheet' href='default.css' />
+    <link rel='stylesheet' href='bootstrap-iso.css'>
+    <link rel='stylesheet' href='bootstrap-submenu.min.css'>
+
+    <style>
+        .bootstrap-iso a:link,
+        .bootstrap-iso a:visited,
+        .bootstrap-iso a:hover,
+        .bootstrap-iso a:active,
+        .bootstrap-iso a:focus {
+            text-decoration: none;
+        }
+
+        .bootstrap-iso .dropdown dl {
+            margin: 0;
+        }
+
+        .bootstrap-iso .none-a-tag li {
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.4;
+            color: #333;
+            white-space: nowrap;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .bootstrap-iso .none-a-tag li:hover,
+        .bootstrap-iso .none-a-tag li:focus {
+            text-decoration: none;
+            color: #262626;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="contentlayout">
+            <li class="contentlayout_left">
+                <img src='images/logo.svg' height='40px' style='margin-top:5px;'>
+            </li>
+            <li class="contentlayout_right">
+
+                <div class="bootstrap-iso">
+
+
+                    
+                    <div class="my_link dropdown" id="my_link">
+                        <dl class="my_linkDL" aria-expanded="false" data-toggle="dropdown" data-submenu="">
+                            <dd>업무시스템<span class="icon_menu top_collapse_down"></span></dd>
+                        </dl>
+                        <div class="my_link_list dropdown-menu pull-right none-a-tag"
+                            style="padding-top: 0px; padding-bottom: 0px; min-width: 100px; top: 0px;">
+                            <dl class="my_link_listDL">
+                                <dt style="width: 33%;" onclick="QuickMove(event, 'UP')"><span
+                                        class="icon_menu top_collapse_up"></span></dt>
+                                <dt style="width: 33%;" onclick="QuickMove(event, 'DOWN')"><span
+                                        class="icon_menu top_collapse_down"></span></dt>
+                                <dt style="width: 33%; text-align: center; padding-top: 5px;"
+                                    onclick="GoToApplication('92', '', false)"><span
+                                        class="main_img main_icon_config"></span></dt>
+                                <dd id="quicklink_beforeitem"
+                                    style="text-align: center; border-bottom: 1px solid rgb(222, 222, 222); font-size: 30px; height: 20px; display: none;">
+                                    <div style="margin-top: -15px">···</div>
+                                </dd>
+                                <dd>
+                                    <ul class="my_link_listUL" style="overflow-y: auto; height: 195px;">
+                                        <li onclick="OpenWindow('', 'https://calendar.google.com', '구글', 'FULL')"
+                                            class="cursorPointer" _liheight="38"><span>구글</span></li>
+                                        <li onclick="OpenWindow('', 'http://www.naver.com', '네이버', 'FULL')"
+                                            class="cursorPointer" _liheight="38"><span>네이버</span></li>
+                                        <li onclick="OpenWindow('', 'http://www.google.com', '구글', 'FULL')"
+                                            class="cursorPointer" _liheight="38"><span>구글</span></li>
+                                        <li onclick="OpenWindow('', 'http://www.daum.net', '다음', 'FULL')"
+                                            class="cursorPointer" _liheight="38"><span>다음</span></li>
+                                        <li onclick="OpenWindow('', 'http://www.nate.com', '네이트', 'FULL')"
+                                            class="cursorPointer" _liheight="38"><span>네이트</span></li>
+                                    </ul>
+                                </dd>
+                                <dd id="quicklink_afteritem"
+                                    style="text-align: center; border-bottom: 1px solid rgb(222, 222, 222); font-size: 30px; height: 20px; display: none;">
+                                    <div style="margin-top: -15px">···</div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="my_information dropdown" id="my_information_Menu">
+                        <a href="#" id="my_information_Button" data-toggle="dropdown" data-submenu="">
+                            <dl class="my_informationDL">
+                                <dt>
+                                    <img src="images/info_photo.svg"
+                                        alt=""></dt>
+                                <dd><span class="icon_menu top_collapse_down"></span></dd>
+                            </dl>
+                        </a>
+
+                        <ul class="dropdown-menu pull-right none-a-tag" id="my_informationUL" style="">
+                            <li onclick="OpenWindowMultiView(this, event)"
+                                id="/myoffice/ezpersonal/index_environment.aspx">환경설정</li>
+                            <li
+                                onclick="OpenWindow('', '/myoffice/ezOrgan/Search_Organ.aspx', 'layer', 'width=800px, height=700px')">
+                                직원조회</li>
+                            <li onclick="Logout('/logout.aspx')">로그아웃</li>
+                        </ul>
+                    </div>
+
+                    <div class="my_Notification dropdown">
+                        <ul class="my_NotificationUL" data-toggle="dropdown" data-submenu="" style="margin-bottom: 0px">
+                            <li>
+                                <span class="icon_menu top_Notification" title="알림"></span>
+                                <span id="notiCountBadge" class="top_count"><span>3</span></span>
+                            </li>
+                        </ul>
+                        <div class="dropdown-menu pull-right none-a-tag" id="my_NotificationUL"
+                            style="padding: 0px; margin: 0px; width: 352px; height: 685px; right: -130px;">
+                            <!-- 포인트 -->
+                            <p class="notification_point"><span class="icon16 notification_arrow_point"></span></p>
+                            <iframe id="iframeNoti"
+                                src="/myoffice/ezPersonal/Notification_Realtime/Notification_Main.aspx"
+                                style="width: 100%; height: 100%" frameborder="0" scrolling="NO"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="my_search">
+                        <ul class="contentlayout my_searchUL">
+                            <li class='contentlayout_left'>
+                                통합검색<span class="icon_menu top_collapse_down"></span>
+                            </li>
+                            <li class="contentlayout_right" onclick="Search_Integrate()" title="검색"><span
+                                    class="icon_menu top_searchBtn"></span></li>
+                            <li class="contentlayout_none">
+                                <input type="text" id="txt_Search" class="width100percent" placeholder=""
+                                    onkeydown="entercheck()"></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </li>
+            <li class="contentlayout_none">
+                <nav>
+                    <ul id="horizonMenu" class="navUL" style="">
+
+                        <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                            _usemulti="1" id="/myoffice/ezportal/layout/portallayout_basic.aspx"><span
+                                class="icon_menu top_resource"></span><span class="top_text" style="">메일</span></li>
+                        <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                            _usemulti="1" id="/myoffice/ezemail/index_myoffice.aspx"><span
+                                class="icon_menu top_mail"></span><span class="top_text" style="">결재</span></li>
+                        <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                            _usemulti="1" id="/myoffice/ezapproval/index_approval.aspx"><span
+                                class="icon_menu top_approval"></span><span class="top_text" style="">게시</span></li>
+                        <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                            _usemulti="1" id="/myoffice/ezboardstd/index_board.aspx"><span
+                                class="icon_menu top_board"></span><span class="top_text" style="">규정/지침</span></li>
+                        <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                            _usemulti="1" id="/myoffice/ezschedule/index_schedule.aspx"><span
+                                class="icon_menu top_pims"></span><span class="top_text" style="">업무지원</span></li>
+                        <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                            _usemulti="1" id="/myoffice/ezresource/index_resource.aspx"><span
+                                class="icon_menu top_knowledge"></span><span class="top_text" style="">소통마당</span></li>
+                        <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                            _usemulti="1" id="/myoffice/ezcommunity/main_page.aspx"><span
+                                class="icon_menu top_sns"></span><span class="top_text" style="">협업</span></li>
+                    </ul>
+                    <ul id="verticalMenu" class="ToggleMenu bootstrap-iso" style="display: none">
+                        <li class="dropdown"><span class="top_toggleBtn" data-toggle="dropdown" data-submenu=""><span
+                                    class="icon_menu top_toggle"></span></span>
+                            <ul class="dropdown-menu pull-left ToggleMenuUL" id="verticalMenu_UL" style="">
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    id="/myoffice/ezportal/layout/portallayout_basic.aspx"><span
+                                        class="icon_menu top_resource" title="포탈"></span><span
+                                        class="top_text">포탈</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    id="/myoffice/ezemail/index_myoffice.aspx"><span class="icon_menu top_mail"
+                                        title="메일"></span><span class="top_text">메일</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    id="/myoffice/ezapproval/index_approval.aspx"><span class="icon_menu top_approval"
+                                        title="결재"></span><span class="top_text">결재</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    id="/myoffice/ezboardstd/index_board.aspx"><span class="icon_menu top_board"
+                                        title="게시판"></span><span class="top_text">게시판</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    id="/myoffice/ezschedule/index_schedule.aspx"><span class="icon_menu top_pims"
+                                        title="일정관리"></span><span class="top_text">일정관리</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    id="/myoffice/ezresource/index_resource.aspx"><span class="icon_menu top_knowledge"
+                                        title="자원관리"></span><span class="top_text">자원관리</span></li>
+                                <li name="topmenu_li" class="cursorPointer" onclick="OpenWindowMultiView(this, event)"
+                                    id="/myoffice/ezcommunity/main_page.aspx"><span class="icon_menu top_sns"
+                                        title="커뮤니티"></span><span class="top_text">커뮤니티</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </li>
+        </ul>
+    </header>
+</body>
+
+</html>

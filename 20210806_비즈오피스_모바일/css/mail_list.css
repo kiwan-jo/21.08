@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+.mail_content{width:100%; display:block; position:relative; padding-bottom:63px; padding-top:53px; box-sizing:border-box;}
+
+/* list_checked_area 시작 */
+.list_checked_area{position:fixed; top:0; left:0; width:100%; height:113px; background-color:#000; z-index:1000; display:none;}
+.list_checked_area > dl{height:25px; line-height:25px; padding:10px 15px;}
+.list_checked_area > dl dt{float:left; color:#fff;}
+.list_checked_area > dl dt span{color:#1E8FFF;}
+.list_checked_area > dl dd{float:right;}
+.list_checked_area > dl dd span img{margin-top:4px;}
+
+.list_checked_area ul{display:flex; padding:0 5%; box-sizing:border-box;}
+.list_checked_area ul li{width:20%; text-align:center;}
+.list_checked_area ul li dl dt{height:24px;}
+.list_checked_area ul li.list_checked_menu_01 dl dt{background:url(../images/list_checked_menu_01.svg) no-repeat center bottom;}
+.list_checked_area ul li.list_checked_menu_02 dl dt{background:url(../images/list_checked_menu_02.svg) no-repeat center bottom;}
+.list_checked_area ul li.list_checked_menu_03 dl dt{background:url(../images/list_checked_menu_03.svg) no-repeat center bottom;}
+.list_checked_area ul li.list_checked_menu_04 dl dt{background:url(../images/list_checked_menu_04.svg) no-repeat center bottom;}
+.list_checked_area ul li.list_checked_menu_05 dl dt{background:url(../images/list_checked_menu_05.svg) no-repeat center bottom;}
+.list_checked_area ul li dl dd{color:#fff; margin-top:15px;}
+
+
+
+
+
+/* header 시작 */
+.mail_content header{width:100%; height:53px; font-size:20px; line-height:53px; text-align:center; position:fixed; top:0; left:0; background-color:#fff; z-index:100;}
+.mail_content header .prev_page_btn{float:left; margin:18px 0 0 10px;}
+.mail_content header span{float:none;}
+.mail_content header .mail_search{float:right; margin:13px 10px 0 0;}
+/* header 끝 */
+
+
+/* ===== mail_list_area 시작 ===== */
+
+/* mail_list_title start */
+.mail_list_area .mail_list_title{background-color:#F4F4F4; height:60px;}
+.mail_list_area .mail_list_title dt{float:left; line-height:60px; margin-left:20px; font-size:17px;}
+.mail_list_area .mail_list_title dt .check_icon{margin-right:5px;}
+.mail_list_area .mail_list_title dt .current_mail_amount{display:inline-block; font-size:13px; border:1px solid #178BFF; padding:0 6px; box-sizing:border-box; height:20px; border-radius:10px; line-height:20px; color:#178bff;}
+
+.mail_list_area .mail_list_title dd{float:right; line-height:60px; margin-right:20px;}
+.mail_list_area .mail_list_title dd .mail_reload{margin-right:10px;}
+/* mail_list_title end */
+
+
+/* mail_list 시작 */
+.mail_list{width:100%;}
+.mail_list li{width:100%; display:flex; overflow:hidden; padding:10px 0; border-bottom:1px solid #EFF1F6; position:relative;}
+.mail_list li:nth-child(1):before{content:''; display:inline-block; position:absolute; left:0; top:0; width:4px; height:100%; background-color:#1E8FFF}
+.mail_list li:nth-child(2):before{content:''; display:inline-block; position:absolute; left:0; top:0; width:4px; height:100%; background-color:#1E8FFF}
+.mail_list li:nth-child(3):before{content:''; display:inline-block; position:absolute; left:0; top:0; width:4px; height:100%; background-color:#1E8FFF}
+.mail_list li:nth-child(4):before{content:''; display:inline-block; position:absolute; left:0; top:0; width:4px; height:100%; background-color:#1E8FFF}
+
+.mail_list li div.list_left_area{width:15%; text-align:center; margin:auto 0;}
+.mail_list li div.list_right_area{width:85%;}
+.mail_list li div dl{overflow:hidden; padding-right:10px; box-sizing:border-box; height:24px; line-height:24px;}
+.mail_list li div dl dt{float:left;}
+.mail_list li div dl dd{float:right; font-size:12px;}
+
+input[type='checkbox']{display:none;}
+input[type='checkbox'] + label span{display:inline-block; width:20px; height:20px; background:url(../images/bg_checkbox.svg) no-repeat 0 0;}
+input[type='checkbox']:checked + label span{background:url(../images/bg_checkbox_checked.svg) no-repeat 0 0;}
+
+.mail_list li div.list_right_area .list_DL_01{margin-bottom:5px;}
+.mail_list li div.list_right_area .list_DL_01 .favorite span{display:inline-block; width:20px; height:24px;}
+.mail_list li div.list_right_area .list_DL_01 .favorite_on span{background:url(../images/mail_favorite_on.svg) no-repeat 0 0;}
+.mail_list li div.list_right_area .list_DL_01 .favorite_off span{background:url(../images/mail_favorite_off.svg) no-repeat 0 0;}
+.mail_list li div.list_right_area .list_DL_01 .mail_list_time{margin-right:10px; font-size:13px;}
+.mail_list li div.list_right_area .list_DL_01 .mail_list_date{margin-right:5px; font-size:13px;}
+
+
+
+.mail_list li div.list_right_area .list_DL_02{}
+.mail_list li div.list_right_area .list_DL_02 dt{max-width:calc(100% - 20px); overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:15px; height:24px;}
+.mail_list li div.list_right_area .list_DL_02 dt.grade_up{color:#DC000C}
+.mail_list li div.list_right_area .list_DL_02 dt.grade_up{background:url(../images/grade_up.svg) no-repeat 0 3px; padding-left:15px; box-sizing:border-box;}
+.mail_list li div.list_right_area .list_DL_02 dt.grade_down{background:url(../images/grade_down.svg) no-repeat 0 3px; padding-left:15px; box-sizing:border-box;}
+.mail_list li div.list_right_area .list_DL_02 dd{height:24px; margin-right:3px;}
+.mail_list li div.list_right_area .list_DL_02 dd span{display:inline-block; width:16px; height:24px; background:url(../images/mail_link_icon.svg) no-repeat 0 center;}
+/* mail_list 끝 */
+
+
+
+.top_move{position:fixed; bottom:80px; right:10px; width:50px; height:50px; border:1px solid #D6DBE4; box-sizing:border-box; box-shadow:0px 3px 3px rgba(0,0,0,0.16); border-radius:50%;background:url(../images/aside_up.svg) no-repeat center center; background-color:#fff !important; z-index:100;}
+.write_page_move{position:fixed; bottom:140px; right:10px; width:50px; height:50px; box-sizing:border-box; box-shadow:0px 3px 3px rgba(0,0,0,0.16); border-radius:50%; background:url(../images/mail_write_icon.svg) no-repeat center center; background-color:#1E8FFF; z-index:10;}

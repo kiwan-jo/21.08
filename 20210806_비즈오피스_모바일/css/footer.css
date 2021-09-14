@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* footer 메뉴 시작 */
+footer{width:100%; position:fixed; bottom:0; z-index:100; padding:10px 5%; box-sizing:border-box; box-shadow:0 -2px 2px rgba(0,0,0,0.16); background-color:#fff; font-family:'NotoSansKR';}
+footer ul{display:flex; width:100%; flex-wrap:wrap;}
+footer ul li{width:calc(100% / 6); text-align:center;}
+footer ul li dt{height:20px;}
+footer ul li dt img{vertical-align:bottom;}
+footer ul li dd{margin-top:5px;}
+/* footer 메뉴 끝 */

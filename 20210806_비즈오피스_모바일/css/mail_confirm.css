@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.mail_confirm{display:none;}
+
+/* base */
+.mail_confirm{display:none; padding-bottom:88px;}
+
+input{vertical-align:middle;}
+.mail_confirm dl{overflow:hidden;}
+.mail_confirm .write_L{float:left;}
+.mail_confirm .write_L.receiver_txt{width:75px; height:50px; line-height:50px;}
+.mail_confirm .write_R{float:right;}
+.mail_confirm .write_layout{border-bottom:1px solid #eee; padding:0 10px;  box-sizing:border-box;}
+.mail_confirm .file_area .file_type_jpg{display:inline-block; width:20px; height:20px; background:url(../images/jpg_file_img.svg) no-repeat center center; vertical-align:middle; margin-right:5px;}
+.mail_confirm .file_area .file_type_ppt{display:inline-block; width:20px; height:20px; background:url(../images/ppt_file_img.svg) no-repeat center center; vertical-align:middle; margin-right:5px;}
+.mail_confirm .file_area .file_delete{display:inline-block; width:10px; height:10px; background:url(../images/close_icon.png) no-repeat center center / 7px 7px;}
+
+.mail_confirm .reference_expand_icon{margin-left:5px; display:inline-block; width:16px; height:16px; background:url(../images/expand_down.svg) no-repeat 0 center; vertical-align:middle;}
+.mail_confirm .reference_expand_icon.on{background:url(../images/expand_up.svg) no-repeat 0 0;}
+
+
+/* ===================== mail_confirm content =================== */
+
+/* header */
+.mail_confirm header{text-align:left; border-bottom:1px solid #d5d5d5; padding:0 10px; box-sizing:border-box; height:53px;}
+.mail_confirm header dl dt{margin-top:19px;}
+/* .mail_confirm header dl dd{height:30px; border:1px solid #DFDFDF; border-radius:15px; line-height:30px; margin-top:11px; padding:0 5px; margin-right:5px;} */
+.mail_confirm header dl dd.mail_confirm_menu span{display:inline-block; width:12px; height:100%; background:url(../images/mail_confirm_menu_icon.svg) no-repeat center center / auto 18px;}
+.mail_confirm header dl dd.mail_delete span{display:inline-block; width:20px; height:100%; background:url(../images/mail_delete_icon.svg) no-repeat center center / auto 16px; margin-right:10px;}
+.mail_confirm header dl dd.mail_reply > span{display:inline-block; padding:0 5px; border:1px solid #DFDFDF; margin-top:11px; box-sizing:border-box; border-radius:31px; margin-right:10px;}
+.mail_confirm header dl dd .reply_icon{display:inline-block; width:12px; height:31px; background:url(../images/mail_reply_icon.svg) no-repeat 0 45% / 12px auto; vertical-align:middle; margin-right:5px;}
+.mail_confirm header dl dd .reply_all_icon{display:inline-block; width:12px; height:31px; background:url(../images/mail_reply_all.svg) no-repeat 0 45% / 12px auto; vertical-align:middle; margin-right:5px;}
+ 
+/* 받은 메일 제목 */
+.mail_confirm .receive_mail_title{padding:15px 10px;}
+.mail_confirm .receive_mail_title ul li:nth-child(1){overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; font-weight:600;}
+.mail_confirm .receive_mail_title ul li:nth-child(2){margin-top:10px; height:24px; line-height:24px;}
+.mail_confirm .receive_mail_title ul li:nth-child(2) .date{margin-right:5px;}
+.mail_confirm .receive_mail_title ul li:nth-child(2) .favorite{display:inline-block; width:16px; height:24px; background:url(../images/mail_favorite_on.svg) no-repeat center center;}
+.mail_confirm .receive_mail_title ul li:nth-child(2) .link_icon{display:inline-block; width:16px; height:24px; background:url(../images/mail_link_icon.svg) no-repeat center center; margin-right:10px;}
+
+/* 첨부파일 */
+.mail_confirm .add_file_area{height:auto; }
+.mail_confirm .add_file{height:45px; line-height:45px; box-sizing:border-box;}
+.mail_confirm .add_file .add_file_amount{margin-left:5px;}
+.mail_confirm .add_file .save_all{margin-left:10px; text-decoration:underline; color:#1E8FFF;}
+
+.mail_confirm .file_area ul{display:flex; flex-wrap:wrap; width:100%; padding-bottom:10px; box-sizing:border-box; overflow:hidden;}
+.mail_confirm .file_area ul li{width:calc(50% - 5px); border:1px solid #d5d5d5; box-sizing:border-box; border-radius:3px; margin-right:10px; padding:5px; margin-bottom:5px;}
+.mail_confirm .file_area ul li:nth-child(2){margin-right:0;}
+.mail_confirm .file_area ul p{width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+
+/* 받은메일 내용 */
+.mail_confirm .mail_text_area{padding:10px 10px 0 10px;}
+.mail_confirm .mail_text_area p{line-height:1.5;}
+.mail_confirm .mail_text_area img{width:290px; height:auto; margin-top:10px;}
+.mail_confirm .mail_text_area ul{display:flex; flex-wrap:wrap; width:96%; box-shadow:1px 1px 3px rgba(0,0,0,0.16), -1px -1px 3px rgba(0,0,0,0.16); margin:20px auto 0; border-radius:5px;}
+.mail_confirm .mail_text_area ul li{width:33.333%; border-right:1px solid #dfdfdf; box-sizing:border-box; text-align:center; height:45px; line-height:45px;}
+.mail_confirm .mail_text_area ul li span{display:inline-block; width:18px; height:100%; vertical-align:middle; background-repeat:no-repeat !important; background-position:left 45% !important;}
+.mail_confirm .mail_text_area ul li span.reply_icon{background:url(../images/mail_reply_icon.svg);}
+.mail_confirm .mail_text_area ul li span.reply_all_icon{background:url(../images/mail_reply_all_icon.svg);}
+.mail_confirm .mail_text_area ul li span.relay_icon{background:url(../images/mail_relay_icon.svg);}
+
+
+.mail_confirm .reference_expand_area{display:none;}
+.mail_confirm .file_area{display:none;}
+
+
+.mail_confirm .write_layout_form{display:flex; width:100%; padding:10px;}
+.mail_confirm .write_layout_form .write_L_form{margin:auto 0; width:75px;}
+.mail_confirm .write_layout_form .write_L_form_02{margin:auto 0; width:calc(100% - 75px);}
+.mail_confirm .write_layout_form .write_L_form_02 span{display:inline-block; background-color:#ECECEC; padding:0 10px; height:26px; line-height:26px; border-radius:13px; margin-right:5px;}
+.mail_confirm .write_layout_form .write_R_form{margin:auto 0; width:68px;}

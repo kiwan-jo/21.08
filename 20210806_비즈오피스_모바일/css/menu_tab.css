@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* ======================================================================= */
+
+/* menu_tab 시작 */
+.menu_tab{background-color:#fff; width:100%;  font-family:'NotoSansCJKkr-Regular'; display:none; padding-bottom:68px; box-sizing:border-box;}
+.menu_tab:before{content:''; position:fixed; width:40%; height:100%; background-color:#f2f3f5;}
+
+
+/* header 시작 */
+.menu_tab header{height:48px; line-height:48px; padding:0 4%; box-sizing:border-box; background-color:#fff; position:relative;}
+.menu_tab header dl dt{float:left;}
+.menu_tab header dl dt span{font-size:17px;}
+.menu_tab header dl dd{float:right; margin-top:15px;}
+/* header 끝 */
+
+
+/* menu_tab_quick 시작 */
+.menu_tab_quick{margin:0; width:100%; box-shadow:none; border-radius:0%; box-shadow:0 3px 5px rgba(0,0,0,0.16); position:relative; z-index:100}
+.menu_tab_quick ul{display:flex; flex-wrap:wrap; width:100%;}
+.menu_tab_quick ul li{width:33.333%; text-align:center; padding:15px 0;}
+.menu_tab_quick ul li dl dd{margin-top:10px;}
+/* menu_tab_quick 끝 */
+
+
+/* menu_list 시작 */
+.menu_list_area{position:relative; width:100%;}
+.menu_list_area span{cursor:pointer;}
+.list_depth_01{width:100%; padding-left:5px; padding-top:25px; box-sizing:border-box; position:relative; z-index:1}
+.list_depth_01 > li{width:43%; height:43px; line-height:43px; padding-left:10px; box-sizing:border-box; margin-bottom:10px;}
+.list_depth_01 > li.on{background-color:#3C85EF; border-radius:22px;}
+.list_depth_01 > li > span{display:inline-block; font-size:18px; max-width:93%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.list_depth_01 > li.on > span{color:#fff;}
+
+.list_depth_01 li > div{position:absolute; left:40%; top:0; width:60%; padding:30px 6%; box-sizing:border-box; display:none;}
+
+.list_depth_02{font-size:16px;}
+.list_depth_02 > li{line-height:38px;}
+.list_depth_02 > li > img{margin-left:5px; margin-bottom:1px;}
+
+.list_depth_03{display:none;}
+.list_depth_03 > li{padding-left:10%;}
+.list_depth_03 > li > span{overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.list_depth_03 > li > span:before{content:'-'; margin-right:5px;}
+.list_depth_03 > li.on span{color:#3C85EF}
